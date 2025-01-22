@@ -30,10 +30,11 @@ from app_modules import (
 load_dotenv()
 QUALITY_THRESHOLD = os.getenv("QUALITY_THRESHOLD") or 0.8
 LOCAL_DB = (
-    os.getenv("LOCAL_DB") or True
+    os.getenv("LOCAL_DB") or 1
 )  # Use cloud database - False or local database - True
 HOME_DIR = os.getenv("HOME_DIR") or "code/cfr2sbvr_inspect"
 DEFAULT_DATA_DIR = os.getenv("DEFAULT_DATA_DIR") or f"{HOME_DIR}/data"
+DATABASE = os.getenv("DATABASE")
 
 # Config logging
 logger = log_config(HOME_DIR)
@@ -50,7 +51,7 @@ for name, value in os.environ.items():
 st.sidebar.title(":material/assured_workload: CFR2SBVR Inspect")
 
 # Connect to the database
-conn, db_name = db_connection(LOCAL_DB, DEFAULT_DATA_DIR)
+conn, db_name = db_connection(DATABASE, LOCAL_DB, DEFAULT_DATA_DIR)
 
 st.sidebar.header("Checkpoints", divider="red")
 
