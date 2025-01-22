@@ -29,9 +29,7 @@ from app_modules import (
 # Constants and environment variables
 load_dotenv()
 QUALITY_THRESHOLD = os.getenv("QUALITY_THRESHOLD") or 0.8
-LOCAL_DB = (
-    os.getenv("LOCAL_DB") or 1
-)  # Use cloud database - False or local database - True
+LOCAL_DB = os.getenv("LOCAL_DB")  # Use cloud database - False or local database - True
 HOME_DIR = os.getenv("HOME_DIR") or "code/cfr2sbvr_inspect"
 DEFAULT_DATA_DIR = os.getenv("DEFAULT_DATA_DIR") or f"{HOME_DIR}/data"
 DATABASE = os.getenv("DATABASE")
