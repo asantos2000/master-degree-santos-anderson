@@ -154,8 +154,13 @@ event = st.dataframe(
 st.write("Select up to four rows to evaluate.")
 
 st.sidebar.header("Dataset info", divider="red")
+if LOCAL_DB:
+    db_icon = ":material/computer:"
+else:
+    db_icon = ":material/cloud:"
+
 st.sidebar.write(
-    f":material/database: {db_name} ({':material/computer:' if LOCAL_DB else ':material/cloud:'})"
+    f":material/database: {db_name} ({db_icon})"
 )
 
 st.sidebar.write(f":material/table: {table_selected}")

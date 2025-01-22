@@ -458,7 +458,7 @@ def get_databases(local_db):
         return ["md:cfr2sbvr_db"]
 
 
-def db_connection(db_name, local_db=1, default_data_dir="data"):
+def db_connection(db_name, local_db, default_data_dir="data"):
     # Connect to the database
     if local_db:
         conn = duckdb.connect(f"{default_data_dir}/{db_name}.db", read_only=True)
