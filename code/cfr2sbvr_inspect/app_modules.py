@@ -458,15 +458,16 @@ def get_databases(local_db):
         return ["md:cfr2sbvr_db"]
 
 
-def db_connection(db_name, local_db, default_data_dir="data"):
+def db_connection(db_name, default_data_dir="data"):
     # Connect to the database
-    if local_db:
-        conn = duckdb.connect(f"{default_data_dir}/{db_name}.db", read_only=True)
-    else:
+    if db_name.startswith("md:"):
         mother_duck_token = os.getenv("MOTHER_DUCK_TOKEN")
         conn = duckdb.connect(
-            f"md:{db_name}?motherduck_token={mother_duck_token}", read_only=True
+            f"{db_name}?motherduck_token={mother_duck_token}", read_only=True
         )
+    else:
+        conn = duckdb.connect(f"{default_data_dir}/{db_name}", read_only=True)
+
     return conn, db_name
 
 

@@ -29,7 +29,6 @@ from app_modules import (
 # Constants and environment variables
 load_dotenv()
 QUALITY_THRESHOLD = os.getenv("QUALITY_THRESHOLD") or 0.8
-LOCAL_DB = int(os.getenv("LOCAL_DB"))  # Use cloud database - 0 or local database - 1
 HOME_DIR = os.getenv("HOME_DIR") or "code/cfr2sbvr_inspect"
 DEFAULT_DATA_DIR = os.getenv("DEFAULT_DATA_DIR") or f"{HOME_DIR}/data"
 DATABASE = os.getenv("DATABASE")
@@ -46,7 +45,7 @@ st.set_page_config(page_title="CFR2SBVR Inspect", page_icon="🏛️", layout="w
 st.sidebar.title(":material/assured_workload: CFR2SBVR Inspect")
 
 # Connect to the database
-conn, db_name = db_connection(DATABASE, LOCAL_DB, DEFAULT_DATA_DIR)
+conn, db_name = db_connection(DATABASE, DEFAULT_DATA_DIR)
 
 st.sidebar.header("Checkpoints", divider="red")
 
@@ -152,10 +151,10 @@ event = st.dataframe(
 st.write("Select up to four rows to evaluate.")
 
 st.sidebar.header("Dataset info", divider="red")
-if LOCAL_DB:
-    db_icon = ":material/computer:"
-else:
+if DATABASE.startswith("md:"):
     db_icon = ":material/cloud:"
+else:
+    db_icon = ":material/computer:"
 
 st.sidebar.write(
     f":material/database: {db_name} ({db_icon})"
