@@ -43,7 +43,7 @@ logger = log_config(HOME_DIR)
 
 st.set_page_config(page_title="CFR2SBVR Inspect", page_icon="🏛️", layout="wide")
 
-st.write(os.getenv("DATABASE"), os.getenv("LOCAL_DB"))
+st.write(DATABASE, LOCAL_DB)
 
 st.sidebar.title(":material/assured_workload: CFR2SBVR Inspect")
 
