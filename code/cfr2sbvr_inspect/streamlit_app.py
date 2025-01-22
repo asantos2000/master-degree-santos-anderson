@@ -38,7 +38,9 @@ DEFAULT_DATA_DIR = os.getenv("DEFAULT_DATA_DIR") or f"{HOME_DIR}/data"
 # Config logging
 logger = log_config(HOME_DIR)
 
-
+for name, value in os.environ.items():
+    st.write("{0}: {1}".format(name, value))
+    
 #
 # Main
 #
