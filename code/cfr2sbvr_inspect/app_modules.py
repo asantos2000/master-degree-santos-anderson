@@ -465,7 +465,7 @@ def db_connection(db_name, local_db, default_data_dir="data"):
     else:
         mother_duck_token = os.getenv("MOTHER_DUCK_TOKEN")
         conn = duckdb.connect(
-            f"{db_name}?motherduck_token=md:{mother_duck_token}", read_only=True
+            f"md:{db_name}?motherduck_token={mother_duck_token}", read_only=True
         )
     return conn, db_name
 
