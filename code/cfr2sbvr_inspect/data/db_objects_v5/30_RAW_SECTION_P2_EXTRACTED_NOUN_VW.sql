@@ -54,7 +54,7 @@ FROM
 		terms.definition as statement_text,
 		1 as confidence,
 		'From true table' as reason,
-		FALSE as isLocalScope,
+		terms.isLocalScope,
 		1 as local_scope_confidence,
 		'From true table' as local_scope_reason,
 		created_at

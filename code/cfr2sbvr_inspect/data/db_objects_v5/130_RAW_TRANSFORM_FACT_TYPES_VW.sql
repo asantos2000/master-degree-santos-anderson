@@ -11,6 +11,7 @@ SELECT
 	TRANSF.content.transformed,
 	TRANSF.content.confidence as transformation_confidence,
 	TRANSF.content.reason as transformation_reason,
+	TRUE as isLocalScope,
 	CLASS.statement_classification_type,
 	CLASS.statement_classification_type_confidence,
 	CLASS.statement_classification_type_explanation,

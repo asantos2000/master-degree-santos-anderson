@@ -21,14 +21,14 @@ from app_modules import (
     get_statement_sources,
     extract_row_values,
     format_score,
-    get_databases,
     chatbot_widget,
     log_config,
+    df_to_rdf_triples,
 )
 
 # Constants and environment variables
 load_dotenv()
-QUALITY_THRESHOLD = os.getenv("QUALITY_THRESHOLD") or 0.8
+QUALITY_THRESHOLD = os.getenv("QUALITY_THRESHOLD") or 0.8 # Ref: 5.3.2 Rules classification
 HOME_DIR = os.getenv("HOME_DIR") or "code/cfr2sbvr_inspect"
 DEFAULT_DATA_DIR = os.getenv("DEFAULT_DATA_DIR") or f"{HOME_DIR}/data"
 DATABASE = os.getenv("DATABASE")
@@ -170,6 +170,8 @@ st.sidebar.markdown(
 - <span style="text-decoration: underline double; text-decoration-color: green;">names</span>
 - <span style="text-decoration: underline; text-decoration-color: green;">terms</span>
 - <span style="font-style: italic; color: blue;">verb symbols</span>
+- CS: Candidate Statement
+- TS: Transformed Statement
 """,
     unsafe_allow_html=True,
 )
@@ -190,6 +192,7 @@ with comp_tab:
             st.write("There is nothing to see here yet, select at least one row.")
             logger.info(f"Error {e}.")
 
+        row_values = {}
         if number_of_columns and number_of_columns <= 4:
             # Loop through the rows and assign each row to a column
             for col, row in zip(columns, select_rows):
@@ -227,7 +230,7 @@ with comp_tab:
                     verb_symbols = row_values.get("verb_symbols")
                     sources = row_values.get("statement_sources")
                     highlighted_text = highlight_statement(
-                        f"OS{row}",
+                        f"CS{row}",
                         doc_id,
                         statement_id,
                         classification_type,
@@ -449,7 +452,14 @@ with feedback_tab:
     st.dataframe(filtered_df)
 
     if st.button("Save as best option(s)"):
-        st.json(filtered_df.to_json(orient="records"))
+        #st.json(filtered_df.to_json(orient="records"))
+        st.markdown(f"""
+```turtle
+
+{df_to_rdf_triples(filtered_df)}
+
+```
+        """)
         st.info(f"Best option(s) saved at {dt.datetime.now()}")
 
-    chatbot_widget()
+    chatbot_widget(row_values)
