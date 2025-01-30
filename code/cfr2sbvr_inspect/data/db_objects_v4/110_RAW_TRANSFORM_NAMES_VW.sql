@@ -11,6 +11,7 @@ TRANSF.content.templates_ids as transformation_template_ids,
 TRANSF.content.transformed,
 TRANSF.content.confidence as transformation_confidence,
 TRANSF.content.reason as transformation_reason,
+EXT_P2.isLocalScope as isLocalScope,
 CLASS.statement_classification_type,
 CLASS.statement_classification_type_confidence,
 CLASS.statement_classification_type_explanation,
@@ -30,6 +31,15 @@ LEFT JOIN main.RAW_CLASSIFY_VW as CLASS
 	AND CLASS.checkpoint = 'documents_true_table.json'
 	AND list_has_any(TRANSF.content.statement_sources, CLASS.statement_sources)
 	AND (TRANSF.content.statement = CLASS.statement_text)
+LEFT JOIN main.RAW_SECTION_P2_EXTRACTED_NOUN_VW as EXT_P2
+  ON
+	(TRANSF.content.statement_id::STRING = EXT_P2.statement_title::STRING)
+	AND (CLASS.source = 'Names')
+	AND (TRANSF.content.doc_id = EXT_P2.doc_id)
+	--AND TRANSF.file_source = CLASS.checkpoint
+	AND EXT_P2.checkpoint = 'documents_true_table.json'
+	--AND list_has_any(TRANSF.content.statement_sources, EXT_P2.statement_sources)
+	AND (TRANSF.content.statement = EXT_P2.statement_text)
 );
 
 SELECT * FROM RAW_TRANSFORM_NAMES_VW;

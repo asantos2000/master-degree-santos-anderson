@@ -25,6 +25,7 @@ SELECT
 	TRANSF.statement_classification_subtype,
 	TRANSF.statement_classification_subtype_confidence,
 	TRANSF.statement_classification_subtype_explanation,
+	TRANSF.isLocalScope,
 	-- EXTRACT
 	TRANSF.terms,
 	TRANSF.verb_symbols,

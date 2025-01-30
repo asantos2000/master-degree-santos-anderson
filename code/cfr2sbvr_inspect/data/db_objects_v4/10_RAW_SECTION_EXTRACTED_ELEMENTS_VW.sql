@@ -57,7 +57,7 @@ SELECT
 			from_checkpoint := NULL
 		)
 	) AS terms,
-	P1.classification."replace"(' ', '_') AS SOURCE
+	P1.classification."replace"(' ', '_') AS source
 FROM P1
 LEFT JOIN (
 	SELECT
@@ -147,7 +147,7 @@ SELECT
 			from_checkpoint := COALESCE(NAMES.file_source, TERMS.file_source, NULL)
     	)
     ) AS terms,
-	P1.classification."replace"(' ', '_') AS SOURCE
+	P1.classification."replace"(' ', '_') AS source
 FROM P1
 LEFT JOIN (
 	SELECT
