@@ -1,14 +1,9 @@
 # Create FIBO vector store
 
-Run after [create_kg.py](../src/create_kg.py)
+Used by [create_kg.py](../src/create_kg.py)
 
-## Usage
-
-```bash
-source ../../.env # Variables to conenct to GraphDB
-./fibo-vector-store.sh
-```
+For manual usage see [AllegroGraph: LLM Embed Specification](https://franz.com/agraph/support/documentation/llmembed.html)
 
 ## LLM Embed Specification
 
-For [fibo-vec.def](./fibo-vec.def) sintaxe see [here](https://franz.com/agraph/support/documentation/8.2.1/llmembed.html).
+For `*.def` sintaxe see [here](https://franz.com/agraph/support/documentation/8.3.1/llmembed.html).
