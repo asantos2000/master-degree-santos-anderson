@@ -32,7 +32,7 @@ ALLEGROGRAPH_LOCAL:
   PORT: 10035  # 443 for AllegroGraph cloud
   USER: "super"  # admin for AllegroGraph cloud
   PASSWORD: "2002"  # Replace with your password
-  HOME_DIR: "/home/adsantos/agraph-8.3.0"
+  HOME_DIR: "/home/adsantos/agraph-8.3.1"
 
 # AllegroGraph Configuration
 ALLEGROGRAPH_CLOUD:
@@ -42,6 +42,7 @@ ALLEGROGRAPH_CLOUD:
   PORT: 443 
   USER: "admin"
   PASSWORD: "GYL6N1KPB4R4xdWKIZqrYw"  # Replace with your password
+  PROTOCOL: "https"
 
 # Directories and Files
 DEFAULT_DATA_DIR: "../data"
@@ -61,7 +62,7 @@ GITHUB_REPO_CODE_DIR: "code"
 
 # FIBO Graph Configuration
 FIBO_GRAPH: "fibo:FIBO_Graph"
-FIBO_GRAPH_VECTOR_STORE: "fibo-glossary-3m-vec"
+FIBO_GRAPH_VECTOR_STORE: "fibo-glossary-e3s-vec"
 
 # CFR_SBVR Graph Configuration
 CFR_SBVR_GRAPH: "cfr-sbvr:CFR_SBVR"

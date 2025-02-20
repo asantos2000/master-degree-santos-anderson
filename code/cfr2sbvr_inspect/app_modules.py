@@ -229,7 +229,7 @@ def display_section(conn, doc_id):
 def witt_taxonomy_dialog(classification):
     rule_provider = RuleInformationProvider("code/cfr2sbvr_inspect/data")
     markdown_data = rule_provider.get_classification_and_templates(
-        classification, return_forms="fact_type"
+        classification, return_forms="rule"
     )
     st.markdown(markdown_data)
 
