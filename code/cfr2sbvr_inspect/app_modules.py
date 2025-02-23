@@ -11,7 +11,7 @@ import jellyfish
 import rules_taxonomy_provider.main as rules_taxonomy_provider
 import streamlit as st
 from openai import OpenAI
-from rdflib import Graph, Namespace, Literal, URIRef, XSD, RDF
+from rdflib import Graph, Namespace, Literal, URIRef, XSD, RDF, RDFS
 from typing import Optional, List, Dict, Any
 from pydantic import BaseModel
 
@@ -598,7 +598,8 @@ def remove_section_symbol(doc_id: str) -> str:
     return doc_id.replace("§", "")
 
 def triples_rule_and_fact(graph: Graph, rule_fact_model: RuleAndFact):
-    designation_class = CFR_SBVR[rule_fact_model.statement_id]
+    designation_class = CFR_SBVR[transform_to_rdf_subject(rule_fact_model.statement_id)]
+    label = rule_fact_model.statement_id
     concept_type = rule_fact_model.concept_type
     designation_type = SBVR.DefinitionalRule if concept_type == "Fact" else SBVR.BehavioralBusinessRule
 
@@ -609,6 +610,7 @@ def triples_rule_and_fact(graph: Graph, rule_fact_model: RuleAndFact):
     graph.add((designation_class, RDF.type, SBVR[concept_type]))
     graph.add((designation_class, RDF.type, designation_type))
     graph.add((designation_class, SBVR.statement, Literal(rule_fact_model.statement)))
+    graph.add((designation_class, RDFS.label, Literal(label)))
     graph.add((designation_class, SBVR.designationIsInNamespace, URIRef(rule_fact_model.vocabulary_namespace)))
     graph.add((designation_class, CFR_SBVR.createDate, Literal(now_as_xsd_dateTime(), datatype=XSD.dateTime)))
 
@@ -874,6 +876,7 @@ def df_to_rdf_triples(data_df) -> str:
     g.bind("sbvr", SBVR)
     g.bind("cfr-sbvr", CFR_SBVR)
     g.bind("fro-cfr", FRO_CFR)
+    g.bind("rdfs", RDFS)
 
     for index, element in enumerate(pred_terms_names):
         logger.info(f"{index=}")
@@ -932,8 +935,8 @@ def df_to_rdf_triples(data_df) -> str:
 
         # SBVR ontology
         concept_type = "Rule" if element.get('source') == "Operative_Rules" else "Fact"
-        
-        statement_subject  = transform_to_rdf_subject(element.get('statement_title'))#generate_meaningful_rdf_subject(element.get('statement'))
+
+        statement_title = element.get('statement_title')
 
         sources = element.get("statement_sources") # paragraph
 
@@ -949,7 +952,7 @@ def df_to_rdf_triples(data_df) -> str:
 
         # create Fact model
         rule_fact_model = RuleAndFact(
-            statement_id=statement_subject,
+            statement_id=statement_title,
             statement=statement,
             concept_type=concept_type,
             terms=terms,
