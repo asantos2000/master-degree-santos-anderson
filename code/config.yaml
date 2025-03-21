@@ -62,11 +62,11 @@ GITHUB_REPO_CODE_DIR: "code"
 
 # FIBO Graph Configuration
 FIBO_GRAPH: "fibo:FIBO_Graph"
-FIBO_GRAPH_VECTOR_STORE: "fibo-glossary-e3s-vec"
+FIBO_GRAPH_VECTOR_STORE: "fibo-glossary-3m-vec" # "fibo-glossary-e3s-vec"
 
 # CFR_SBVR Graph Configuration
 CFR_SBVR_GRAPH: "cfr-sbvr:CFR_SBVR"
 CFR_SBVR_GRAPH_VECTOR_STORE: "cfr-sbvr-3m-vec"
 
 # Similarity search threshold for exact match
-SIMILARITY_THRESHOLD: 0.99
+SIMILARITY_THRESHOLD: 0.85
