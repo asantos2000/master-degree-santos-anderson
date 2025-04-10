@@ -10,3 +10,4 @@ python-dotenv
 pyyaml
 natsort
 openai
+python-dotenv
