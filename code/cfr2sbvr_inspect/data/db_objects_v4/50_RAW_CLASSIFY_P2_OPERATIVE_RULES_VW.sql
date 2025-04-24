@@ -40,7 +40,7 @@ LEFT JOIN main.RAW_SECTION_EXTRACTED_ELEMENTS_VW as EXTRACT
 	AND EXTRACT.checkpoint = 'documents_true_table.json'
 	AND list_has_any(CLASS.statement_sources,
 	EXTRACT.statement_sources)
-	AND (CLASS.statement_text = EXTRACT.statement_text)
+	--AND (CLASS.statement_text = EXTRACT.statement_text)
 GROUP BY
 	CLASS.id,
 	CLASS.checkpoint,

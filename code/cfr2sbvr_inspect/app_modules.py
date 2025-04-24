@@ -308,7 +308,7 @@ def load_data(conn, table, checkpoints, doc_ids, statement_sources, process_sele
         )
 
     data_query = f"""
-    SELECT *
+    SELECT * EXCLUDE (id)
     FROM {table}
     WHERE 1 = 1
     {where_clause}
@@ -384,6 +384,7 @@ def extract_row_values(data_df, row):
     row_values["statement_id"] = data_df.at[row, "statement_id"]
     row_values["checkpoint"] = data_df.at[row, "checkpoint"]
     row_values["statement_sources"] = data_df.at[row, "statement_sources"]
+    row_values["source"] = data_df.at[row, "source"]
 
     # transformed
     try:

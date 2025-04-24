@@ -16,36 +16,37 @@ SELECT
 FROM
 	(
 	WITH expanded AS (
-SELECT
-	t.id,
-	t.file_source AS checkpoint,
-	t.content.doc_id,
-	t.content.statement_id,
-	t.content.statement_title,
-	t.content.statement_text,
-	t.content.statement_sources,
-	t.created_at,
-	c.item ->> 'type' AS statement_classification_type,
-	c.item ->> 'explanation' AS statement_classification_explanation,
-	(c.item ->> 'confidence')::DOUBLE AS statement_classification_confidence
-FROM
-	main.RAW_CLASSIFY_P1_OPERATIVE_RULES t,
-	UNNEST(t.content.classification) c(item) ),
-ranked_classifications AS (
-SELECT
-	*,
-	ROW_NUMBER() OVER ( PARTITION BY doc_id,
-	statement_id, checkpoint
-ORDER BY
-	statement_classification_confidence DESC ) AS rn
-FROM
-	expanded )
-SELECT
-	*
-FROM
-	ranked_classifications
-WHERE
-	rn = 1) AS CLASS
+	SELECT
+		t.id,
+		t.file_source AS checkpoint,
+		t.content.doc_id,
+		t.content.statement_id,
+		t.content.statement_title,
+		t.content.statement_text,
+		t.content.statement_sources,
+		t.created_at,
+		c.item ->> 'type' AS statement_classification_type,
+		c.item ->> 'explanation' AS statement_classification_explanation,
+		(c.item ->> 'confidence')::DOUBLE AS statement_classification_confidence
+	FROM
+		main.RAW_CLASSIFY_P1_OPERATIVE_RULES t,
+		UNNEST(t.content.classification) c(item) ),
+	ranked_classifications AS (
+	SELECT
+		*,
+		ROW_NUMBER() OVER ( PARTITION BY doc_id,
+		statement_id,
+		checkpoint
+	ORDER BY
+		statement_classification_confidence DESC ) AS rn
+	FROM
+		expanded )
+	SELECT
+		*
+	FROM
+		ranked_classifications
+	WHERE
+		rn = 1) AS CLASS
 LEFT JOIN main.RAW_SECTION_EXTRACTED_ELEMENTS_VW as EXTRACT
   ON
 	(CLASS.statement_id::STRING = EXTRACT.statement_id::STRING)
@@ -53,7 +54,7 @@ LEFT JOIN main.RAW_SECTION_EXTRACTED_ELEMENTS_VW as EXTRACT
 	--AND CLASS.checkpoint = EXTRACT.checkpoint
 	AND EXTRACT.checkpoint = 'documents_true_table.json'
 	AND list_has_any(CLASS.statement_sources, EXTRACT.statement_sources)
-	AND (CLASS.statement_text = EXTRACT.statement_text)
+	--AND (CLASS.statement_text = EXTRACT.statement_text)
 GROUP BY
 	CLASS.id,
 	CLASS.checkpoint,
