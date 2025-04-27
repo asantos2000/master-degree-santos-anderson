@@ -48,6 +48,8 @@ source .env
 set +a
 ```
 
+> Notebooks can be executed using Google Colab or JupyterLab.
+
 ### Notebook Execution Sequence
 
 1. **Create the Python Module**: Execute `src/chap_6_cfr2sbvr_modules.ipynb` to generate the required Python module.
