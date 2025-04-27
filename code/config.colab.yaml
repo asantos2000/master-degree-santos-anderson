@@ -31,12 +31,12 @@ ALLEGROGRAPH_CLOUD:
   PASSWORD: "your-password"  # Replace with your password
 
 # Directories and Files
-DEFAULT_DATA_DIR: "/content/data"
-DEFAULT_CHECKPOINT_DIR: "/content/data/checkpoints"
-DEFAULT_OUTPUT_DIR: "/content/outputs"
+DEFAULT_DATA_DIR: "/content/drive/MyDrive/cfr2sbvr/data"
+DEFAULT_CHECKPOINT_DIR: "/content/drive/MyDrive/cfr2sbvr/data/checkpoints"
+DEFAULT_OUTPUT_DIR: "/content/drive/MyDrive/cfr2sbvr/outputs"
 DEFAULT_CHECKPOINT_FILE: null  # to be set programmatically
 DEFAULT_EXTRACTION_REPORT_FILE: null  # to be set programmatically
-DEFAULT_EXCEL_FILE: "/content/outputs/compare_items_metrics.xlsx"
+DEFAULT_EXCEL_FILE: "/content/drive/MyDrive/cfr2sbvr/outputs/compare_items_metrics.xlsx"
 
 # GitHub Configuration
 GITHUB_REPO: "https://github.com/asantos2000/master-degree-santos-anderson.git"  # You can set this with environment variables
