@@ -32,6 +32,8 @@ QUALITY_THRESHOLD = os.getenv("QUALITY_THRESHOLD") or 0.8 # Ref: 5.3.2 Rules cla
 HOME_DIR = os.getenv("HOME_DIR") or "code/cfr2sbvr_inspect"
 DEFAULT_DATA_DIR = os.getenv("DEFAULT_DATA_DIR") or f"{HOME_DIR}/data"
 DATABASE = os.getenv("DATABASE")
+if not DATABASE:
+    DATABASE = st.secrets.get("DATABASE")
 
 # Config logging
 logger = log_config(HOME_DIR)
