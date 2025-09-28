@@ -281,6 +281,8 @@ def db_connection(db_name, default_data_dir="data"):
     # Connect to the database
     if db_name.startswith("md:"):
         mother_duck_token = os.getenv("MOTHER_DUCK_TOKEN")
+        if not mother_duck_token:
+            mother_duck_token = st.secrets.get("MOTHER_DUCK_TOKEN")
         conn = duckdb.connect(
             f"{db_name}?motherduck_token={mother_duck_token}", read_only=True
         )
@@ -492,6 +494,9 @@ def chatbot_widget(row_values):
     st.caption("🤖 Chatbot powered by OpenAI")
 
     openai_api_key = os.getenv("OPENAI_API_KEY")
+    if not openai_api_key:
+        openai_api_key = st.secrets.get("OPENAI_API_KEY")
+
     client = OpenAI(api_key=openai_api_key)
 
     if "messages" not in st.session_state:
