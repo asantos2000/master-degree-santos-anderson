@@ -32,6 +32,12 @@ QUALITY_THRESHOLD = os.getenv("QUALITY_THRESHOLD") or 0.8 # Ref: 5.3.2 Rules cla
 HOME_DIR = os.getenv("HOME_DIR") or "code/cfr2sbvr_inspect"
 DEFAULT_DATA_DIR = os.getenv("DEFAULT_DATA_DIR") or f"{HOME_DIR}/data"
 DATABASE = os.getenv("DATABASE")
+MOTHER_DUCK_TOKEN = os.getenv("MOTHER_DUCK_TOKEN")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+if not OPENAI_API_KEY:
+    os.environ["OPENAI_API_KEY"] = st.secrets.get("OPENAI_API_KEY")
+if not MOTHER_DUCK_TOKEN:
+    os.environ["MOTHER_DUCK_TOKEN"] = st.secrets.get("MOTHER_DUCK_TOKEN")
 
 # Config logging
 logger = log_config(HOME_DIR)
