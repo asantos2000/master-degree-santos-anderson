@@ -11,3 +11,4 @@ pyyaml
 natsort
 openai
 python-dotenv
+streamlit

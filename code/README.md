@@ -1,5 +1,11 @@
 # CFR2SBVR
 
+## TL;DR
+
+The project creates a Knowledge Graph with three components: FIBO (Financial Industry Business Ontology), CFR (Code of Federal Regulations), and SBVR (Semantic Business Vocabulary and Rules) extracted from the first two.
+
+## The project
+
 The primary objective of this project is to create a Knowledge Graph in RDF format, consisting of three named graphs:
 
 - **FIBO**: This graph contains the [Financial Industry Business Ontology (FIBO)](https://github.com/edmcouncil/fibo). Specifically, it includes the [FIBO Production Quickstart](https://spec.edmcouncil.org/fibo/ontology/master/2024Q2/prod.fibo-quickstart.ttl) from the [EDM Council](https://edmcouncil.org/). Additional resources are accessible via the [Product Downloads](https://edmconnect.edmcouncil.org/okgspecialinterestgroup/resources-sig-link/resources-sig-link-fibo-products-download) page.
@@ -8,7 +14,7 @@ The primary objective of this project is to create a Knowledge Graph in RDF form
 
 - **SBVR**: This graph integrates definitional rules from FIBO and CFR, along with behavioral rules extracted from CFR. These rules are extracted, transformed, and linked to their original sources using the cfr2sbvr tool. Additional details about this tool will be shared in an upcoming publication.
 
-## Project Structure
+## The project main structure
 
 - **src**: Contains the Python source code. Refer to `src/README.md` for setup instructions and dependencies.
 - **data**: Holds all data files.
@@ -50,7 +56,51 @@ set +a
 
 > Notebooks can be executed using Google Colab or JupyterLab.
 
-### Notebook Execution Sequence
+## Project Folder Structure
+
+Root Level (/master-degree-santos-anderson/)
+
+- code/ - Main project code (core implementation)
+- docs/ - Documentation files
+- grc-suppliers/ - GRC suppliers related files
+- ontologies/ - Ontology files (FIBO, CFR, etc.)
+- rsl/ - RSL (Research Support Library) files
+
+Code Directory (/code/)
+
+- src/ - Python source code (Jupyter notebooks & modules)
+- data/ - Data files (input/output datasets)
+- labs/ - Laboratory/experimental code
+- outputs/ - Generated outputs from processing
+- scripts/ - Utility scripts
+- media/ - Media files (images, diagrams)
+- cfr2sbvr_inspect/ - Code inspection tools
+- Configuration files:
+  - config.yaml - Local configuration
+  - config.colab.yaml - Google Colab configuration
+  - requirements.txt - Python dependencies
+
+Source Directory (/code/src/)
+
+Core Implementation:
+- Jupyter Notebooks (execution sequence):
+  a. chap_6_cfr2sbvr_modules.ipynb - Python module creation
+  b. chap_6_semantic_annotation_elements_extraction.ipynb - Element extraction
+  c. chap_6_semantic_annotation_rules_classification.ipynb - Rules classification
+  d. chap_6_nlp2sbvr_transform.ipynb - NLP to SBVR transformation
+  e. chap_6_create_kg.ipynb - Knowledge Graph setup
+  f. chap_6_nlp2sbvr_elements_association_creation.ipynb - KG population
+  g. chap_7_validation_*.ipynb - Validation notebooks
+
+Support Modules:
+- configuration/ - Configuration management
+- checkpoint/ - Checkpoint/state management
+- llm_query/ - LLM query handling
+- logging_setup/ - Logging configuration
+- rules_taxonomy_provider/ - Rules taxonomy management
+- token_estimator/ - Token estimation utilities
+
+## Notebook Execution Sequence
 
 1. **Create the Python Module**: Execute `src/chap_6_cfr2sbvr_modules.ipynb` to generate the required Python module.
 2. **Semantic Annotation Elements Extraction**: Run `src/chap_6_semantic_annotation_elements_extraction.ipynb` to extract semantic elements.
@@ -61,6 +111,47 @@ set +a
 7. **Validation - Extraction**: Run `src/chap_7_validation_elements_extraction.ipynb` to validate the extracted elements.
 8. **Validation - Classification**: Execute `src/chap_7_validation_rules_classification.ipynb` to validate the rule classifications.
 9. **Validation - Transformation**: Run `src/chap_7_validation_rules_transformation.ipynb` to validate the transformation process.
+
+## Google Colab integration
+
+Google Colab integration code is found across multiple Jupyter notebooks. Here's what handles Google Colab integration:
+
+### Key Integration Pattern
+
+The main Google Colab detection and setup code appears in multiple notebooks with this consistent pattern:
+
+Files with Colab integration: /mnt/d/Projects/master-degree-santos-anderson/code/src/chap_6_*.ipynb
+
+Core integration code (found in multiple notebooks):
+
+```python
+import sys
+import os
+
+IN_COLAB = 'google.colab' in sys.modules
+
+if IN_COLAB:
+  from google.colab import drive
+  drive.mount('/content/drive')
+  !git clone https://github.com/asantos2000/master-degree-santos-anderson.git cfr2sbvr
+  !cp -r cfr2sbvr/code/src/configuration .
+  !cp -r cfr2sbvr/code/src/checkpoint .
+  !cp -r cfr2sbvr/code/config.colab.yaml config.yaml
+  DEFAULT_CONFIG_FILE="config.yaml"
+else:
+  # Local setup code
+```
+
+Colab-specific configuration: /mnt/d/Projects/master-degree-santos-anderson/code/config.colab.yaml:34-36
+- Sets up Google Drive paths for data storage
+- Configures output directories in /content/drive/MyDrive/cfr2sbvr/
+
+Colab integration features:
+1. Environment detection: Checks if running in Google Colab via 'google.colab' in sys.modules
+2. Drive mounting: Mounts Google Drive for persistent storage
+3. Repository cloning: Clones the GitHub repo into Colab environment
+4. Configuration setup: Copies Colab-specific config files
+5. Badge integration: Each notebook has a "Open in Colab" badge linking to the GitHub repo
 
 ## Contributing
 
