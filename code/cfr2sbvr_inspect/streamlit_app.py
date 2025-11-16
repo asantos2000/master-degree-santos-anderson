@@ -28,14 +28,6 @@ from app_modules import (
 
 # Constants and environment variables
 load_dotenv()
-<<<<<<< Updated upstream
-QUALITY_THRESHOLD = os.getenv("QUALITY_THRESHOLD") or 0.8 # Ref: 5.3.2 Rules classification
-HOME_DIR = os.getenv("HOME_DIR") or "code/cfr2sbvr_inspect"
-DEFAULT_DATA_DIR = os.getenv("DEFAULT_DATA_DIR") or f"{HOME_DIR}/data"
-DATABASE = os.getenv("DATABASE")
-if not DATABASE:
-    DATABASE = st.secrets.get("DATABASE")
-=======
 # Helper: read configuration values from Streamlit secrets first, then the environment
 def get_config(key, default=None, cast=None, nested_key=None):
     """
@@ -100,7 +92,6 @@ QUALITY_THRESHOLD = get_config("QUALITY_THRESHOLD", default=0.8, cast=float)  # 
 HOME_DIR = get_config("HOME_DIR", default="code/cfr2sbvr_inspect")
 DEFAULT_DATA_DIR = get_config("DEFAULT_DATA_DIR", default=f"{HOME_DIR}/data")
 DATABASE = get_config("DATABASE")
->>>>>>> Stashed changes
 
 # Config logging
 logger = log_config(HOME_DIR)
