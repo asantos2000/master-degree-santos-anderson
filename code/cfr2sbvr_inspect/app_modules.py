@@ -596,31 +596,45 @@ def chatbot_widget(row_values):
 
     with st.form("my_chat_form", clear_on_submit=True):
 
-        user_prompt = st.text_input("Type your message here", value=prompt)
+            user_prompt = st.text_input("Type your message here", value=prompt)
 
-        if user_prompt:
-            st.session_state.messages.append({"role": "user", "content": user_prompt})
-            st.chat_message("user").write(user_prompt)
-            if hasattr(client, "chat") and hasattr(client.chat, "completions"):
-                # New SDK
-                response = client.chat.completions.create(
-                    model="gpt-4o", messages=st.session_state.messages
-                )
-            elif hasattr(client, "ChatCompletion"):
-                # Legacy SDK
-                response = client.ChatCompletion.create(
-                    model="gpt-4o", messages=st.session_state.messages
-                )
-            else:
-                st.error("OpenAI client doesn't expose chat completion API")
-                logger.error("OpenAI client doesn't expose chat completion API")
-                return
-            msg = response.choices[0].message.content
-            st.session_state.messages.append({"role": "assistant", "content": msg})
-            st.chat_message("assistant").write(msg)
+            submitted = st.form_submit_button('Press enter to send', type="tertiary")
+            if submitted and user_prompt:
+                st.session_state.messages.append({"role": "user", "content": user_prompt})
+                st.chat_message("user").write(user_prompt)
+                # Use client_type returned by creation helper to avoid triggering attribute access
+                try:
+                    if client_type == "new":
+                        response = client.chat.completions.create(
+                            model="gpt-4o", messages=st.session_state.messages
+                        )
+                    elif client_type == "legacy":
+                        response = client.ChatCompletion.create(
+                            model="gpt-4o", messages=st.session_state.messages
+                        )
+                    else:
+                        # As a safe fallback, attempt to create from attributes but guarded
+                        if hasattr(client, "chat") and hasattr(getattr(client, "chat"), "completions"):
+                            response = client.chat.completions.create(
+                                model="gpt-4o", messages=st.session_state.messages
+                            )
+                        elif hasattr(client, "ChatCompletion"):
+                            response = client.ChatCompletion.create(
+                                model="gpt-4o", messages=st.session_state.messages
+                            )
+                        else:
+                            st.error("OpenAI client doesn't expose chat completion API")
+                            logger.error("OpenAI client doesn't expose chat completion API")
+                            return
+                except Exception as e:
+                    st.error(f"Chat call failed: {e}")
+                    logger.exception("Chat call failed")
+                    return
+                msg = response.choices[0].message.content
+                st.session_state.messages.append({"role": "assistant", "content": msg})
+                st.chat_message("assistant").write(msg)
 
-        if st.form_submit_button('Press enter to send', type="tertiary"):
-            user_prompt = ""
+            # form submission handled above in 'submitted' logic
 
 def log_config(home_dir):
     # Set up logging configuration
