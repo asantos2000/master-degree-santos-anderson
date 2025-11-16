@@ -212,6 +212,25 @@ def highlight_statement(
     return final_text
 
 
+
+def get_secret(key, default=None):
+    """
+    Read a configuration value from Streamlit secrets if available, otherwise fall back to env var.
+    Returns default if neither is set.
+    """
+    try:
+        if hasattr(st, "secrets") and st.secrets:
+            if key in st.secrets:
+                return st.secrets[key]
+            # Try nested sections
+            for k, v in st.secrets.items():
+                if isinstance(v, dict) and key in v:
+                    return v[key]
+    except Exception:
+        pass
+    return os.getenv(key, default)
+
+
 def display_section(conn, doc_id):
     doc_id_url = doc_id.replace("§ ", "")
     section_url = f"https://www.ecfr.gov/current/title-17/section-{doc_id_url}"
@@ -280,9 +299,7 @@ def get_databases(local_db):
 def db_connection(db_name, default_data_dir="data"):
     # Connect to the database
     if db_name.startswith("md:"):
-        mother_duck_token = os.getenv("MOTHER_DUCK_TOKEN")
-        if not mother_duck_token:
-            mother_duck_token = st.secrets.get("MOTHER_DUCK_TOKEN")
+        mother_duck_token = get_secret("MOTHER_DUCK_TOKEN")
         conn = duckdb.connect(
             f"{db_name}?motherduck_token={mother_duck_token}", read_only=True
         )
@@ -493,11 +510,33 @@ def format_score(score, THRESHOLD):
 def chatbot_widget(row_values):
     st.caption("🤖 Chatbot powered by OpenAI")
 
-    openai_api_key = os.getenv("OPENAI_API_KEY")
+    openai_api_key = get_secret("OPENAI_API_KEY")
+    # Log source for debugging, without printing the secret
+    try:
+        if hasattr(st, "secrets") and st.secrets and (
+            "OPENAI_API_KEY" in st.secrets
+            or any(isinstance(v, dict) and "OPENAI_API_KEY" in v for v in st.secrets.values())
+        ):
+            logger.debug("OpenAI API key: loaded from Streamlit secrets")
+        elif os.getenv("OPENAI_API_KEY"):
+            logger.debug("OpenAI API key: loaded from environment variable")
+        else:
+            logger.debug("OpenAI API key: not configured")
+    except Exception:
+        # Avoid crashing due to introspection issues
+        pass
     if not openai_api_key:
-        openai_api_key = st.secrets.get("OPENAI_API_KEY")
+        st.warning(
+            "OpenAI API key is not configured. Please set OPENAI_API_KEY in Streamlit secrets or environment variables."
+        )
+        return
 
-    client = OpenAI(api_key=openai_api_key)
+    try:
+        client = OpenAI(api_key=openai_api_key)
+    except Exception as e:
+        st.error(f"Failed to initialize OpenAI client: {e}")
+        logger.exception("Failed to initialize OpenAI client")
+        return
 
     if "messages" not in st.session_state:
         st.session_state["messages"] = [
