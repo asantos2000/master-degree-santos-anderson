@@ -11,3 +11,4 @@ PyYAML==6.0.2
 natsort==8.4.0
 openai==1.52.2
 streamlit==1.41.1
+requests==2.31.0
