@@ -10,7 +10,7 @@ import duckdb
 import jellyfish
 import rules_taxonomy_provider.main as rules_taxonomy_provider
 import streamlit as st
-# Importing openai dynamically inside create_openai_client to avoid version issues
+from openai import OpenAI
 from rdflib import Graph, Namespace, Literal, URIRef, XSD, RDF, RDFS
 from typing import Optional, List, Dict, Any
 from pydantic import BaseModel
@@ -229,67 +229,6 @@ def get_secret(key, default=None):
     except Exception:
         pass
     return os.getenv(key, default)
-
-
-def create_openai_client(api_key):
-    """
-    Create an OpenAI client robustly across different SDK versions.
-
-    - Prefer the new OpenAI class (openai.OpenAI)
-    - Fall back to the legacy module approach (openai.api_key and openai.ChatCompletion)
-    - Catch TypeError for unexpected kwargs (e.g., 'proxies') and fallback
-    """
-    import importlib
-    try:
-        # Try to load the module first
-        openai_mod = importlib.import_module("openai")
-        version = getattr(openai_mod, "__version__", None)
-    except Exception:
-        raise RuntimeError("The openai package is not installed in the environment")
-
-    # Try to instantiate the new OpenAI client if available
-    OpenAIClass = getattr(openai_mod, "OpenAI", None)
-    if OpenAIClass:
-        try:
-            client = OpenAIClass(api_key=api_key)
-            logger.debug("OpenAI client: created new OpenAIClass instance")
-            return client, "new", version
-        except TypeError as e:
-            # If the constructor fails due to unexpected kwargs, we will not
-            # blindly fallback to legacy; check module version first.
-            logger.warning("OpenAI OpenAIClass initialization failed: %s", e)
-
-    # At this point, try to determine package version
-    version = getattr(openai_mod, "__version__", None)
-    try:
-        ver_major = int(version.split(".")[0]) if version else None
-    except Exception:
-        ver_major = None
-
-    # If package is <1.0 (legacy API), we can use ChatCompletion
-    if ver_major is not None and ver_major < 1 and hasattr(openai_mod, "ChatCompletion"):
-        try:
-            openai_mod.api_key = api_key
-            logger.debug("OpenAI client: using legacy openai module (ChatCompletion)")
-            return openai_mod, "legacy", version
-        except Exception:
-            raise
-
-    # If we reach here, the module looks like 1.0+ or the new API is expected.
-    # If the OpenAIClass was present but we couldn't instantiate it because of
-    # environment-specific issues (e.g., HTTPX/proxies), raise a clear message.
-    if OpenAIClass is not None:
-        raise RuntimeError(
-            "OpenAI 'OpenAI' class present but failed to initialize. "
-            "Double-check your environment and that the openai/httpx packages are compatible."
-        )
-
-    # If no OpenAI class but package is 1.0+ and lacks legacy ChatCompletion
-    raise RuntimeError(
-        "The installed openai package doesn't expose the new or the legacy API. "
-        "If your environment uses openai>=1.0.0, prefer the new OpenAI API. "
-        "If your environment is older, ensure openai<1.0.0 is installed or adapt the code."
-    )
 
 
 def display_section(conn, doc_id):
@@ -593,7 +532,7 @@ def chatbot_widget(row_values):
         return
 
     try:
-        client, client_type, client_version = create_openai_client(openai_api_key)
+        client = OpenAI(api_key=openai_api_key)
     except Exception as e:
         st.error(f"Failed to initialize OpenAI client: {e}")
         logger.exception("Failed to initialize OpenAI client")
@@ -618,61 +557,20 @@ def chatbot_widget(row_values):
 
     with st.form("my_chat_form", clear_on_submit=True):
 
-            user_prompt = st.text_input("Type your message here", value=prompt)
+        user_prompt = st.text_input("Type your message here", value=prompt)
 
-            submitted = st.form_submit_button('Press enter to send', type="tertiary")
-            if submitted and user_prompt:
-                st.session_state.messages.append({"role": "user", "content": user_prompt})
-                st.chat_message("user").write(user_prompt)
-                # Use client_type returned by creation helper to avoid triggering attribute access
-                try:
-                    if client_type == "new":
-                        response = client.chat.completions.create(
-                            model="gpt-4o", messages=st.session_state.messages
-                        )
-                    elif client_type == "legacy":
-                        # Verify the version of the legacy client; ChatCompletion no longer exists for openai>=1.0.0
-                        ver = None
-                        try:
-                            ver = getattr(client, "__version__", None)
-                            ver_major = int(ver.split(".")[0]) if ver else None
-                        except Exception:
-                            ver_major = None
-                        if ver_major is not None and ver_major >= 1:
-                            st.error(
-                                "The installed openai library is >=1.0.0 which does not support ChatCompletion. "
-                                "Please pin it to a legacy version (openai<1.0.0) or adapt the app to the new API."
-                            )
-                            logger.error(
-                                "Detected openai>=1.0.0 but client_type=legacy; please pin or migrate"
-                            )
-                            return
-                        response = client.ChatCompletion.create(
-                            model="gpt-4o", messages=st.session_state.messages
-                        )
-                    else:
-                        # As a safe fallback, attempt to create from attributes but guarded
-                        if hasattr(client, "chat") and hasattr(getattr(client, "chat"), "completions"):
-                            response = client.chat.completions.create(
-                                model="gpt-4o", messages=st.session_state.messages
-                            )
-                        elif hasattr(client, "ChatCompletion"):
-                            response = client.ChatCompletion.create(
-                                model="gpt-4o", messages=st.session_state.messages
-                            )
-                        else:
-                            st.error("OpenAI client doesn't expose chat completion API")
-                            logger.error("OpenAI client doesn't expose chat completion API")
-                            return
-                except Exception as e:
-                    st.error(f"Chat call failed: {e}")
-                    logger.exception("Chat call failed")
-                    return
-                msg = response.choices[0].message.content
-                st.session_state.messages.append({"role": "assistant", "content": msg})
-                st.chat_message("assistant").write(msg)
+        if user_prompt:
+            st.session_state.messages.append({"role": "user", "content": user_prompt})
+            st.chat_message("user").write(user_prompt)
+            response = client.chat.completions.create(
+                model="gpt-4o", messages=st.session_state.messages
+            )
+            msg = response.choices[0].message.content
+            st.session_state.messages.append({"role": "assistant", "content": msg})
+            st.chat_message("assistant").write(msg)
 
-            # form submission handled above in 'submitted' logic
+        if st.form_submit_button('Press enter to send', type="tertiary"):
+            user_prompt = ""
 
 def log_config(home_dir):
     # Set up logging configuration
