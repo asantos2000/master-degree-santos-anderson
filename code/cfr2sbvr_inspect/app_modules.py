@@ -10,7 +10,7 @@ import duckdb
 import jellyfish
 import rules_taxonomy_provider.main as rules_taxonomy_provider
 import streamlit as st
-from openai import OpenAI
+# Importing openai dynamically inside create_openai_client to avoid version issues
 from rdflib import Graph, Namespace, Literal, URIRef, XSD, RDF, RDFS
 from typing import Optional, List, Dict, Any
 from pydantic import BaseModel
@@ -229,6 +229,45 @@ def get_secret(key, default=None):
     except Exception:
         pass
     return os.getenv(key, default)
+
+
+def create_openai_client(api_key):
+    """
+    Create an OpenAI client robustly across different SDK versions.
+
+    - Prefer the new OpenAI class (openai.OpenAI)
+    - Fall back to the legacy module approach (openai.api_key and openai.ChatCompletion)
+    - Catch TypeError for unexpected kwargs (e.g., 'proxies') and fallback
+    """
+    try:
+        from openai import OpenAI as OpenAIClass
+        client = OpenAIClass(api_key=api_key)
+        logger.debug("OpenAI client: created new OpenAIClass instance")
+        return client, "new"
+    except TypeError as e:
+        # Workaround older OpenAI SDK versions that don't accept certain kwargs
+        if "proxies" in str(e) or "unexpected keyword argument" in str(e):
+            logger.warning("OpenAI OpenAIClass initialization failed due to proxies/kwargs mismatch; falling back to legacy client: %s", e)
+            try:
+                import openai as openai_mod
+
+                openai_mod.api_key = api_key
+                return openai_mod, "legacy"
+            except Exception:
+                # Re-raise the original TypeError if fallback fails
+                raise
+        else:
+            # Not the proxies issue, let caller handle
+            raise
+    except Exception:
+        # If anything else goes wrong, try the legacy import
+        try:
+            import openai as openai_mod
+
+            openai_mod.api_key = api_key
+            return openai_mod, "legacy"
+        except Exception:
+            raise
 
 
 def display_section(conn, doc_id):
@@ -532,7 +571,7 @@ def chatbot_widget(row_values):
         return
 
     try:
-        client = OpenAI(api_key=openai_api_key)
+        client, client_type = create_openai_client(openai_api_key)
     except Exception as e:
         st.error(f"Failed to initialize OpenAI client: {e}")
         logger.exception("Failed to initialize OpenAI client")
@@ -562,9 +601,20 @@ def chatbot_widget(row_values):
         if user_prompt:
             st.session_state.messages.append({"role": "user", "content": user_prompt})
             st.chat_message("user").write(user_prompt)
-            response = client.chat.completions.create(
-                model="gpt-4o", messages=st.session_state.messages
-            )
+            if hasattr(client, "chat") and hasattr(client.chat, "completions"):
+                # New SDK
+                response = client.chat.completions.create(
+                    model="gpt-4o", messages=st.session_state.messages
+                )
+            elif hasattr(client, "ChatCompletion"):
+                # Legacy SDK
+                response = client.ChatCompletion.create(
+                    model="gpt-4o", messages=st.session_state.messages
+                )
+            else:
+                st.error("OpenAI client doesn't expose chat completion API")
+                logger.error("OpenAI client doesn't expose chat completion API")
+                return
             msg = response.choices[0].message.content
             st.session_state.messages.append({"role": "assistant", "content": msg})
             st.chat_message("assistant").write(msg)
