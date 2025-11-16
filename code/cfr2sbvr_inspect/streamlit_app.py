@@ -28,15 +28,106 @@ from app_modules import (
 
 # Constants and environment variables
 load_dotenv()
+<<<<<<< Updated upstream
 QUALITY_THRESHOLD = os.getenv("QUALITY_THRESHOLD") or 0.8 # Ref: 5.3.2 Rules classification
 HOME_DIR = os.getenv("HOME_DIR") or "code/cfr2sbvr_inspect"
 DEFAULT_DATA_DIR = os.getenv("DEFAULT_DATA_DIR") or f"{HOME_DIR}/data"
 DATABASE = os.getenv("DATABASE")
 if not DATABASE:
     DATABASE = st.secrets.get("DATABASE")
+=======
+# Helper: read configuration values from Streamlit secrets first, then the environment
+def get_config(key, default=None, cast=None, nested_key=None):
+    """
+    Get configuration value from Streamlit secrets or environment variables.
+
+    Priority: Streamlit secrets -> environment variables -> default
+
+    Parameters:
+    - key: Top-level key name to look up (str)
+    - default: Value to return if neither secrets nor env var found
+    - cast: optional callable to cast the returned value (e.g. float, int)
+    - nested_key: optional nested key inside a secrets section (e.g., st.secrets['db']['uri'])
+    """
+    # 1. Try Streamlit secrets
+    try:
+        # If nested_key provided, treat st.secrets[key] as a dict
+        if hasattr(st, "secrets") and st.secrets:
+            if nested_key and key in st.secrets and isinstance(st.secrets[key], dict):
+                if nested_key in st.secrets[key]:
+                    val = st.secrets[key][nested_key]
+                else:
+                    val = None
+            elif key in st.secrets:
+                val = st.secrets[key]
+            else:
+                # Try to find key inside nested sections
+                found = None
+                for secret_section_key, secret_section_val in st.secrets.items():
+                    if isinstance(secret_section_val, dict) and key in secret_section_val:
+                        found = secret_section_val[key]
+                        break
+                val = found
+        else:
+            val = None
+    except Exception:
+        # In case streamlit is not available or st.secrets behaves unexpectedly
+        val = None
+
+    # 2. Fallback to environment variable
+    if val is None:
+        val = os.getenv(key)
+
+    # 3. If still none, use default
+    if val is None:
+        val = default
+
+    # 4. Cast value if requested
+    if cast is not None and val is not None:
+        try:
+            return cast(val)
+        except Exception:
+            # If cast fails, return default (but keep original fallback)
+            try:
+                return cast(default) if default is not None else default
+            except Exception:
+                return val
+
+    return val
+
+# Application configuration variables (Secrets have precedence over env vars)
+QUALITY_THRESHOLD = get_config("QUALITY_THRESHOLD", default=0.8, cast=float)  # Ref: 5.3.2 Rules classification
+HOME_DIR = get_config("HOME_DIR", default="code/cfr2sbvr_inspect")
+DEFAULT_DATA_DIR = get_config("DEFAULT_DATA_DIR", default=f"{HOME_DIR}/data")
+DATABASE = get_config("DATABASE")
+>>>>>>> Stashed changes
 
 # Config logging
 logger = log_config(HOME_DIR)
+
+# Log the configuration sources and values for debugging
+def _source_of(key):
+    # Check Streamlit secrets first
+    try:
+        if hasattr(st, "secrets") and st.secrets:
+            if key in st.secrets:
+                return "secrets"
+            for secret_section_key, secret_section_val in st.secrets.items():
+                if isinstance(secret_section_val, dict) and key in secret_section_val:
+                    return "secrets"
+    except Exception:
+        pass
+
+    # Check environment variables
+    if os.getenv(key) is not None:
+        return "env"
+
+    return "default"
+
+logger.debug(f"QUALITY_THRESHOLD={QUALITY_THRESHOLD} (source={_source_of('QUALITY_THRESHOLD')})")
+logger.debug(f"HOME_DIR={HOME_DIR} (source={_source_of('HOME_DIR')})")
+logger.debug(f"DEFAULT_DATA_DIR={DEFAULT_DATA_DIR} (source={_source_of('DEFAULT_DATA_DIR')})")
+logger.debug(f"DATABASE={DATABASE} (source={_source_of('DATABASE')})")
 
 #
 # Main
