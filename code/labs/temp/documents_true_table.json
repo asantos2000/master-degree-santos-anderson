@@ -1,0 +1,200 @@
+[
+    {
+        "id": "classify_P2_Definitional_facts",
+        "type": "true_table",
+        "content": [
+            {
+                "doc_id": "\u00a7 275.0-2",
+                "statement_id": "1",
+                "statement": "A person may serve process, pleadings, or other papers on a non-resident investment adviser, or on a non-resident general partner or non-resident managing agent of an investment adviser by serving any or all of its appointed agents.",
+                "sources": [
+                    "(a)"
+                ],
+                "subtype": "Complex concept structure rules",
+                "templates_ids": [
+                    "T12"
+                ]
+            },
+            {
+                "doc_id": "\u00a7 275.0-2",
+                "statement_id": "2",
+                "statement": "A person may serve a non-resident investment adviser, non-resident general partner, or non-resident managing agent by furnishing the Commission with one copy of the process, pleadings, or papers, for each named party, and one additional copy for the Commission's records.",
+                "sources": [
+                    "(a)(1)"
+                ],
+                "subtype": "Complex concept structure rules",
+                "templates_ids": [
+                    "T12"
+                ]
+            },
+            {
+                "doc_id": "\u00a7 275.0-2",
+                "statement_id": "5",
+                "statement": "Managing agent means any person, including a trustee, who directs or manages, or who participates in directing or managing, the affairs of any unincorporated organization or association other than a partnership.",
+                "sources": [
+                    "(b)(1)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "\u00a7 275.0-2",
+                "statement_id": "6",
+                "statement": "Non-resident means an individual who resides in any place not subject to the jurisdiction of the United States; a corporation that is incorporated in or that has its principal office and place of business in any place not subject to the jurisdiction of the United States; and a partnership or other unincorporated organization or association that has its principal office and place of business in any place not subject to the jurisdiction of the United States.",
+                "sources": [
+                    "(b)(2)"
+                ],
+                "subtype": "Formal extensional definitions",
+                "templates_ids": [
+                    "T8"
+                ]
+            },
+            {
+                "doc_id": "\u00a7 275.0-2",
+                "statement_id": "7",
+                "statement": "Principal office and place of business has the same meaning as in \u00a7 275.203A-3(c) of this chapter.",
+                "sources": [
+                    "(b)(3)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "\u00a7 275.0-5",
+                "statement_id": "5",
+                "statement": "For purposes of this rule, an application means any application for an order of the Commission under the Act other than an application for registration as an investment adviser.",
+                "sources": [
+                    "(d)"
+                ],
+                "subtype": "Formal extensional definitions",
+                "templates_ids": [
+                    "T8"
+                ]
+            },
+            {
+                "doc_id": "\u00a7 275.0-7",
+                "statement_id": "1",
+                "statement": "The term small business or small organization for purposes of the Investment Advisers Act of 1940 shall mean an investment adviser that has assets under management of less than $25 million, or such higher amount as the Commission may by rule deem appropriate.",
+                "sources": [
+                    "(a)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "\u00a7 275.0-7",
+                "statement_id": "2",
+                "statement": "An investment adviser has assets under management, as defined under Section 203A(a)(3) of the Act and reported on its annual updating amendment to Form ADV, of less than $25 million, or such higher amount as the Commission may by rule deem appropriate.",
+                "sources": [
+                    "(a)(1)"
+                ],
+                "subtype": "Valid value definitions",
+                "templates_ids": [
+                    "T15"
+                ]
+            },
+            {
+                "doc_id": "\u00a7 275.0-7",
+                "statement_id": "3",
+                "statement": "An investment adviser did not have total assets of $5 million or more on the last day of the most recent fiscal year.",
+                "sources": [
+                    "(a)(2)"
+                ],
+                "subtype": "Valid value definitions",
+                "templates_ids": [
+                    "T15"
+                ]
+            },
+            {
+                "doc_id": "\u00a7 275.0-7",
+                "statement_id": "4",
+                "statement": "An investment adviser does not control, is not controlled by, and is not under common control with another investment adviser that has assets under management of $25 million or more, or any person (other than a natural person) that had total assets of $5 million or more on the last day of the most recent fiscal year.",
+                "sources": [
+                    "(a)(3)"
+                ],
+                "subtype": "Complex concept structure rules",
+                "templates_ids": [
+                    "T12"
+                ]
+            },
+            {
+                "doc_id": "\u00a7 275.0-7",
+                "statement_id": "5",
+                "statement": "Control means the power, directly or indirectly, to direct the management or policies of a person, whether through ownership of securities, by contract, or otherwise.",
+                "sources": [
+                    "(b)(1)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "\u00a7 275.0-7",
+                "statement_id": "6",
+                "statement": "A person is presumed to control a corporation if the person directly or indirectly has the right to vote 25 percent or more of a class of the corporation's voting securities.",
+                "sources": [
+                    "(b)(1)(i)(A)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "\u00a7 275.0-7",
+                "statement_id": "7",
+                "statement": "A person is presumed to control a partnership if the person has the right to receive upon dissolution, or has contributed, 25 percent or more of the capital of the partnership.",
+                "sources": [
+                    "(b)(1)(ii)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "\u00a7 275.0-7",
+                "statement_id": "8",
+                "statement": "A person is presumed to control a limited liability company (LLC) if the person directly or indirectly has the right to vote 25 percent or more of a class of the interests of the LLC, has the right to receive upon dissolution, or has contributed, 25 percent or more of the capital of the LLC, or is an elected manager of the LLC.",
+                "sources": [
+                    "(b)(1)(iii)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "\u00a7 275.0-7",
+                "statement_id": "9",
+                "statement": "A person is presumed to control a trust if the person is a trustee or managing agent of the trust.",
+                "sources": [
+                    "(b)(1)(iv)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "\u00a7 275.0-7",
+                "statement_id": "10",
+                "statement": "Total assets means the total assets as shown on the balance sheet of the investment adviser or other person described above under paragraph (a)(3) of this section, or the balance sheet of the investment adviser or such other person with its subsidiaries consolidated, whichever is larger.",
+                "sources": [
+                    "(b)(2)"
+                ],
+                "subtype": "Formal extensional definitions",
+                "templates_ids": [
+                    "T8"
+                ]
+            }
+        ]
+    }
+]

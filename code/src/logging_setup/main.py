@@ -55,6 +55,9 @@ def setting_logging(log_path: str, log_level: str):
     # Example logger
     logger = logging.getLogger(__name__)
 
+    # Set the log level for the logger
+    logger.setLevel(level)
+
     # Log a test message to verify
     logger.info("Logging is set up with daily rotation.")
 

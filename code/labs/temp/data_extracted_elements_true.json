@@ -1,0 +1,919 @@
+[
+    {
+        "id": "\u00a7 275.0-2_P1",
+        "type": "true_table",
+        "content": {
+            "section": "\u00a7 275.0-2",
+            "summary": "This section outlines the procedures for serving legal documents such as process, pleadings, or other papers on non-resident investment advisers, general partners, and managing agents. It specifies how service can be made through appointed agents and the role of the Commission's Secretary in forwarding documents. It also provides definitions for terms like 'Managing agent', 'Non-resident', and 'Principal office and place of business'.",
+            "elements": [
+                {
+                    "id": 1,
+                    "title": "Service of process on non-resident entities",
+                    "statement": "A person may serve process, pleadings, or other papers on a non-resident investment adviser, or on a non-resident general partner or non-resident managing agent of an investment adviser by serving any or all of its appointed agents.",
+                    "terms": [
+                        {
+                            "term": "Person",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Non-resident investment adviser",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Non-resident general partner",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Non-resident managing agent",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Appointed agents",
+                            "classification": "Common Noun"
+                        }
+                    ],
+                    "verb_symbols": [
+                        "serve",
+                        "by serving"
+                    ],
+                    "classification": "Fact Type",
+                    "sources": [
+                        "(a)"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "title": "Furnishing documents to the Commission",
+                    "statement": "A person may serve a non-resident investment adviser, non-resident general partner, or non-resident managing agent by furnishing the Commission with one copy of the process, pleadings, or papers, for each named party, and one additional copy for the Commission's records.",
+                    "terms": [
+                        {
+                            "term": "Commission's records",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Named party",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Commission",
+                            "classification": "Proper Noun"
+                        },
+                        {
+                            "term": "Process",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Pleadings",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Papers",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Person",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Non-resident investment adviser",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Non-resident general partner",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Non-resident managing agent",
+                            "classification": "Common Noun"
+                        }
+                    ],
+                    "verb_symbols": [
+                        "serve",
+                        "by furnishing",
+                        "with"
+                    ],
+                    "classification": "Fact Type",
+                    "sources": [
+                        "(a)(1)"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "title": "Forwarding documents by the Secretary",
+                    "statement": "If process, pleadings, or other papers are served on the Commission as described in this section, the Secretary of the Commission (Secretary) will promptly forward a copy to each named party by registered or certified mail at that party's last address filed with the Commission.",
+                    "terms": [
+                        {
+                            "term": "Last address",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Process",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Papers",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Pleadings",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Commission",
+                            "classification": "Proper Noun"
+                        },
+                        {
+                            "term": "Last address filed with the Commission",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Secretary of the Commission",
+                            "classification": "Proper Noun"
+                        },
+                        {
+                            "term": "Named party",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Registered mail",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Certified mail",
+                            "classification": "Common Noun"
+                        }
+                    ],
+                    "verb_symbols": [
+                        "will forward",
+                        "by",
+                        "at"
+                    ],
+                    "classification": "Operative Rule",
+                    "sources": [
+                        "(a)(2)"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "title": "Certification of service by the Secretary",
+                    "statement": "If the Secretary certifies that the Commission was served with process, pleadings, or other papers pursuant to paragraph (a)(1) of this section and forwarded these documents to a named party pursuant to paragraph (a)(2) of this section, this certification constitutes evidence of service upon that party.",
+                    "terms": [
+                        {
+                            "term": "Commission",
+                            "classification": "Proper Noun"
+                        },
+                        {
+                            "term": "Process",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Pleadings",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Papers",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Evidence of service",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Secretary",
+                            "classification": "Proper Noun"
+                        },
+                        {
+                            "term": "Named party",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Certification",
+                            "classification": "Common Noun"
+                        }
+                    ],
+                    "verb_symbols": [
+                        "certifies",
+                        "was served",
+                        "forwarded",
+                        "constitutes"
+                    ],
+                    "classification": "Operative Rule",
+                    "sources": [
+                        "(a)(3)"
+                    ]
+                },
+                {
+                    "id": 5,
+                    "title": "Definition of Managing agent",
+                    "statement": "Managing agent means any person, including a trustee, who directs or manages, or who participates in directing or managing, the affairs of any unincorporated organization or association other than a partnership.",
+                    "terms": [
+                        {
+                            "term": "Managing agent",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Person",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Trustee",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Unincorporated organization",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Association",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Partnership",
+                            "classification": "Common Noun"
+                        }
+                    ],
+                    "verb_symbols": [
+                        "means",
+                        "directs",
+                        "manages",
+                        "participates"
+                    ],
+                    "classification": "Fact Type",
+                    "sources": [
+                        "(b)(1)"
+                    ]
+                },
+                {
+                    "id": 6,
+                    "title": "Definition of Non-resident",
+                    "statement": "Non-resident means an individual who resides in any place not subject to the jurisdiction of the United States; a corporation that is incorporated in or that has its principal office and place of business in any place not subject to the jurisdiction of the United States; and a partnership or other unincorporated organization or association that has its principal office and place of business in any place not subject to the jurisdiction of the United States.",
+                    "terms": [
+                        {
+                            "term": "Jurisdiction of the United States",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Non-resident",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Individual",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Corporation",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Principal office",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Place of business",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Partnership",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Unincorporated organization",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Association",
+                            "classification": "Common Noun"
+                        }
+                    ],
+                    "verb_symbols": [
+                        "means",
+                        "resides",
+                        "is incorporated",
+                        "has"
+                    ],
+                    "classification": "Fact Type",
+                    "sources": [
+                        "(b)(2)"
+                    ]
+                },
+                {
+                    "id": 7,
+                    "title": "Definition of Principal office and place of business",
+                    "statement": "Principal office and place of business has the same meaning as in \u00a7 275.203A-3(c) of this chapter.",
+                    "terms": [
+                        {
+                            "term": "Principal office",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Place of business",
+                            "classification": "Common Noun"
+                        }
+                    ],
+                    "verb_symbols": [
+                        "has"
+                    ],
+                    "classification": "Fact Type",
+                    "sources": [
+                        "(b)(3)"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "id": "\u00a7 275.0-5_P1",
+        "type": "true_table",
+        "content": {
+            "section": "\u00a7 275.0-5",
+            "summary": "This document outlines the procedure for proceedings initiated by the filing of an application or by the Commission's own motion under any section of the Act or related rules. It specifies the publication of notice in the Federal Register, the process for interested persons to submit facts or request a hearing, and the conditions under which the Commission will order a hearing. It also defines 'application' for the purposes of this rule.",
+            "elements": [
+                {
+                    "id": 1,
+                    "title": "Notice of proceeding initiation",
+                    "statement": "Notice of the initiation of the proceeding will be published in the Federal Register and will indicate the earliest date upon which an order disposing of the matter may be entered.",
+                    "terms": [
+                        {
+                            "term": "Earliest date",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Federal Register",
+                            "classification": "Proper Noun"
+                        },
+                        {
+                            "term": "Notice",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Initiation of the proceeding",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Order",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Matter",
+                            "classification": "Common Noun"
+                        }
+                    ],
+                    "verb_symbols": [
+                        "will be published",
+                        "will indicate"
+                    ],
+                    "classification": "Operative Rule",
+                    "sources": [
+                        "(a)"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "title": "Submission of facts and hearing request",
+                    "statement": "Any interested person may, within the period of time specified therein, submit to the Commission in writing any facts bearing upon the desirability of a hearing on the matter and may request that a hearing be held, stating his reasons therefor and the nature of his interest in the matter.",
+                    "terms": [
+                        {
+                            "term": "Commission",
+                            "classification": "Proper Noun"
+                        },
+                        {
+                            "term": "Order disposing of the matter",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Interested person",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Period of time",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Facts",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Hearing",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Matter",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Reasons",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Nature of interest",
+                            "classification": "Common Noun"
+                        }
+                    ],
+                    "verb_symbols": [
+                        "may submit",
+                        "may request",
+                        "stating"
+                    ],
+                    "classification": "Operative Rule",
+                    "sources": [
+                        "(a)"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "title": "Issuance of order disposing of the matter",
+                    "statement": "An order disposing of the matter will be issued as of course following the expiration of the period of time referred to in paragraph (a) of this section, unless the Commission thereafter orders a hearing on the matter.",
+                    "terms": [
+                        {
+                            "term": "Commission",
+                            "classification": "Proper Noun"
+                        },
+                        {
+                            "term": "Order disposing of the matter",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Order",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Matter",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Period of time",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Hearing",
+                            "classification": "Common Noun"
+                        }
+                    ],
+                    "verb_symbols": [
+                        "will be issued",
+                        "orders"
+                    ],
+                    "classification": "Operative Rule",
+                    "sources": [
+                        "(b)"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "title": "Commission orders a hearing",
+                    "statement": "The Commission will order a hearing on the matter, if it appears that a hearing is necessary or appropriate in the public interest or for the protection of investors, upon the request of any interested person or upon its own motion.",
+                    "terms": [
+                        {
+                            "term": "Motion",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Commission",
+                            "classification": "Proper Noun"
+                        },
+                        {
+                            "term": "Hearing",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Matter",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Public interest",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Protection of investors",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Interested person",
+                            "classification": "Common Noun"
+                        }
+                    ],
+                    "verb_symbols": [
+                        "will order",
+                        "appears",
+                        "is necessary",
+                        "is appropriate"
+                    ],
+                    "classification": "Operative Rule",
+                    "sources": [
+                        "(c)"
+                    ]
+                },
+                {
+                    "id": 5,
+                    "title": "Definition of application",
+                    "statement": "For purposes of this rule, an application means any application for an order of the Commission under the Act other than an application for registration as an investment adviser.",
+                    "terms": [
+                        {
+                            "term": "Act",
+                            "classification": "Proper Noun"
+                        },
+                        {
+                            "term": "Commission",
+                            "classification": "Proper Noun"
+                        },
+                        {
+                            "term": "Order of the Commission",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Application for registration",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Application",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Order",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Registration",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Investment adviser",
+                            "classification": "Common Noun"
+                        }
+                    ],
+                    "verb_symbols": [
+                        "means"
+                    ],
+                    "classification": "Fact Type",
+                    "sources": [
+                        "(d)"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "id": "\u00a7 275.0-7_P1",
+        "type": "true_table",
+        "content": {
+            "section": "\u00a7 275.0-7",
+            "summary": "This document defines what constitutes a 'small business' or 'small organization' under the Investment Advisers Act of 1940 for the purposes of the Regulatory Flexibility Act. It specifies criteria related to assets under management, total assets, and control relationships to determine if an investment adviser qualifies as a small entity. It also provides definitions for 'control' and 'total assets' in this context.",
+            "elements": [
+                {
+                    "id": 1,
+                    "title": "Definition of small business or small organization",
+                    "statement": "The term small business or small organization for purposes of the Investment Advisers Act of 1940 shall mean an investment adviser that has assets under management of less than $25 million, or such higher amount as the Commission may by rule deem appropriate.",
+                    "terms": [
+                        {
+                            "term": "Small business",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Small organization",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Investment adviser",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Assets under management",
+                            "classification": "Common Noun"
+                        }
+                    ],
+                    "verb_symbols": [
+                        "shall mean",
+                        "has",
+                        "deem"
+                    ],
+                    "classification": "Fact Type",
+                    "sources": [
+                        "(a)"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "title": "Assets under management criterion",
+                    "statement": "An investment adviser has assets under management, as defined under Section 203A(a)(3) of the Act and reported on its annual updating amendment to Form ADV, of less than $25 million, or such higher amount as the Commission may by rule deem appropriate.",
+                    "terms": [
+                        {
+                            "term": "Investment adviser",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Assets under management",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Form ADV",
+                            "classification": "Proper Noun"
+                        }
+                    ],
+                    "verb_symbols": [
+                        "has",
+                        "defined",
+                        "reported",
+                        "deem"
+                    ],
+                    "classification": "Fact Type",
+                    "sources": [
+                        "(a)(1)"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "title": "Total assets criterion",
+                    "statement": "An investment adviser did not have total assets of $5 million or more on the last day of the most recent fiscal year.",
+                    "terms": [
+                        {
+                            "term": "Investment adviser",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Total assets",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Fiscal year",
+                            "classification": "Common Noun"
+                        }
+                    ],
+                    "verb_symbols": [
+                        "did not have"
+                    ],
+                    "classification": "Fact Type",
+                    "sources": [
+                        "(a)(2)"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "title": "Control relationship criterion",
+                    "statement": "An investment adviser does not control, is not controlled by, and is not under common control with another investment adviser that has assets under management of $25 million or more, or any person (other than a natural person) that had total assets of $5 million or more on the last day of the most recent fiscal year.",
+                    "terms": [
+                        {
+                            "term": "Investment adviser",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Control",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Assets under management",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Person",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Natural person",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Fiscal year",
+                            "classification": "Common Noun"
+                        }
+                    ],
+                    "verb_symbols": [
+                        "does not control",
+                        "is not controlled by",
+                        "is not under common control with",
+                        "has",
+                        "had"
+                    ],
+                    "classification": "Fact Type",
+                    "sources": [
+                        "(a)(3)"
+                    ]
+                },
+                {
+                    "id": 5,
+                    "title": "Definition of control",
+                    "statement": "Control means the power, directly or indirectly, to direct the management or policies of a person, whether through ownership of securities, by contract, or otherwise.",
+                    "terms": [
+                        {
+                            "term": "Securities",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Control",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Power",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Management",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Policies",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Person",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Ownership of securities",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Contract",
+                            "classification": "Common Noun"
+                        }
+                    ],
+                    "verb_symbols": [
+                        "means",
+                        "to direct"
+                    ],
+                    "classification": "Fact Type",
+                    "sources": [
+                        "(b)(1)"
+                    ]
+                },
+                {
+                    "id": 6,
+                    "title": "Presumption of control over a corporation",
+                    "statement": "A person is presumed to control a corporation if the person directly or indirectly has the right to vote 25 percent or more of a class of the corporation's voting securities.",
+                    "terms": [
+                        {
+                            "term": "Person",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Corporation",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Right to vote",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Voting securities",
+                            "classification": "Common Noun"
+                        }
+                    ],
+                    "verb_symbols": [
+                        "is presumed to control",
+                        "has"
+                    ],
+                    "classification": "Fact Type",
+                    "sources": [
+                        "(b)(1)(i)(A)"
+                    ]
+                },
+                {
+                    "id": 7,
+                    "title": "Presumption of control over a partnership",
+                    "statement": "A person is presumed to control a partnership if the person has the right to receive upon dissolution, or has contributed, 25 percent or more of the capital of the partnership.",
+                    "terms": [
+                        {
+                            "term": "Dissolution",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Person",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Partnership",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Right to receive upon dissolution",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Capital",
+                            "classification": "Common Noun"
+                        }
+                    ],
+                    "verb_symbols": [
+                        "is presumed to control",
+                        "has",
+                        "has contributed"
+                    ],
+                    "classification": "Fact Type",
+                    "sources": [
+                        "(b)(1)(ii)"
+                    ]
+                },
+                {
+                    "id": 8,
+                    "title": "Presumption of control over an LLC",
+                    "statement": "A person is presumed to control a limited liability company (LLC) if the person directly or indirectly has the right to vote 25 percent or more of a class of the interests of the LLC, has the right to receive upon dissolution, or has contributed, 25 percent or more of the capital of the LLC, or is an elected manager of the LLC.",
+                    "terms": [
+                        {
+                            "term": "Interests of the LLC",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Person",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Limited liability company (LLC)",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Right to vote",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Right to receive upon dissolution",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Capital",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Elected manager",
+                            "classification": "Common Noun"
+                        }
+                    ],
+                    "verb_symbols": [
+                        "is presumed to control",
+                        "has",
+                        "has contributed",
+                        "is"
+                    ],
+                    "classification": "Fact Type",
+                    "sources": [
+                        "(b)(1)(iii)"
+                    ]
+                },
+                {
+                    "id": 9,
+                    "title": "Presumption of control over a trust",
+                    "statement": "A person is presumed to control a trust if the person is a trustee or managing agent of the trust.",
+                    "terms": [
+                        {
+                            "term": "Person",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Trust",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Trustee",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Managing agent",
+                            "classification": "Common Noun"
+                        }
+                    ],
+                    "verb_symbols": [
+                        "is presumed to control",
+                        "is"
+                    ],
+                    "classification": "Fact Type",
+                    "sources": [
+                        "(b)(1)(iv)"
+                    ]
+                },
+                {
+                    "id": 10,
+                    "title": "Definition of total assets",
+                    "statement": "Total assets means the total assets as shown on the balance sheet of the investment adviser or other person described above under paragraph (a)(3) of this section, or the balance sheet of the investment adviser or such other person with its subsidiaries consolidated, whichever is larger.",
+                    "terms": [
+                        {
+                            "term": "Total assets",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Balance sheet",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Investment adviser",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Person",
+                            "classification": "Common Noun"
+                        },
+                        {
+                            "term": "Subsidiaries",
+                            "classification": "Common Noun"
+                        }
+                    ],
+                    "verb_symbols": [
+                        "means",
+                        "shown"
+                    ],
+                    "classification": "Fact Type",
+                    "sources": [
+                        "(b)(2)"
+                    ]
+                }
+            ]
+        }
+    }
+]

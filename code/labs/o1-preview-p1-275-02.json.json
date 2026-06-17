@@ -1,0 +1,708 @@
+{
+    "timestamp": "2024-12-05 20:37:38",
+    "processing_notes": "Processing document: § 275.0-2",
+    "section": "§ 275.0-2",
+    "elements": [
+        {
+            "id": 1,
+            "title": "Procedure for serving process on non-resident investment advisers via appointed agents",
+            "statement": "Under Forms ADV and ADV-NR [17 CFR 279.1 and 279.4], a person may serve process, pleadings, or other papers on a non-resident investment adviser, or on a non-resident general partner or non-resident managing agent of an investment adviser by serving any or all of its appointed agents:",
+            "terms": [
+                {
+                    "term": "Form ADV",
+                    "classification": "Proper Noun",
+                    "confidence": 1.0,
+                    "reason": "Form ADV is a specific form referenced in the regulation.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Form ADV is explicitly mentioned."
+                },
+                {
+                    "term": "Form ADV-NR",
+                    "classification": "Proper Noun",
+                    "confidence": 1.0,
+                    "reason": "Form ADV-NR is a specific form referenced in the regulation.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Form ADV-NR is explicitly mentioned."
+                },
+                {
+                    "term": "Person",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Person is a general term for an individual or entity.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "The term person is explicitly mentioned."
+                },
+                {
+                    "term": "Process",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Refers to legal documents.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "The term process is explicitly mentioned."
+                },
+                {
+                    "term": "Pleadings",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Refers to legal documents.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "The term pleadings is explicitly mentioned."
+                },
+                {
+                    "term": "Other papers",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Refers to additional legal documents.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "The term other papers is explicitly mentioned."
+                },
+                {
+                    "term": "Non-resident investment adviser",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "A category of investment adviser.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned in the statement."
+                },
+                {
+                    "term": "Non-resident general partner",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "A category of general partner.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                },
+                {
+                    "term": "Non-resident managing agent",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "A category of managing agent.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                },
+                {
+                    "term": "Investment adviser",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "An entity providing investment advice.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Mentioned in the context."
+                },
+                {
+                    "term": "Appointed agents",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Agents appointed for service of process.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                }
+            ],
+            "verb_symbols": [
+                "may serve",
+                "by serving"
+            ],
+            "verb_symbols_extracted_confidence": [
+                0.9,
+                0.9
+            ],
+            "verb_symbols_extracted_reason": [
+            "May serve indicates action permitted to the person.",
+        "By serving indicates the method by which service is carried out."
+            ],
+            "classification": "Rule",
+            "confidence": 0.9,
+            "reason": "The statement specifies an allowed procedure, indicating what may be done under certain circumstances.",
+            "sources": [
+                "(a)"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Serving non-resident investment advisers via the Commission",
+            "statement": "A person may serve a non-resident investment adviser, non-resident general partner, or non-resident managing agent by furnishing the Commission with one copy of the process, pleadings, or papers, for each named party, and one additional copy for the Commissions records.",
+            "terms": [
+                {
+                    "term": "Person",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "General term for individual or entity.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned in the statement."
+                },
+                {
+                    "term": "Non-resident investment adviser",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "A type of investment adviser.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                },
+                {
+                    "term": "Non-resident general partner",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "A type of general partner.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                },
+                {
+                    "term": "Non-resident managing agent",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "A type of managing agent.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                },
+                {
+                    "term": "Commission",
+                    "classification": "Proper Noun",
+                    "confidence": 1.0,
+                    "reason": "Refers to the Securities and Exchange Commission.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                },
+                {
+                    "term": "Copy",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Refers to duplicate of documents.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Mentioned as one copy."
+                },
+                {
+                    "term": "Process",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Refers to legal documents.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                },
+                {
+                    "term": "Pleadings",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Refers to legal documents.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                },
+                {
+                    "term": "Papers",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Refers to documents.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                },
+                {
+                    "term": "Named party",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Party named in legal proceedings.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Mentioned as for each named party."
+                },
+                {
+                    "term": "Commissions records",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Records maintained by the Commission.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                }
+            ],
+            "verb_symbols": [
+                "may serve",
+                "by furnishing"
+            ],
+            "verb_symbols_extracted_confidence": [
+                0.9,
+                0.9
+            ],
+            "verb_symbols_extracted_reason": [
+            "May serve indicates permissible action.",
+        "By furnishing indicates the method."
+            ],
+            "classification": "Rule",
+            "confidence": 0.9,
+            "reason": "Specifies a procedure that must be followed.",
+            "sources": [
+                "(a)(1)"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Commission forwards served documents to named parties",
+            "statement": "If process, pleadings, or other papers are served on the Commission as described in this section, the Secretary of the Commission (Secretary) will promptly forward a copy to each named party by registered or certified mail at that partys last address filed with the Commission.",
+            "terms": [
+                {
+                    "term": "Process",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Refers to legal documents.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                },
+                {
+                    "term": "Pleadings",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Refers to legal documents.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                },
+                {
+                    "term": "Other papers",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Refers to additional legal documents.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                },
+                {
+                    "term": "Commission",
+                    "classification": "Proper Noun",
+                    "confidence": 1.0,
+                    "reason": "Refers to the SEC.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                },
+                {
+                    "term": "Secretary of the Commission",
+                    "classification": "Proper Noun",
+                    "confidence": 1.0,
+                    "reason": "Specific officer within the Commission.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                },
+                {
+                    "term": "Copy",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Refers to the documents sent.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                },
+                {
+                    "term": "Named party",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Party in legal proceedings.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                },
+                {
+                    "term": "Registered mail",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Method of mailing.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Mentioned as method of sending documents."
+                },
+                {
+                    "term": "Certified mail",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Method of mailing.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Mentioned as method of sending documents."
+                },
+                {
+                    "term": "Partys last address filed with the Commission",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Address where documents are sent.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                }
+            ],
+            "verb_symbols": [
+                "are served",
+                "will promptly forward"
+            ],
+            "verb_symbols_extracted_confidence": [
+                0.9,
+                0.9
+            ],
+            "verb_symbols_extracted_reason": [
+            "Are served indicates action.",
+        "Will promptly forward indicates the Secretarys action."
+            ],
+            "classification": "Rule",
+            "confidence": 0.9,
+            "reason": "Specifies obligatory action by the Secretary.",
+            "sources": [
+                "(a)(2)"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Certification constitutes evidence of service",
+            "statement": "If the Secretary certifies that the Commission was served with process, pleadings, or other papers pursuant to paragraph (a)(1) of this section and forwarded these documents to a named party pursuant to paragraph (a)(2) of this section, this certification constitutes evidence of service upon that party.",
+            "terms": [
+                {
+                    "term": "Secretary",
+                    "classification": "Proper Noun",
+                    "confidence": 1.0,
+                    "reason": "Refers to the Secretary of the Commission.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                },
+                {
+                    "term": "Commission",
+                    "classification": "Proper Noun",
+                    "confidence": 1.0,
+                    "reason": "Refers to the SEC.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                },
+                {
+                    "term": "Process",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Refers to legal documents.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                },
+                {
+                    "term": "Pleadings",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Refers to legal documents.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                },
+                {
+                    "term": "Other papers",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Refers to legal documents.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                },
+                {
+                    "term": "Paragraph (a)(1)",
+                    "classification": "Proper Noun",
+                    "confidence": 1.0,
+                    "reason": "Reference to prior section.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly referred."
+                },
+                {
+                    "term": "Paragraph (a)(2)",
+                    "classification": "Proper Noun",
+                    "confidence": 1.0,
+                    "reason": "Reference to prior section.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly referred."
+                },
+                {
+                    "term": "Named party",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Party in legal proceedings.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                },
+                {
+                    "term": "Certification",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Document certifying actions.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                },
+                {
+                    "term": "Evidence of service",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Legal proof that service occurred.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                },
+                {
+                    "term": "Party",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Person or entity in legal proceeding.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                }
+            ],
+            "verb_symbols": [
+                "certifies",
+                "was served",
+                "forwarded",
+                "constitutes"
+            ],
+            "verb_symbols_extracted_confidence": [
+                0.9,
+                0.9,
+                0.9,
+                0.9
+            ],
+            "verb_symbols_extracted_reason": [
+            "Certifies indicates action by Secretary.",
+        "Was served indicates prior action.",
+        "Forwarded indicates action taken.",
+        "Constitutes indicates legal outcome."
+            ],
+            "classification": "Rule",
+            "confidence": 0.9,
+            "reason": "Specifies legal effect of actions.",
+            "sources": [
+                "(a)(3)"
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Definition of Managing agent",
+            "statement": "Managing agent means any person, including a trustee, who directs or manages, or who participates in directing or managing, the affairs of any unincorporated organization or association other than a partnership.",
+            "terms": [
+                {
+                    "term": "Managing agent",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Subject being defined.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "The term being defined."
+                },
+                {
+                    "term": "Person",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Individual or entity.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                },
+                {
+                    "term": "Trustee",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Included in definition.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                },
+                {
+                    "term": "Affairs",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Activities of an organization.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Mentioned in context."
+                },
+                {
+                    "term": "Unincorporated organization",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Type of entity.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Mentioned in definition."
+                },
+                {
+                    "term": "Association",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Type of entity.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Mentioned in definition."
+                },
+                {
+                    "term": "Partnership",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Excluded from definition.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Mentioned as exception."
+                }
+            ],
+            "verb_symbols": [
+                "means",
+                "directs",
+                "manages",
+                "participates"
+            ],
+            "verb_symbols_extracted_confidence": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "verb_symbols_extracted_reason": [
+            "Means introduces definition.",
+        "Directs and manages indicate actions.",
+        "Participates indicates involvement in actions."
+            ],
+            "classification": "Fact Type",
+            "confidence": 1.0,
+            "reason": "Definition specifying attributes.",
+            "sources": [
+                "(b)(1)"
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Definition of Non-resident",
+            "statement": "Non-resident means: (i) An individual who resides in any place not subject to the jurisdiction of the United States; (ii) A corporation that is incorporated in or that has its principal office and place of business in any place not subject to the jurisdiction of the United States; and (iii) A partnership or other unincorporated organization or association that has its principal office and place of business in any place not subject to the jurisdiction of the United States.",
+            "terms": [
+                {
+                    "term": "Non-resident",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Subject being defined.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "The term being defined."
+                },
+                {
+                    "term": "Individual",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Person.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Mentioned in definition."
+                },
+                {
+                    "term": "Place not subject to the jurisdiction of the United States",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Geographical area.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Repeatedly mentioned in definition."
+                },
+                {
+                    "term": "Corporation",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Type of entity.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Mentioned in definition."
+                },
+                {
+                    "term": "Incorporated in any place not subject to the jurisdiction of the United States",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Describes corporations incorporation.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Mentioned in definition."
+                },
+                {
+                    "term": "Principal office",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Part of business location.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Mentioned in definition."
+                },
+                {
+                    "term": "Place of business",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Part of business location.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Mentioned in definition."
+                },
+                {
+                    "term": "Partnership",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Type of entity.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Mentioned in definition."
+                },
+                {
+                    "term": "Unincorporated organization",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Type of entity.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Mentioned."
+                },
+                {
+                    "term": "Association",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Type of entity.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Mentioned in definition."
+                }
+            ],
+            "verb_symbols": [
+                "means",
+                "resides",
+                "is incorporated",
+                "has"
+            ],
+            "verb_symbols_extracted_confidence": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "verb_symbols_extracted_reason": [
+            "Means introduces definition.",
+        "Resides indicates location.",
+        "Is incorporated indicates legal status.",
+        "Has indicates possession of office and place of business."
+            ],
+            "classification": "Fact Type",
+            "confidence": 1.0,
+            "reason": "Definition specifying conditions for being a non-resident.",
+            "sources": [
+                "(b)(2)"
+            ]
+        },
+        {
+            "id": 7,
+            "title": "Definition of Principal office and place of business",
+            "statement": "Principal office and place of business has the same meaning as in § 275.203A-3(c) of this chapter.",
+            "terms": [
+                {
+                    "term": "Principal office",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Part of business location.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Term being defined."
+                },
+                {
+                    "term": "Place of business",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Part of business location.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Term being defined."
+                },
+                {
+                    "term": "§ 275.203A-3(c)",
+                    "classification": "Proper Noun",
+                    "confidence": 1.0,
+                    "reason": "Reference to another regulation section.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Explicitly mentioned."
+                },
+                {
+                    "term": "This chapter",
+                    "classification": "Common Noun",
+                    "confidence": 1.0,
+                    "reason": "Refers to the current set of regulations.",
+                    "extract_confidence": 1.0,
+                    "extract_reason": "Mentioned in statement."
+                }
+            ],
+            "verb_symbols": [
+                "has the same meaning as"
+            ],
+            "verb_symbols_extracted_confidence": [
+                1.0
+            ],
+            "verb_symbols_extracted_reason": [
+            "Has the same meaning as indicates equivalence in definitions."
+            ],
+            "classification": "Fact Type",
+            "confidence": 1.0,
+            "reason": "Statement refers to an existing definition.",
+            "sources": [
+                "(b)(3)"
+            ]
+        }
+    ]
+}

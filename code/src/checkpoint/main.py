@@ -257,8 +257,10 @@ def get_all_checkpoints(checkpoint_dir, prefix="documents", extension="json"):
     return managers, file_info_list
 
 
-def get_elements_from_checkpoints(checkpoint_dir, merge=True):
+def get_elements_from_checkpoints(checkpoint_dir, merge=True, filter="non_null"):
     managers, file_info_list = get_all_checkpoints(checkpoint_dir)
+
+    logger.debug(file_info_list)
 
     pred_operative_rules = []
     pred_facts = []
@@ -275,8 +277,8 @@ def get_elements_from_checkpoints(checkpoint_dir, merge=True):
         # unique_names = processor.get_unique_names()
         pred_operative_rules += processor.get_rules()
         pred_facts += processor.get_facts()
-        pred_terms += processor.get_terms(definition_filter="non_null")
-        pred_names += processor.get_names(definition_filter="non_null")
+        pred_terms += processor.get_terms(definition_filter=filter)
+        pred_names += processor.get_names(definition_filter=filter)
         pred_files.append(file_info)
 
     logger.debug(f"Rules: {pred_operative_rules}")
@@ -1098,6 +1100,8 @@ class DocumentProcessor:
             enriched_terms = [
                 term for term in enriched_terms if not term.get("definition")
             ]
+        else:
+            logger.info("Not filtering terms based on definition presence.")
 
         # If both doc_id and term_id are provided, return the specific term
         if doc_id and term_id:
@@ -1186,6 +1190,8 @@ class DocumentProcessor:
             enriched_names = [
                 name for name in enriched_names if not name.get("definition")
             ]
+        else:
+            logger.info("Not filtering names based on definition presence.")
 
         # If both doc_id and name_id are provided, return the specific name
         if doc_id and name_id:

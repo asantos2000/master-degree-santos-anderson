@@ -1,0 +1,299 @@
+subtemplate_list:
+  - id: "S1"
+    title: "operative rule statement subject"
+    explanation: |
+      
+    form: |
+      <operative rule statement subject>::=
+      {<term>|combination of [<term>, and]|set of <term>}
+        {<qualifying clause>|}
+
+  - id: "S2"
+    title: "article"
+    explanation: |
+      
+    form: |
+      <article>::={a |an|the}
+
+  - id: "S3"
+    title: "cardinality"
+    explanation: |
+      For example, "exactly one", "at least two", "at least one and at most four".
+    form: |
+      <cardinality>::=
+      {exactly|at least {<positive integer 1> and at most| }}
+      <positive integer 2>
+
+  - id: "S4"
+    title: "determiner"
+    explanation: |
+      One or more determiners can be used before a noun to provide some information as to which (or how many) instances of the noun's concept are being referred to.
+      The most commonly used determiners are articles.
+      Specific determiners are used to limit the noun to referring only to a specific instance or instances.
+      There is an infinite set of ordinal numbers: 'first', 'second', 'third', etc. Any of these may be used between 'the' and a noun to indicate which member of some sequence is referred to, as in “the first stop”. There are other words or phrases that may be used in a similar way.
+      General determiners limit the number of instances referred to by a noun without being specific as to which instance or instances are referenced. The indefinite articles ('a' and 'an') are general determiners, as are also:
+      1. the cardinal numbers ('one', 'two', 'ten', etc.) and various other words defining how many instances are involved;
+      2. the quantifiers 'all', 'both', 'every', 'each', 'any', 'no', etc.;
+      3. 'another', 'other' (but not 'the other', which is a specific determiner);
+      4. 'either', 'neither'.
+      There is an infinite set of cardinal numbers: 'one', 'two', 'three', etc. Any of these may be preceded by one of the following:
+      1. 'exactly' to express a more rigorous statement as to how many instances are involved;
+      2. 'at least' or 'from', to express the minimum number of instances involved;
+      3. 'at most' (or 'up to'), to similarly express the maximum number of instances involved.
+    form: |
+      <determiner>::=
+      {<article>|each|that |those|
+      <cardinality>|at most <positive integer>|
+      the {{first | last} or only|second or any subsequent|previous|next|same}|
+      any {other |more}}
+
+  - id: "S5"
+    title: "set function"
+    explanation: |
+      A set function is any scalar numeric property of a set of data items.
+    form: |
+      <set function>::=
+      {number |sum| total |maximum|minimum|average|mean|median|
+      latest | earliest}
+
+  - id: "S6"
+    title: "inequality operator"
+    explanation: |
+      An inequality operator in a rule statement can be any of the following:
+      1. 'more than', 'less than', 'later than', 'earlier than', 'no more than', 'no less than', 'no later than', 'no earlier than';
+      2. 'at least <literal> more than', 'at most <literal> more than', 'at least <literal> later than', 'at most <literal> later than';
+      3. 'later than <literal> after', 'earlier than <literal> after', 'later than <literal> before', 'earlier than <literal> before'.
+    form: |
+      <inequality operator>::=
+      {{no|} {more|less | later | earlier} than|
+      at {least |most} <literal> {more| later} than|
+      {no|} {later | earlier} than <literal> {after |before}}
+
+  - id: "S7"
+    title: "equality operator"
+    explanation: |
+      There are various equality operators, some appropriate to non-quantitative comparisons and others to quantitative comparisons.
+    form: |
+      <equality operator>::=
+      {the same as| different from|equal to|unequal to}
+
+  - id: "S8"
+    title: "transaction signifier"
+    explanation: |
+      Thus any of the following can be substituted in place of a <transaction signifier> placeholder:
+      1. a term, optionally followed by a qualifying clause;
+      2. a list of terms, optionally followed by a qualifying clause, and preceded by "combination of" or "record of a combination of"; the last two objects in the list are separated by "and" (or a comma and "and" if adhering to U.S. punctuation standards) and each other pair of objects in the list is separated by a comma.
+    form: |
+      <transaction signifier>::=
+      {<term>|{record of a| } combination of [<term>, and]}
+        {<qualifying clause>| }
+
+  - id: "S9"
+    title: "verb part"
+    explanation: |
+      Thus any of the following can be substituted in place of a <verb part> placeholder:
+      1. a preposition preceded by a participle: for example, "specified by";
+      2. a preposition preceded by an adjective: for example, "available in";
+      3. a preposition alone: for example, "of ".
+    form: |
+      <verb part>::=
+      {<participle>|<adjective>| } <preposition>
+
+  - id: "S10"
+    title: "predicate"
+    explanation: |
+      Thus any of the following can be substituted in place of a <predicate> placeholder:
+      1. a verb phrase followed by a single object: for example, "is specified by that transaction";
+      2. "is" and an equality operator or inequality operator followed by a single object: for example, "is equal to the fee payable", "is less than the maximum price";
+      3. a verb phrase followed by
+        a. a list of objects, the last two objects in the list separated by "and" (or a comma and "and" if adhering to U.S. punctuation standards), and each other pair of objects in the list separated by a comma: for example, "specifies a discount code and a promotion code";
+        b. a list of objects, the last two objects in the list separated by "or" (or a comma and "or" if adhering to U.S. punctuation standards), and each other pair of objects in the list separated by a comma: for example, "is 0 or 1";
+      4. a verb phrase alone: for example, "is closed".
+    form: |
+      <predicate>::=
+      {{<verb phrase>| is {<equality operator>|<inequality operator>}}
+        <object>|
+      <verb phrase> {[<object>, and] | [<object>, or] | }}
+
+  - id: "S11"
+    title: "object"
+    explanation: |
+      Thus any of the following can be substituted in place of an <object> placeholder:
+      1. a term optionally preceded by a determiner and optionally followed by a qualifying clause: for example, "the credit card with which the booking was paid for", "employees in receipt of this allowance";
+      2. a term preceded by "the <set function> of" and an optional determiner, and optionally followed by a qualifying clause: for example, "the number of employees in the team", "the sum of the fares";
+      3. a literal optionally preceded by a determiner: for example, "1 January 2012", "that 24 h".
+    form: |
+      <object>::=
+      {{<determiner>|the <set function> of {<determiner>| } | } <term>
+        {<qualifying clause>| } |
+      {<determiner>| } <literal>}
+
+  - id: "S12"
+    title: "expression"
+    explanation: |
+      Thus any of the following can be substituted in place of the <expression> placeholder:
+      1. an object (see subtemplate S11): for example, "the order quantity of that order line";
+      2. a set function followed by a term with optional preceding determiner and optional following qualifying clause: for example, "the number of order lines", "the sum of the extensions for each order line";
+      3. any two expressions joined by "plus", "minus", "multiplied by", or "divided by": for example, "1 minus the discount for that customer", "1 minus the discount for that customer multiplied by the unit price of that product";
+      4. "sum of" or "product of", followed by a list of expressions each separated from the next by a comma and/or "and": for example, "the sum of the base fare, fuel levy, booking fee, and credit card charge for that booking";
+      5. "square", "cube", "square root", or "cube root", followed by an expression: for example, "the square of the speed of light".
+    form: |
+      <expression>::=
+      {<object>|
+      <set function> of {<determiner>| } <term> {<qualifying clause>| } |
+      <expression> {plus|minus|multiplied by|divided by} <expression>|
+      {sum|product} of [<expression>, and] |
+      {square|cube} {root |} of <expression>}
+
+  - id: "S13"
+    title: "conditional clause"
+    explanation: |
+      Thus any of the following can be substituted in place of a <conditional clause> placeholder:
+      1. a single conditional clause, consisting of
+        a. either
+          i. a term preceded by a determiner and optionally followed by a qualifying clause: for example, "the employee who submitted the application",
+          ii. an expression (see subtemplate S12), or
+          iii. "it";
+        b. followed by one of
+          i. a single predicate (see subtemplate S10),
+          ii. a list of predicates, each pair of predicates in the list separated by "and",
+          iii. a list of predicates, each pair of predicates in the list separated by "or";
+      2. a list of conditional clauses, each pair of clauses in the list separated by "and";
+      3. a list of conditional clauses, each pair of clauses in the list separated by "or".
+    form: |
+      <conditional clause>::=
+      {{<determiner> <term> {<qualifying clause>| } |<expression>| it}
+      {<predicate>| [<predicate> and]| [<predicate> or]} |
+      [<conditional clause> and] | [<conditional clause> or]}
+
+  - id: "S14"
+    title: "qualifying clause"
+    explanation: |
+      Thus any of the following can be substituted in place of a <qualifying clause> placeholder:
+      1. "that" or "who" followed by a verb phrase and an optional object (see subtemplate S11): for example, "that includes an international flight";
+      2. a verb part (see subtemplate S9) followed by an object: for example, "specified in a real property transaction";
+      3. "other than" followed by either
+        a. an object, or
+        b. a list of objects, the last two objects in the list separated by "or" (or a comma and "or" if adhering to U.S. punctuation standards) and each other pair of objects in the list separated by a comma: for example, "other than a cash payment or a direct debit payment";
+      4. a conditional clause (see subtemplate S13) preceded by either
+        a. a preposition followed by "which" or "whom", or
+        b. "whose": for example, "for which the payment is made", "whose name appears on the passport";
+      5. "that" or "who" followed by
+        a. a verb phrase,
+        b. "that", "if", or "whether", and
+        c. a conditional clause: for example, "who checks whether the passport has expired";
+      6. a qualifying clause involving multiple criteria:
+        a. separated by "and", with or without "both", as defined in subtemplates S15 and S16,
+        b. separated by "or", with or without "either", as defined in subtemplates S17 and S18.
+    form: |
+      <qualifying clause>::=
+      {{that |who} <verb phrase> {<object>| } |
+      <verb part> <object>|
+      other than {<object>| [<object>, or]} |
+      {<preposition> {which|whom}|whose} <conditional clause>|
+      {that |who} <verb phrase> {that | if |whether} <conditional clause>|
+      <and-qualifying clause>|
+      <or-qualifying clause>|
+      <both-and-qualifying clause>|
+      <either-or-qualifying clause>}
+
+  - id: "S15"
+    title: "and-qualifying clause"
+    explanation: |
+      Subtemplate S15 allows for any of the forms illustrated by the following examples:
+      1. "who has a passport and is booked on an international flight";
+      2. "that is international and has more than one intermediate stop";
+      3. "that is specified in that document and recorded on the register";
+      4. "that is specified in that document and registered";
+      5. "that specifies an urgency code and a rural delivery address".
+    form: |
+      <and-qualifying clause>::=
+      {that |who}
+      {[<verb phrase> {<object>| } and]|
+      is [<verb part> {<object>| } and]
+      <verb phrase> [<object> and]}
+
+  - id: "S16"
+    title: "both-and-qualifying clause"
+    explanation: |
+      Subtemplate S16 allows for any of the forms illustrated by the following examples:
+      1. "who both has a passport and is booked on an international flight";
+      2. "that is both specified in that document and recorded on the register";
+      3. "that specifies both an urgency code and a rural delivery address".
+    form: |
+      <both-and-qualifying clause>::=
+      {that |who}
+      {both <verb phrase> {<object>| } and <verb phrase> {<object>| } |
+      {is |are} both <verb part> {<object>| } and <verb part> {<object>| } |
+      <verb phrase> both <object> and <object>}
+
+  - id: "S17"
+    title: "or-qualifying clause"
+    explanation: |
+      Subtemplate S17 allows for any of the forms illustrated by the following examples:
+      1. "who has a passport or is booked on an international flight";
+      2. "that is international or has more than one intermediate stop";
+      3. "that is specified in that document or recorded on the register";
+      4. "that is specified in that document or registered";
+      5. "that specifies an urgency code or a rural delivery address".
+    form: |
+      <or-qualifying clause>::=
+      {that |who}
+      {[<verb phrase> {<object>| } or] |
+      is [<verb part> {<object>| } or]
+      <verb phrase> [<object> or]}
+
+  - id: "S18"
+    title: "either-or-qualifying clause"
+    explanation: |
+      Subtemplate S18 allows for any of the forms illustrated by the following examples:
+      1. "who both has a passport or is booked on an international flight";
+      2. "that is both specified in that document or recorded on the register";
+      3. "that specifies both an urgency code or a rural delivery address".
+    form: |
+      <either-or-qualifying clause>::=
+      {that |who}
+      {either <verb phrase> {<object>|} or <verb phrase> {<object>| } |
+      {is |are} either <verb part> {<object>|} or <verb part> {<object>| } |
+      <verb phrase> either <object> or <object>}
+
+  - id: "S19"
+    title: "format definition"
+    explanation: |
+      The <format definition> placeholder can be replaced by anything defined in the subtemplate.
+      1. "exactly", "at least", or "up to", followed by a positive integer and a term: for example, "exactly two digits", "at least three letters", "up to nine digits";
+      2. "from", a positive integer, "to", and another positive integer followed by a term: for example, "from two to seven digits";
+      3. any number of any of the above, each separated from the next by "followed by". For example, "exactly two digits followed by a hyphen followed by exactly two digits".
+    form: |
+      <format definition>::=
+      {{exactly|at least |up to} <positive integer 1>|
+      from <positive integer 2> to <positive integer 3>} <term>
+      {followed by <format definition>| }
+
+  - id: "S20"
+    title: "spatial operator"
+    explanation: |
+      The <spatial operator> placeholder can be replaced by anything defined in the subtemplate.
+    form: |
+      <spatial operator>::=
+      {overlap|be within|enclose|span|intersect|meet|be on}
+
+  - id: "S21"
+    title: "time restriction"
+    explanation: |
+      Note that the word 'after' may be used as a conjunction (in which case it is shown as 'after') or a preposition (in which case it is shown as 'after'). This is also true of 'before' and 'until'. Other words and phrases operate only as one or the other: for example, 'while' operates only as a conjunction, while 'during', 'within', 'earlier than', and 'later than' operate only as prepositions.
+    form: |
+      <time restriction>::=
+      {at any time| }
+      {{before|after|during|until|within|{no|} {earlier|later} than} <object>| }
+      {{before|after|during|until|within|on} <object>|
+      {before|after|while|until} <conditional clause>}
+
+  - id: "S22"
+    title: "information access process"
+    explanation: |
+      <information access process> defines the form of access that is restricted.
+    form: |
+      <information access process>::=
+      {viewed|created|updated|deleted}
+

@@ -14,7 +14,6 @@
       in a formal manner. They are categorized as:'
     subsections:
     - section_id: 9.2.1.1
-      class: subtype
       section_title: Formal intensional definitions
       section_definition: 'A formal intensional definition defines the subject business
         term using an intensional definition: one that cites both a hypernym (a term
@@ -35,7 +34,6 @@
       - F192
       - F193
     - section_id: 9.2.1.2
-      class: subtype
       section_title: Formal extensional definitions
       section_definition: 'A formal extensional definition defines the subject business
         term using an extensional definition: one that lists a complete set of hyponyms
@@ -56,7 +54,6 @@
       - F200
       - F201
     - section_id: 9.2.1.3
-      class: subtype
       section_title: Symbolic literal definitions
       section_definition: A symbolic literal definition defines the subject business
         term using one or more literals.
@@ -68,7 +65,6 @@
       - R326
       - R327
   - section_id: 9.2.2
-    class: subtype
     section_title: Categorization scheme enumerations
     section_definition: A categorization scheme enumeration defines the members of
       a categorization scheme that is both mutually exclusive and jointly exhaustive.
@@ -81,8 +77,9 @@
     - R78
     - R328
     - R329
+    - F202
+    - F203
   - section_id: 9.2.3
-    class: subtype
     section_title: Category transition constraints
     section_definition: A category transition constraint specifies allowed or disallowed
       transitions between categories or statuses.
@@ -98,7 +95,6 @@
       on one or more components of a complex concept. They are categorized as:'
     subsections:
     - section_id: 9.2.4.1
-      class: subtype
       section_title: Complex concept cardinality rules
       section_definition: A complex concept cardinality rule defines the number of
         (or minimum and/or maximum number of) components of a particular type within
@@ -110,7 +106,6 @@
       - R332
       - F205
     - section_id: 9.2.4.2
-      class: subtype
       section_title: Complex concept equivalence rules
       section_definition: A complex concept equivalence rule defines a pair of components
         within a particular concept that are of necessity the same.
@@ -123,7 +118,6 @@
       - F207
       - F208
     - section_id: 9.2.4.3
-      class: subtype
       section_title: Complex concept set constraints
       section_definition: A complex concept set constraint defines two sets of components
         within a particular concept that must be identical.
@@ -133,7 +127,6 @@
       - R82
       - R334
   - section_id: 9.2.5
-    class: subtype
     section_title: Valid value definitions
     section_definition: A valid value definition defines the valid values of a particular
       measure as a range or (occasionally) as a list of discrete values.
@@ -149,7 +142,6 @@
       categorized as:'
     subsections:
     - section_id: 9.2.6.1
-      class: subtype
       section_title: Data calculation algorithms
       section_definition: A data calculation algorithm defines how a particular quantity
         or amount (whether for operational purposes, such as a fee, or for business
@@ -161,7 +153,6 @@
       - R336
       - R337
     - section_id: 9.2.6.2
-      class: subtype
       section_title: Conversion factor definitions
       section_definition: A conversion factor definition defines a conversion factor
         between two units of measurement.
@@ -171,7 +162,6 @@
       - R85
       - R338
   - section_id: 9.2.7
-    class: subtype
     section_title: Standard format definitions
     section_definition: A standard format definition defines the standard format for
       data items of a particular type in terms of individual characters and/or component
@@ -201,7 +191,6 @@
       section_definition: A mandatory data rule mandates the presence of data.
       subsections:
       - section_id: 9.3.1.1.1
-        class: subtype
         section_title: Mandatory data item rules
         section_definition: A mandatory data item rule requires that a particular
           data item be present.
@@ -218,7 +207,6 @@
         - R341
         - R342
       - section_id: 9.3.1.1.2
-        class: subtype
         section_title: Mandatory option selection rules
         section_definition: A mandatory option selection rule requires that one of
           a set of pre-defined options be specified. Use T20 for multiple options,
@@ -235,7 +223,6 @@
         - R346
         - R347
       - section_id: 9.3.1.1.3
-        class: subtype
         section_title: Mandatory group rules
         section_definition: A mandatory group rule requires that at least one of a
           group of data items be present. Use T22 for two data items, and T23 for
@@ -252,7 +239,6 @@
         - R350
     - section_id: 9.3.1.2
       section_title: Prohibited data rules
-      class: subtype
       section_definition: A prohibited data rule mandates the absence of some data
         item in a particular situation.
       templates:
@@ -261,7 +247,6 @@
       - R99
       - R351
     - section_id: 9.3.1.3
-      class: subtype
       section_title: Maximum cardinality rules
       section_definition: A maximum cardinality rule places an upper limit (usually
         but not necessarily one) on how many instances of a particular data item there
@@ -275,7 +260,6 @@
       - R352
       - R353
     - section_id: 9.3.1.4
-      class: subtype
       section_title: Multiple data rules
       section_definition: 'A multiple data rule mandates the presence of two or more
         instances of a particular data item in a particular situation. These rule
@@ -289,7 +273,6 @@
       examples:
       - R103
     - section_id: 9.3.1.5
-      class: subtype
       section_title: Dependent cardinality rules
       section_definition: A dependent cardinality rule mandates how many of a particular
         data item must be present based on the value of another data item.
@@ -312,7 +295,6 @@
         of data items match or not match a corresponding combination in a set of records;'
       subsections:
       - section_id: 9.3.2.1.1
-        class: subtype
         section_title: Value set rules constraining single data items
         section_definition: ''
         templates:
@@ -323,7 +305,6 @@
         - R355
         - R356
       - section_id: 9.3.2.1.2
-        class: subtype
         section_title: Value set rules constraining combinations of data items
         section_definition: ''
         templates:
@@ -333,7 +314,6 @@
         - R357
     - section_id: 9.3.2.2
       section_title: Range rules
-      class: subtype
       section_definition: A range rule requires that the content of a data item be
         a value within a particular inclusive or exclusive single-bounded or double-bounded
         range.
@@ -347,7 +327,6 @@
       - R359
       - R360
     - section_id: 9.3.2.3
-      class: subtype
       section_title: Equality rules
       section_definition: An equality rule requires that the content of a data item
         be the same as or not the same as that of some other data item.
@@ -367,7 +346,6 @@
         data item(s) in the same or other records or transactions;
       subsections:
       - section_id: 9.3.2.4.1
-        class: subtype
         section_title: Uniqueness constraints constraining single data items
         section_definition: ''
         templates:
@@ -378,7 +356,6 @@
         - R366
         - R367
       - section_id: 9.3.2.4.2
-        class: subtype
         section_title: Uniqueness constraints constraining combinations of data items
         section_definition: ''
         templates:
@@ -387,7 +364,6 @@
         - R114
         - R368
       - section_id: 9.3.2.4.3
-        class: subtype
         section_title: Uniqueness constraints constraining sets of data items
         section_definition: ''
         templates:
@@ -401,7 +377,6 @@
         a value set rule, range rule, or equality rule;
       subsections:
       - section_id: 9.3.2.5.1
-        class: subtype
         section_title: Data consistency rules constraining a combination of data items
         section_definition: ''
         templates:
@@ -413,7 +388,6 @@
         - F291
         - F292
       - section_id: 9.3.2.5.2
-        class: subtype
         section_title: Data consistency rules constraining a set function
         section_definition: ''
         templates:
@@ -421,7 +395,6 @@
         examples:
         - R371
       - section_id: 9.3.2.5.3
-        class: subtype
         section_title: Data consistency rules constraining a set
         section_definition: ''
         templates:
@@ -435,7 +408,6 @@
         are various subcategories of temporal constraint:'
       subsections:
       - section_id: 9.3.2.6.1
-        class: subtype
         section_title: Simple temporal data constraints
         section_definition: A simple temporal data constraint requires that a particular
           date or time fall within a certain temporal range.
@@ -445,7 +417,6 @@
         - R117
         - R373
       - section_id: 9.3.2.6.2
-        class: subtype
         section_title: Temporal data non-overlap constraints
         section_definition: Temporal data non-overlap constraint requires that the
           time periods specified in a set of records do not overlap each other.
@@ -455,7 +426,6 @@
         - R118
         - R374
       - section_id: 9.3.2.6.3
-        class: subtype
         section_title: Temporal data completeness constraints
         section_definition: A temporal data completeness constraint requires that
           the time periods specified in a set of records be contiguous and between
@@ -466,7 +436,6 @@
         - R119
         - R375
       - section_id: 9.3.2.6.4
-        class: subtype
         section_title: Temporal data inclusion constraints
         section_definition: AA temporal data inclusion constraint requires that the
           time periods specified in a set of records do not fall outside some other
@@ -477,7 +446,6 @@
         - R120
         - R376
       - section_id: 9.3.2.6.5
-        class: subtype
         section_title: Temporal single record constraints
         section_definition: A temporal single record constraint requires that a temporal
           state of affairs be recorded using a single record rather than multiple
@@ -489,7 +457,6 @@
         - R121
         - R377
       - section_id: 9.3.2.6.6
-        class: subtype
         section_title: Day type constraints
         section_definition: A day type constraint restricts a date to one or more
           days of the week or a particular type of day such as a working day (typically
@@ -500,18 +467,16 @@
         - R122
         - R378
     - section_id: 9.3.2.7
-      class: subtype
       section_title: Spatial data constraints
       section_definition: A spatial data constraint prescribes or prohibits relationships
         between data items representing spatial properties (points, line segments
         or polygons).
       templates:
-      - T42
+      - T41
       examples:
       - R123
       - R379
     - section_id: 9.3.2.8
-      class: subtype
       section_title: Data item format rules
       section_definition: A data item format rule specifies the required format of
         a data item.
@@ -522,13 +487,11 @@
       - R380
   - section_id: 9.3.3
     section_title: Data update rules
-    class: category
     section_definition: 'A data update rule either prohibits update of a data item
       or places restrictions on the new value of a data item in terms of its existing
       value. There are three subcategories of data update rule:'
     subsections:
     - section_id: 9.3.3.1
-      class: subtype
       section_title: Data update prohibition rules
       section_definition: A data update prohibition rule prohibits update of a particular
         data item or set of data items. Use T44 for non-transferable relationships
@@ -542,7 +505,6 @@
       - R381
       - R382
     - section_id: 9.3.3.2
-      class: subtype
       section_title: State transition constraints
       section_definition: A state transition constraint limits the changes in a data
         item to a set of valid transitions.
@@ -552,7 +514,6 @@
       - R128
       - R383
     - section_id: 9.3.3.3
-      class: subtype
       section_title: Monotonic transition constraints
       section_definition: A monotonic transition constraint requires that a numeric
         value either only increase or only decrease.
@@ -583,7 +544,6 @@
         on activities.
       subsections:
       - section_id: 9.4.1.1.1
-        class: subtype
         section_title: Activity time limit rules
         section_definition: An activity time limit rule restricts a business process
           or other activity to within a particular time period.
@@ -610,7 +570,6 @@
         - F330
         - F331
       - section_id: 9.4.1.1.2
-        class: subtype
         section_title: Activity exclusion period rules
         section_definition: An activity exclusion period rule prohibits a business
           process or other activity during a particular time period.
@@ -634,7 +593,6 @@
         - F330
         - F331
       - section_id: 9.4.1.1.3
-        class: subtype
         section_title: Activity obligation rules
         section_definition: An activity obligation rule requires a business process
           or other activity to occur either within a maximum time after a particular
@@ -646,7 +604,6 @@
         - R138
         - R390
     - section_id: 9.4.1.2
-      class: subtype
       section_title: Activity pre-condition rules
       section_definition: An activity pre-condition rule prohibits a business process
         or other activity unless some other activity or event has previously occurred
@@ -662,7 +619,6 @@
       - F334
       - F335
     - section_id: 9.4.1.3
-      class: subtype
       section_title: Activity prohibition rules
       section_definition: An activity prohibition rule prohibits a business process
         or other activity if some event or other process has previously occurred or
@@ -673,7 +629,6 @@
       - R135
       - R393
     - section_id: 9.4.1.4
-      class: subtype
       section_title: Activity conflict rules
       section_definition: An activity conflict rule restricts the simultaneous occurrence
         of multiple processes or other activities.
@@ -683,7 +638,6 @@
       templates:
       - T48
     - section_id: 9.4.1.5
-      class: subtype
       section_title: Information retention rules
       section_definition: An information retention rule defines the minimum period
         for which a particular type of information is retained.
@@ -693,7 +647,6 @@
       - R137
       - R394
   - section_id: 9.4.2
-    class: subtype
     section_title: Process decision rules
     section_definition: A process decision rule determines what action a business
       process or device is to take in specific situations;
@@ -717,7 +670,6 @@
     or hold certain roles in a business context.
   subsections:
   - section_id: 9.5.1
-    class: subtype
     section_title: Party restriction rules
     section_definition: A party restriction rule places restrictions on who can perform
       some processes or activities or play some roles, based on age, some other physical
@@ -738,7 +690,6 @@
     - F347
     - F348
   - section_id: 9.5.2a
-    class: subtype
     section_title: Role separation rules
     section_definition: A role separation rule prohibits the same party from performing
       two activities.
@@ -748,7 +699,6 @@
     - R144
     - R399
   - section_id: 9.5.2b
-    class: subtype
     section_title: Role binding rules
     section_definition: A role binding rule requires that the party performing the
       second of two activities be the same as the party who performed the first of
@@ -759,7 +709,6 @@
     - R145
     - R400
   - section_id: 9.5.3
-    class: subtype
     section_title: Information access rules
     section_definition: An information access rule defines who can view, create, or
       update particular information.
@@ -769,7 +718,6 @@
     - R146
     - R401
   - section_id: 9.5.4
-    class: subtype
     section_title: Responsibility rules
     section_definition: A responsibility rule defines who is responsible for performing
       a particular process or liable for a particular fee, duty, or tax.
@@ -780,3 +728,6 @@
     - R402
     - F356
     - F357
+- section_id: '9+'
+  section_title: Operative rules
+  section_definition: Operative rules (otherwise known as normative rules or prescriptive rules) state what must or must not happen in particular circumstances. Operative rules can be contravened, and required information may be omitted, inappropriate information supplied, or an attempt may be made to perform a process that is prohibited. By contrast, definitional rules (otherwise known as structural rules or descriptive rules) constrain how we define various constructs created by the organization (or the industry within which it operates). Data, Activity, and Party rules are all operative rules.

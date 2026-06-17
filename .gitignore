@@ -9,3 +9,11 @@ storage
 storage_txts
 lib
 __pycache__
+logs
+code/src/objs.pkl
+code/data/temp
+.DS_Store
+swark-output
+*.log
+.devcontainer
+.streamlit/secrets.toml

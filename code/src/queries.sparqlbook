@@ -62,18 +62,6 @@
   {
     "kind": 1,
     "language": "markdown",
-    "value": "upsert_term_cfr_sbvr_graph",
-    "metadata": {}
-  },
-  {
-    "kind": 2,
-    "language": "sparql",
-    "value": "\nPREFIX sbvr: <https://www.omg.org/spec/SBVR/20190601#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nPREFIX cfr-sbvr: <http://cfr2sbvr.com/cfr#>\n\nWITH cfr-sbvr:CFR_SBVR_Graph\nDELETE {\n    cfr-sbvr:TotalAssetTerm ?p ?o .\n    cfr-sbvr:TotalAssetConcept ?p1 ?o1 .\n    cfr-sbvr:TotalAssetDefinition ?p2 ?o2 .\n}\nINSERT {\n    cfr-sbvr:TotalAssetTerm a sbvr:Term ;\n        sbvr:signifier \"total asset\" ;\n        \n        sbvr:closeMatch <https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesClassification/AssetClass> ;\nsbvr:closeMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/AccountingEquity/FinancialAsset> ;\nsbvr:closeMatch <https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Ownership/TangibleAsset> ;\nsbvr:closeMatch <https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Ownership/Asset> ;\nsbvr:closeMatch <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/AccountAsAnAsset> ;\nsbvr:closeMatch <https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/AccountingEquity/PhysicalAsset> ;\n\n        sbvr:isImplicitlyUnderstood \"false\"^^xsd:boolean ;\n        sbvr:meaning cfr-sbvr:TotalAssetConcept .\n\n    cfr-sbvr:TotalAssetConcept a sbvr:Concept, skos:Concept ;\n        sbvr:definition cfr-sbvr:TotalAssetDefinition ;\n        sbvr:designation cfr-sbvr:TotalAssetTerm ;\n        skos:prefLabel \"total asset\" .\n\n    cfr-sbvr:TotalAssetDefinition a sbvr:IntensionalDefinition ;\n        sbvr:text \"The total assets as shown on the balance sheet of the investment adviser or another relevant person, or the consolidated balance sheet of the adviser with its subsidiaries.\" .\n}\nWHERE {\n    # Match all existing triples related to TotalAsset\n    OPTIONAL { cfr-sbvr:TotalAssetTerm ?p ?o . }\n    OPTIONAL { cfr-sbvr:TotalAssetConcept ?p1 ?o1 . }\n    OPTIONAL { cfr-sbvr:TotalAssetDefinition ?p2 ?o2 . }\n}",
-    "metadata": {}
-  },
-  {
-    "kind": 1,
-    "language": "markdown",
     "value": "similar_search_cfr_sbvr",
     "metadata": {}
   },
@@ -110,7 +98,7 @@
   {
     "kind": 2,
     "language": "sparql",
-    "value": "PREFIX sbvr: <https://www.omg.org/spec/SBVR/20190601#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nPREFIX cfr-sbvr: <http://cfr2sbvr.com/cfr#>\n\nSELECT ?s ?p ?o\n#FROM NAMED cfr-sbvr:CFR_SBVR\n{ \n  #graph ?g {\n    #?s ?p sbvr:VocabularyNamespace .\n    ?s ?p sbvr:Vocabulary .\n  #}\n}",
+    "value": "PREFIX sbvr: <https://www.omg.org/spec/SBVR/20190601#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nPREFIX cfr-sbvr: <http://cfr2sbvr.com/cfr#>\n\nSELECT ?s ?p\n{ \n    ?s ?p sbvr:Vocabulary .\n}",
     "metadata": {}
   },
   {
@@ -122,19 +110,7 @@
   {
     "kind": 2,
     "language": "sparql",
-    "value": "PREFIX fibo: <https://spec.edmcouncil.org/fibo/ontology/QuickFIBOProd#>\nPREFIX sbvr: <https://www.omg.org/spec/SBVR/20190601#>\nPREFIX cfr-sbvr: <http://cfr2sbvr.com/cfr#>\nPREFIX fro-cfr: <http://finregont.com/fro/cfr/Code_Federal_Regulations.ttl#>\n\nSELECT ?s ?p ?o\n{\n  ?s ?p sbvr:Vocabulary .\n\n  #fro-cfr:CFR_Title_17_Part_275_NS  ?p ?o .\n\n  #fibo:FIBO_NS  ?p ?o .\n}",
-    "metadata": {}
-  },
-  {
-    "kind": 1,
-    "language": "markdown",
-    "value": "add_voc_with_association",
-    "metadata": {}
-  },
-  {
-    "kind": 2,
-    "language": "sparql",
-    "value": "PREFIX sbvr: <https://www.omg.org/spec/SBVR/20190601#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nPREFIX cfr-sbvr: <http://cfr2sbvr.com/cfr#>\n\nDELETE {\n    cfr-sbvr:CFR_SBVR_275_0_2_VOC ?p ?o .\n}\nINSERT {\n    cfr-sbvr:CFR_SBVR_275_0_2_VOC\n        a owl:Class, sbvr:Vocabulary .\n\n    cfr-sbvr:CFR_SBVR_VOC sbvr:vocabulary1IncorporatesVocabulary2 cfr-sbvr:CFR_SBVR_275_0_2_VOC .\n}\nWHERE {\n    # Match all existing triples related to 275_0_2\n    cfr-sbvr:275_0_2_VOC ?p ?o .\n} ",
+    "value": "PREFIX fibo: <https://spec.edmcouncil.org/fibo/ontology/QuickFIBOProd#>\nPREFIX sbvr: <https://www.omg.org/spec/SBVR/20190601#>\nPREFIX cfr-sbvr: <http://cfr2sbvr.com/cfr#>\nPREFIX fro-cfr: <http://finregont.com/fro/cfr/Code_Federal_Regulations.ttl#>\n\nSELECT ?s\n{\n  ?s rdf:type sbvr:Vocabulary .\n}",
     "metadata": {}
   },
   {
@@ -147,30 +123,6 @@
     "kind": 2,
     "language": "sparql",
     "value": "PREFIX llm: <http://franz.com/ns/allegrograph/8.0.0/llm/> \nPREFIX fibo: <https://spec.edmcouncil.org/fibo/ontology/master/2024Q2/QuickFIBOProd#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX cfr-sbvr: <http://cfr2sbvr.com/cfr#>\n\nSELECT ?s ?p ?o\nFROM cfr-sbvr:CFR_SBVR\nWHERE {\n    ?s ?p ?o .\n}",
-    "metadata": {}
-  },
-  {
-    "kind": 1,
-    "language": "markdown",
-    "value": "delete_voc_association",
-    "metadata": {}
-  },
-  {
-    "kind": 2,
-    "language": "sparql",
-    "value": "PREFIX sbvr: <https://www.omg.org/spec/SBVR/20190601#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nPREFIX cfr-sbvr: <http://cfr2sbvr.com/cfr#>\n\nDELETE DATA {\n    cfr-sbvr:CFR_SBVR_VOC sbvr:vocabulary1IncorporatesVocabulary2 cfr-sbvr:CFR_SBVR_275_0_2_VOC .\n}",
-    "metadata": {}
-  },
-  {
-    "kind": 1,
-    "language": "markdown",
-    "value": "delete_where_NS",
-    "metadata": {}
-  },
-  {
-    "kind": 2,
-    "language": "sparql",
-    "value": "PREFIX fibo: <https://spec.edmcouncil.org/fibo/ontology/QuickFIBOProd#>\nPREFIX sbvr: <https://www.omg.org/spec/SBVR/20190601#>\nPREFIX cfr-sbvr: <http://cfr2sbvr.com/cfr#>\nPREFIX fro-cfr: <http://finregont.com/fro/cfr/Code_Federal_Regulations.ttl#>\n\nDELETE WHERE\n{\n  cfr-sbvr:CFR_SBVR_NS ?p ?o .\n\n  #fro-cfr:CFR_Title_17_Part_275_NS  ?p ?o .\n\n  #fibo:FIBO_NS  ?p ?o .\n}",
     "metadata": {}
   },
   {
@@ -296,7 +248,7 @@
   {
     "kind": 2,
     "language": "sparql",
-    "value": "# [endpoint=./data/prod.fibo-quickstart-2024Q2.ttl]\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sbvr: <https://www.omg.org/spec/SBVR/20190601#>\nPREFIX sbvr-cfr: <http://adsantos.dev/sbvr/cfr#>\nPREFIX cmns-av: <https://www.omg.org/spec/Commons/AnnotationVocabulary/>\n\nSELECT ?s ?last_word ?subject ?label ?definition ?isDefinedBy ?sbvrType ?vocabulary ?synonym ?abbreviation\n# CONSTRUCT {\n#     ?subject\n#         a owl:Class ;\n#         rdfs:label ?label ;\n#         skos:definition ?definition ;\n#         rdfs:isDefinedBy ?isDefinedBy ;\n#         sbvr:vocabulary ?directory ;\n#         sbvr:type sbvr:Object .\n# }\nWHERE {\n  {\n    ?s a owl:Class ;\n    rdfs:label ?label ;\n    skos:definition ?definition .\n    OPTIONAL { ?s cmns-av:synonym ?synonym ; }\n    #OPTIONAL { ?s rdfs:isDefinedBy ?isDefinedBy ;}\n    OPTIONAL { ?s cmns-av:abbreviation ?abbreviation ; }\n  }\n  UNION\n  {\n    ?s a owl:NamedIndividual ;\n    rdfs:label ?label ;\n    skos:definition ?definition .\n    OPTIONAL { ?s cmns-av:synonym ?synonym ; }\n    #OPTIONAL { ?s rdfs:isDefinedBy ?isDefinedBy ;}\n    OPTIONAL { ?s cmns-av:abbreviation ?abbreviation ; }\n  }\n\n  BIND(REPLACE(STR(?s), '^.*[#/]', '') AS ?last_word)\n  BIND(REPLACE(STR(?s), '^https://(spec\\\\.edmcouncil\\\\.org/fibo/ontology|www\\\\.omg\\\\.org/spec)/([^/]+)/.*$', '$2') AS ?directory)\n\n  BIND(\n    URI(\n    CONCAT('http://adsantos.dev/sbvr/cfr#', ?last_word)\n    )\n    AS ?subject\n  )\n\n  BIND(?s AS ?isDefinedBy)\n\n  #OPTIONAL { ?s sbvr:Vocabulary ?directory . }\n  BIND(?directory AS ?vocabulary)\n\n  BIND(sbvr:Object AS ?sbvrType)\n\n  # variable interest entity share\n  # special purpose vehicle\n  # common share\n  # chief executive officer\n  # contingent credit default swap\n  FILTER(STR(?label) = \"contingent credit default swap\")\n         #&& (LANG(?label) = \"en\" || LANG(?label) = \"en-US\" || LANG(?label) = \"\"))\n\n}\n#LIMIT 10\n",
+    "value": "# [endpoint=../data/prod-fibo-quickstart-2024Q3.ttl]\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sbvr: <https://www.omg.org/spec/SBVR/20190601#>\nPREFIX sbvr-cfr: <http://adsantos.dev/sbvr/cfr#>\nPREFIX cmns-av: <https://www.omg.org/spec/Commons/AnnotationVocabulary/>\n\nSELECT ?s ?last_word ?subject ?label ?definition ?isDefinedBy ?sbvrType ?vocabulary ?synonym ?abbreviation\n# CONSTRUCT {\n#     ?subject\n#         a owl:Class ;\n#         rdfs:label ?label ;\n#         skos:definition ?definition ;\n#         rdfs:isDefinedBy ?isDefinedBy ;\n#         sbvr:vocabulary ?directory ;\n#         sbvr:type sbvr:Object .\n# }\nWHERE {\n  {\n    ?s a owl:Class ;\n    rdfs:label ?label ;\n    skos:definition ?definition .\n    OPTIONAL { ?s cmns-av:synonym ?synonym ; }\n    #OPTIONAL { ?s rdfs:isDefinedBy ?isDefinedBy ;}\n    OPTIONAL { ?s cmns-av:abbreviation ?abbreviation ; }\n  }\n  UNION\n  {\n    ?s a owl:NamedIndividual ;\n    rdfs:label ?label ;\n    skos:definition ?definition .\n    OPTIONAL { ?s cmns-av:synonym ?synonym ; }\n    #OPTIONAL { ?s rdfs:isDefinedBy ?isDefinedBy ;}\n    OPTIONAL { ?s cmns-av:abbreviation ?abbreviation ; }\n  }\n\n  BIND(REPLACE(STR(?s), '^.*[#/]', '') AS ?last_word)\n  BIND(REPLACE(STR(?s), '^https://(spec\\\\.edmcouncil\\\\.org/fibo/ontology|www\\\\.omg\\\\.org/spec)/([^/]+)/.*$', '$2') AS ?directory)\n\n  BIND(\n    URI(\n    CONCAT('http://adsantos.dev/sbvr/cfr#', ?last_word)\n    )\n    AS ?subject\n  )\n\n  BIND(?s AS ?isDefinedBy)\n\n  #OPTIONAL { ?s sbvr:Vocabulary ?directory . }\n  BIND(?directory AS ?vocabulary)\n\n  BIND(sbvr:Object AS ?sbvrType)\n\n  # variable interest entity share\n  # special purpose vehicle\n  # common share\n  # chief executive officer\n  # contingent credit default swap\n  FILTER(STR(?label) = \"contingent credit default swap\")\n         #&& (LANG(?label) = \"en\" || LANG(?label) = \"en-US\" || LANG(?label) = \"\"))\n\n}\n#LIMIT 10\n",
     "metadata": {}
   },
   {
@@ -308,7 +260,7 @@
   {
     "kind": 2,
     "language": "sparql",
-    "value": "# [endpoint=./data/prod.fibo-quickstart-2024Q2.ttl]\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX sbvr: <https://www.omg.org/spec/SBVR/20190601#>\nPREFIX sbvr-cfr: <http://adsantos.dev/sbrv/cfr#>\n\nSELECT ?subject ?label ?object\nWHERE {\n  ?predicate rdf:type owl:ObjectProperty ;\n    rdfs:label ?label .\n  ?subject ?predicate ?object .\n}\nOFFSET 15000\nLIMIT 10",
+    "value": "# [endpoint=../data/prod-fibo-quickstart-2024Q3.ttl]\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX sbvr: <https://www.omg.org/spec/SBVR/20190601#>\nPREFIX sbvr-cfr: <http://adsantos.dev/sbrv/cfr#>\n\nSELECT ?subject ?label ?object\nWHERE {\n  ?predicate rdf:type owl:ObjectProperty ;\n    rdfs:label ?label .\n  ?subject ?predicate ?object .\n}\nOFFSET 15000\nLIMIT 10",
     "metadata": {}
   },
   {
@@ -368,7 +320,7 @@
   {
     "kind": 1,
     "language": "markdown",
-    "value": "query-embedding-llm-count",
+    "value": "Count terms",
     "metadata": {}
   },
   {
@@ -380,7 +332,7 @@
   {
     "kind": 1,
     "language": "markdown",
-    "value": "query-embedding-llm",
+    "value": "Terms",
     "metadata": {}
   },
   {
@@ -704,13 +656,7 @@
   {
     "kind": 2,
     "language": "sparql",
-    "value": "# connect do allegrograph\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX sbvr-cfr: <http://adsantos.dev/sbvr/cfr#>\n\n#SELECT (URI(CONCAT(\"http://adsantos.dev/sbvr/cfr#\" , MD5(?label))) as ?s) ?label ?definition ?isDefinedBy\nSELECT ?s ?camelCaseLabel ?label\n# CONSTRUCT {\n#     #URI(CONCAT(\"http://adsantos.dev/sbvr/cfr#\" , STR(?label))) ;\n#     URI(CONCAT(\"http://adsantos.dev/sbvr/cfr#\" , STR(?label))) rdf:type owl:Class ;\n#     rdfs:label ?label ;\n#     skos:definition ?definition ;\n#     rdfs:isDefinedBy ?isDefinedBy .\n# }\nWHERE {\n  {\n    ?s a owl:Class ;\n    ?isDefinedBy a owl:Class ;\n    rdfs:label ?label ;\n    skos:definition ?definition .\n\n    #BIND(IRI(CONCAT(\"http://adsantos.dev/sbvr/cfr#\", STR(?camelCaseLabel))) AS ?s)\n    #?p ?o .\n  }\n}\nLIMIT 10",
-    "metadata": {}
-  },
-  {
-    "kind": 2,
-    "language": "sparql",
-    "value": "# [endpoint=./data/classify_subtypes.ttl]\nPREFIX ex: <http://example.org/schema/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n\nselect ?sectionID ?sectionTitle ?sectionDefinition ?subsectionID ?subsectionTitle ?subsectionDefinition\nwhere {\n    ?sectionID a ex:Section .\n    ?sectionID rdfs:label ?sectionTitle .\n    ?sectionID ex:definition ?sectionDefinition .\n    ?sectionID ex:hasSubsection ?subsectionID .\n    ?subsectionID a ex:Section .\n    ?subsectionID rdfs:label ?subsectionTitle .\n    ?subsectionID ex:definition ?subsectionDefinition .\n}",
+    "value": "# [endpoint=../data/classify_subtypes.ttl]\nPREFIX ex: <http://example.org/schema/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n\nselect ?sectionID ?sectionTitle ?sectionDefinition ?subsectionID ?subsectionTitle ?subsectionDefinition\nwhere {\n    ?sectionID a ex:Section .\n    ?sectionID rdfs:label ?sectionTitle .\n    ?sectionID ex:definition ?sectionDefinition .\n    ?sectionID ex:hasSubsection ?subsectionID .\n    ?subsectionID a ex:Section .\n    ?subsectionID rdfs:label ?subsectionTitle .\n    ?subsectionID ex:definition ?subsectionDefinition .\n}",
     "metadata": {}
   },
   {
@@ -746,7 +692,7 @@
   {
     "kind": 1,
     "language": "markdown",
-    "value": "Tuples",
+    "value": "MVF",
     "metadata": {}
   },
   {

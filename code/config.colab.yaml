@@ -32,7 +32,7 @@ ALLEGROGRAPH_CLOUD:
 
 # Directories and Files
 DEFAULT_DATA_DIR: "/content/drive/MyDrive/cfr2sbvr/data"
-DEFAULT_CHECKPOINT_DIR: "/content/drive/MyDrive/cfr2sbvr/checkpoints"
+DEFAULT_CHECKPOINT_DIR: "/content/drive/MyDrive/cfr2sbvr/data/checkpoints"
 DEFAULT_OUTPUT_DIR: "/content/drive/MyDrive/cfr2sbvr/outputs"
 DEFAULT_CHECKPOINT_FILE: null  # to be set programmatically
 DEFAULT_EXTRACTION_REPORT_FILE: null  # to be set programmatically

@@ -1,0 +1,1684 @@
+[
+    {
+        "id": "\u00a7 275.0-2_P1",
+        "type": "llm_response",
+        "content": {
+            "section": "\u00a7 275.0-2",
+            "summary": "This document outlines the procedures for serving legal documents such as process, pleadings, or other papers on non-resident investment advisers, general partners, and managing agents. It specifies how service can be made through appointed agents and the role of the Commission's Secretary in forwarding documents. It also provides definitions for terms like 'managing agent', 'non-resident', and 'principal office and place of business'.",
+            "elements": [
+                {
+                    "id": 1,
+                    "title": "Service of process on non-resident entities",
+                    "statement": "A person may serve process, pleadings, or other papers on a non-resident investment adviser, or on a non-resident general partner or non-resident managing agent of an investment adviser by serving any or all of its appointed agents.",
+                    "terms": [
+                        {
+                            "term": "Person",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term is a general reference to an individual or entity.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as the subject performing the action."
+                        },
+                        {
+                            "term": "Non-resident investment adviser",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term refers to a specific type of entity involved in the process.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as the recipient of the action."
+                        },
+                        {
+                            "term": "Non-resident general partner",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term refers to a specific type of entity involved in the process.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as the recipient of the action."
+                        },
+                        {
+                            "term": "Non-resident managing agent",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term refers to a specific type of entity involved in the process.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as the recipient of the action."
+                        },
+                        {
+                            "term": "Appointed agents",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to entities designated to receive service on behalf of others.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied as the means through which service is effected."
+                        }
+                    ],
+                    "verb_symbols": [
+                        "serve",
+                        "by serving"
+                    ],
+                    "verb_symbols_extracted_confidence": [
+                        0.9,
+                        0.8
+                    ],
+                    "verb_symbols_extracted_reason": [
+                        "The verb is explicitly mentioned as the action performed.",
+                        "The verb phrase indicates the method of performing the action."
+                    ],
+                    "classification": "Fact Type",
+                    "confidence": 0.9,
+                    "reason": "The statement describes a general procedure applicable to various entities.",
+                    "sources": [
+                        "(a)"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "title": "Furnishing documents to the Commission",
+                    "statement": "A person may serve a non-resident investment adviser, non-resident general partner, or non-resident managing agent by furnishing the Commission with one copy of the process, pleadings, or papers, for each named party, and one additional copy for the Commission's records.",
+                    "terms": [
+                        {
+                            "term": "Person",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term is a general reference to an individual or entity.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as the subject performing the action."
+                        },
+                        {
+                            "term": "Non-resident investment adviser",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term refers to a specific type of entity involved in the process.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as the recipient of the action."
+                        },
+                        {
+                            "term": "Non-resident general partner",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term refers to a specific type of entity involved in the process.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as the recipient of the action."
+                        },
+                        {
+                            "term": "Non-resident managing agent",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term refers to a specific type of entity involved in the process.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as the recipient of the action."
+                        },
+                        {
+                            "term": "Commission",
+                            "classification": "Proper Noun",
+                            "confidence": 0.9,
+                            "reason": "The term refers to a specific governmental body.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as the entity receiving the documents."
+                        },
+                        {
+                            "term": "Process",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to legal documents involved in the service.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is part of the list of documents to be furnished."
+                        },
+                        {
+                            "term": "Pleadings",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to legal documents involved in the service.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is part of the list of documents to be furnished."
+                        },
+                        {
+                            "term": "Papers",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to legal documents involved in the service.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is part of the list of documents to be furnished."
+                        }
+                    ],
+                    "verb_symbols": [
+                        "serve",
+                        "by furnishing",
+                        "with"
+                    ],
+                    "verb_symbols_extracted_confidence": [
+                        0.9,
+                        0.8,
+                        0.7
+                    ],
+                    "verb_symbols_extracted_reason": [
+                        "The verb is explicitly mentioned as the action performed.",
+                        "The verb phrase indicates the method of performing the action.",
+                        "The preposition indicates the relationship between the action and the recipient."
+                    ],
+                    "classification": "Fact Type",
+                    "confidence": 0.9,
+                    "reason": "The statement describes a general procedure applicable to various entities.",
+                    "sources": [
+                        "(a)(1)"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "title": "Forwarding documents by the Secretary",
+                    "statement": "If process, pleadings, or other papers are served on the Commission as described in this section, the Secretary of the Commission (Secretary) will promptly forward a copy to each named party by registered or certified mail at that party's last address filed with the Commission.",
+                    "terms": [
+                        {
+                            "term": "Process",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to legal documents involved in the service.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is part of the list of documents to be forwarded."
+                        },
+                        {
+                            "term": "Pleadings",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to legal documents involved in the service.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is part of the list of documents to be forwarded."
+                        },
+                        {
+                            "term": "Papers",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to legal documents involved in the service.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is part of the list of documents to be forwarded."
+                        },
+                        {
+                            "term": "Commission",
+                            "classification": "Proper Noun",
+                            "confidence": 0.9,
+                            "reason": "The term refers to a specific governmental body.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as the entity receiving the documents."
+                        },
+                        {
+                            "term": "Secretary",
+                            "classification": "Proper Noun",
+                            "confidence": 0.9,
+                            "reason": "The term refers to a specific role within the Commission.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as the entity performing the action."
+                        },
+                        {
+                            "term": "Named party",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to the recipients of the forwarded documents.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is explicitly mentioned as the recipient of the action."
+                        },
+                        {
+                            "term": "Registered mail",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to the method of forwarding documents.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is explicitly mentioned as the method of forwarding."
+                        },
+                        {
+                            "term": "Certified mail",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to the method of forwarding documents.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is explicitly mentioned as the method of forwarding."
+                        },
+                        {
+                            "term": "Last address filed with the Commission",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to the location where documents are sent.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is explicitly mentioned as the destination of the documents."
+                        }
+                    ],
+                    "verb_symbols": [
+                        "served",
+                        "forward",
+                        "by"
+                    ],
+                    "verb_symbols_extracted_confidence": [
+                        0.9,
+                        0.8,
+                        0.7
+                    ],
+                    "verb_symbols_extracted_reason": [
+                        "The verb is explicitly mentioned as the action performed.",
+                        "The verb is explicitly mentioned as the action performed.",
+                        "The preposition indicates the method of performing the action."
+                    ],
+                    "classification": "Operative Rule",
+                    "confidence": 0.9,
+                    "reason": "The statement prescribes a specific action to be taken by the Secretary in response to a condition.",
+                    "sources": [
+                        "(a)(2)"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "title": "Certification of service by the Secretary",
+                    "statement": "If the Secretary certifies that the Commission was served with process, pleadings, or other papers pursuant to paragraph (a)(1) of this section and forwarded these documents to a named party pursuant to paragraph (a)(2) of this section, this certification constitutes evidence of service upon that party.",
+                    "terms": [
+                        {
+                            "term": "Secretary",
+                            "classification": "Proper Noun",
+                            "confidence": 0.9,
+                            "reason": "The term refers to a specific role within the Commission.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as the entity performing the action."
+                        },
+                        {
+                            "term": "Commission",
+                            "classification": "Proper Noun",
+                            "confidence": 0.9,
+                            "reason": "The term refers to a specific governmental body.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as the entity receiving the documents."
+                        },
+                        {
+                            "term": "Process",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to legal documents involved in the service.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is part of the list of documents to be certified."
+                        },
+                        {
+                            "term": "Pleadings",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to legal documents involved in the service.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is part of the list of documents to be certified."
+                        },
+                        {
+                            "term": "Papers",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to legal documents involved in the service.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is part of the list of documents to be certified."
+                        },
+                        {
+                            "term": "Named party",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to the recipients of the forwarded documents.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is explicitly mentioned as the recipient of the action."
+                        },
+                        {
+                            "term": "Certification",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to the act of certifying the service of documents.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is explicitly mentioned as the result of the action."
+                        },
+                        {
+                            "term": "Evidence of service",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to the proof of service upon a party.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is explicitly mentioned as the outcome of the certification."
+                        }
+                    ],
+                    "verb_symbols": [
+                        "certifies",
+                        "was served",
+                        "forwarded",
+                        "constitutes"
+                    ],
+                    "verb_symbols_extracted_confidence": [
+                        0.9,
+                        0.8,
+                        0.8,
+                        0.7
+                    ],
+                    "verb_symbols_extracted_reason": [
+                        "The verb is explicitly mentioned as the action performed.",
+                        "The verb is explicitly mentioned as the action performed.",
+                        "The verb is explicitly mentioned as the action performed.",
+                        "The verb is explicitly mentioned as the result of the action."
+                    ],
+                    "classification": "Operative Rule",
+                    "confidence": 0.9,
+                    "reason": "The statement prescribes a specific action to be taken by the Secretary and its legal consequence.",
+                    "sources": [
+                        "(a)(3)"
+                    ]
+                },
+                {
+                    "id": 5,
+                    "title": "Definition of Managing Agent",
+                    "statement": "Managing agent means any person, including a trustee, who directs or manages, or who participates in directing or managing, the affairs of any unincorporated organization or association other than a partnership.",
+                    "terms": [
+                        {
+                            "term": "Managing agent",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term is defined within the context of the document.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly defined in the document."
+                        },
+                        {
+                            "term": "Person",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term is a general reference to an individual or entity.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as part of the definition."
+                        },
+                        {
+                            "term": "Trustee",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term refers to a specific role within the definition.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as part of the definition."
+                        },
+                        {
+                            "term": "Unincorporated organization",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term refers to a type of entity managed by the agent.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as part of the definition."
+                        },
+                        {
+                            "term": "Association",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term refers to a type of entity managed by the agent.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as part of the definition."
+                        },
+                        {
+                            "term": "Partnership",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term refers to a type of entity excluded from the definition.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as part of the definition."
+                        }
+                    ],
+                    "verb_symbols": [
+                        "means",
+                        "directs",
+                        "manages",
+                        "participates in directing",
+                        "participates in managing"
+                    ],
+                    "verb_symbols_extracted_confidence": [
+                        0.9,
+                        0.9,
+                        0.9,
+                        0.8,
+                        0.8
+                    ],
+                    "verb_symbols_extracted_reason": [
+                        "The verb is explicitly mentioned as the definition.",
+                        "The verb is explicitly mentioned as the action performed by the agent.",
+                        "The verb is explicitly mentioned as the action performed by the agent.",
+                        "The verb phrase indicates participation in the action.",
+                        "The verb phrase indicates participation in the action."
+                    ],
+                    "classification": "Fact Type",
+                    "confidence": 0.9,
+                    "reason": "The statement provides a definition applicable to various entities.",
+                    "sources": [
+                        "(b)(1)"
+                    ]
+                },
+                {
+                    "id": 6,
+                    "title": "Definition of Non-resident",
+                    "statement": "Non-resident means: (i) An individual who resides in any place not subject to the jurisdiction of the United States; (ii) A corporation that is incorporated in or that has its principal office and place of business in any place not subject to the jurisdiction of the United States; and (iii) A partnership or other unincorporated organization or association that has its principal office and place of business in any place not subject to the jurisdiction of the United States.",
+                    "terms": [
+                        {
+                            "term": "Non-resident",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term is defined within the context of the document.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly defined in the document."
+                        },
+                        {
+                            "term": "Individual",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term refers to a type of non-resident entity.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as part of the definition."
+                        },
+                        {
+                            "term": "Corporation",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term refers to a type of non-resident entity.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as part of the definition."
+                        },
+                        {
+                            "term": "Principal office",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term refers to a location criterion for non-resident entities.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as part of the definition."
+                        },
+                        {
+                            "term": "Place of business",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term refers to a location criterion for non-resident entities.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as part of the definition."
+                        },
+                        {
+                            "term": "Partnership",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term refers to a type of non-resident entity.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as part of the definition."
+                        },
+                        {
+                            "term": "Unincorporated organization",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term refers to a type of non-resident entity.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as part of the definition."
+                        },
+                        {
+                            "term": "Association",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term refers to a type of non-resident entity.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as part of the definition."
+                        }
+                    ],
+                    "verb_symbols": [
+                        "means",
+                        "resides",
+                        "is incorporated",
+                        "has"
+                    ],
+                    "verb_symbols_extracted_confidence": [
+                        0.9,
+                        0.9,
+                        0.9,
+                        0.9
+                    ],
+                    "verb_symbols_extracted_reason": [
+                        "The verb is explicitly mentioned as the definition.",
+                        "The verb is explicitly mentioned as the condition for individuals.",
+                        "The verb is explicitly mentioned as the condition for corporations.",
+                        "The verb is explicitly mentioned as the condition for partnerships and other entities."
+                    ],
+                    "classification": "Fact Type",
+                    "confidence": 0.9,
+                    "reason": "The statement provides a definition applicable to various entities.",
+                    "sources": [
+                        "(b)(2)"
+                    ]
+                },
+                {
+                    "id": 7,
+                    "title": "Definition of Principal Office and Place of Business",
+                    "statement": "Principal office and place of business has the same meaning as in \u00a7 275.203A-3(c) of this chapter.",
+                    "terms": [
+                        {
+                            "term": "Principal office",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term is defined within the context of the document.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly defined in the document."
+                        },
+                        {
+                            "term": "Place of business",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term is defined within the context of the document.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly defined in the document."
+                        }
+                    ],
+                    "verb_symbols": [
+                        "has"
+                    ],
+                    "verb_symbols_extracted_confidence": [
+                        0.9
+                    ],
+                    "verb_symbols_extracted_reason": [
+                        "The verb is explicitly mentioned as the definition."
+                    ],
+                    "classification": "Fact Type",
+                    "confidence": 0.9,
+                    "reason": "The statement provides a definition applicable to various entities.",
+                    "sources": [
+                        "(b)(3)"
+                    ]
+                }
+            ]
+        },
+        "elapsed_times": [
+            40.64440337999986
+        ],
+        "completions": [
+            {
+                "id": "chatcmpl-AaA0Q9GODRMrDmVLXnGRUsHz8vLHq",
+                "choices": [
+                    {
+                        "finish_reason": "stop",
+                        "index": 0,
+                        "logprobs": null,
+                        "message": {
+                            "content": null,
+                            "refusal": null,
+                            "role": "assistant",
+                            "audio": null,
+                            "function_call": null,
+                            "tool_calls": [
+                                {
+                                    "id": "call_Gs9z4vIvN3QCyj9nkQImrP4i",
+                                    "function": {
+                                        "arguments": "{\"section\":\"\u00a7 275.0-2\",\"summary\":\"This document outlines the procedures for serving legal documents such as process, pleadings, or other papers on non-resident investment advisers, general partners, and managing agents. It specifies how service can be made through appointed agents and the role of the Commission's Secretary in forwarding documents. It also provides definitions for terms like 'managing agent', 'non-resident', and 'principal office and place of business'.\",\"elements\":[{\"id\":1,\"title\":\"Service of process on non-resident entities\",\"statement\":\"A person may serve process, pleadings, or other papers on a non-resident investment adviser, or on a non-resident general partner or non-resident managing agent of an investment adviser by serving any or all of its appointed agents.\",\"terms\":[{\"term\":\"Person\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term is a general reference to an individual or entity.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as the subject performing the action.\"},{\"term\":\"Non-resident investment adviser\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term refers to a specific type of entity involved in the process.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as the recipient of the action.\"},{\"term\":\"Non-resident general partner\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term refers to a specific type of entity involved in the process.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as the recipient of the action.\"},{\"term\":\"Non-resident managing agent\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term refers to a specific type of entity involved in the process.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as the recipient of the action.\"},{\"term\":\"Appointed agents\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to entities designated to receive service on behalf of others.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied as the means through which service is effected.\"}],\"verb_symbols\":[\"serve\",\"by serving\"],\"verb_symbols_extracted_confidence\":[0.9,0.8],\"verb_symbols_extracted_reason\":[\"The verb is explicitly mentioned as the action performed.\",\"The verb phrase indicates the method of performing the action.\"],\"classification\":\"Fact Type\",\"confidence\":0.9,\"reason\":\"The statement describes a general procedure applicable to various entities.\",\"sources\":[\"(a)\"]},{\"id\":2,\"title\":\"Furnishing documents to the Commission\",\"statement\":\"A person may serve a non-resident investment adviser, non-resident general partner, or non-resident managing agent by furnishing the Commission with one copy of the process, pleadings, or papers, for each named party, and one additional copy for the Commission's records.\",\"terms\":[{\"term\":\"Person\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term is a general reference to an individual or entity.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as the subject performing the action.\"},{\"term\":\"Non-resident investment adviser\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term refers to a specific type of entity involved in the process.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as the recipient of the action.\"},{\"term\":\"Non-resident general partner\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term refers to a specific type of entity involved in the process.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as the recipient of the action.\"},{\"term\":\"Non-resident managing agent\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term refers to a specific type of entity involved in the process.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as the recipient of the action.\"},{\"term\":\"Commission\",\"classification\":\"Proper Noun\",\"confidence\":0.9,\"reason\":\"The term refers to a specific governmental body.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as the entity receiving the documents.\"},{\"term\":\"Process\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to legal documents involved in the service.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is part of the list of documents to be furnished.\"},{\"term\":\"Pleadings\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to legal documents involved in the service.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is part of the list of documents to be furnished.\"},{\"term\":\"Papers\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to legal documents involved in the service.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is part of the list of documents to be furnished.\"}],\"verb_symbols\":[\"serve\",\"by furnishing\",\"with\"],\"verb_symbols_extracted_confidence\":[0.9,0.8,0.7],\"verb_symbols_extracted_reason\":[\"The verb is explicitly mentioned as the action performed.\",\"The verb phrase indicates the method of performing the action.\",\"The preposition indicates the relationship between the action and the recipient.\"],\"classification\":\"Fact Type\",\"confidence\":0.9,\"reason\":\"The statement describes a general procedure applicable to various entities.\",\"sources\":[\"(a)(1)\"]},{\"id\":3,\"title\":\"Forwarding documents by the Secretary\",\"statement\":\"If process, pleadings, or other papers are served on the Commission as described in this section, the Secretary of the Commission (Secretary) will promptly forward a copy to each named party by registered or certified mail at that party's last address filed with the Commission.\",\"terms\":[{\"term\":\"Process\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to legal documents involved in the service.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is part of the list of documents to be forwarded.\"},{\"term\":\"Pleadings\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to legal documents involved in the service.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is part of the list of documents to be forwarded.\"},{\"term\":\"Papers\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to legal documents involved in the service.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is part of the list of documents to be forwarded.\"},{\"term\":\"Commission\",\"classification\":\"Proper Noun\",\"confidence\":0.9,\"reason\":\"The term refers to a specific governmental body.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as the entity receiving the documents.\"},{\"term\":\"Secretary\",\"classification\":\"Proper Noun\",\"confidence\":0.9,\"reason\":\"The term refers to a specific role within the Commission.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as the entity performing the action.\"},{\"term\":\"Named party\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to the recipients of the forwarded documents.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is explicitly mentioned as the recipient of the action.\"},{\"term\":\"Registered mail\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to the method of forwarding documents.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is explicitly mentioned as the method of forwarding.\"},{\"term\":\"Certified mail\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to the method of forwarding documents.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is explicitly mentioned as the method of forwarding.\"},{\"term\":\"Last address filed with the Commission\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to the location where documents are sent.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is explicitly mentioned as the destination of the documents.\"}],\"verb_symbols\":[\"served\",\"forward\",\"by\"],\"verb_symbols_extracted_confidence\":[0.9,0.8,0.7],\"verb_symbols_extracted_reason\":[\"The verb is explicitly mentioned as the action performed.\",\"The verb is explicitly mentioned as the action performed.\",\"The preposition indicates the method of performing the action.\"],\"classification\":\"Operative Rule\",\"confidence\":0.9,\"reason\":\"The statement prescribes a specific action to be taken by the Secretary in response to a condition.\",\"sources\":[\"(a)(2)\"]},{\"id\":4,\"title\":\"Certification of service by the Secretary\",\"statement\":\"If the Secretary certifies that the Commission was served with process, pleadings, or other papers pursuant to paragraph (a)(1) of this section and forwarded these documents to a named party pursuant to paragraph (a)(2) of this section, this certification constitutes evidence of service upon that party.\",\"terms\":[{\"term\":\"Secretary\",\"classification\":\"Proper Noun\",\"confidence\":0.9,\"reason\":\"The term refers to a specific role within the Commission.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as the entity performing the action.\"},{\"term\":\"Commission\",\"classification\":\"Proper Noun\",\"confidence\":0.9,\"reason\":\"The term refers to a specific governmental body.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as the entity receiving the documents.\"},{\"term\":\"Process\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to legal documents involved in the service.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is part of the list of documents to be certified.\"},{\"term\":\"Pleadings\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to legal documents involved in the service.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is part of the list of documents to be certified.\"},{\"term\":\"Papers\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to legal documents involved in the service.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is part of the list of documents to be certified.\"},{\"term\":\"Named party\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to the recipients of the forwarded documents.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is explicitly mentioned as the recipient of the action.\"},{\"term\":\"Certification\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to the act of certifying the service of documents.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is explicitly mentioned as the result of the action.\"},{\"term\":\"Evidence of service\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to the proof of service upon a party.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is explicitly mentioned as the outcome of the certification.\"}],\"verb_symbols\":[\"certifies\",\"was served\",\"forwarded\",\"constitutes\"],\"verb_symbols_extracted_confidence\":[0.9,0.8,0.8,0.7],\"verb_symbols_extracted_reason\":[\"The verb is explicitly mentioned as the action performed.\",\"The verb is explicitly mentioned as the action performed.\",\"The verb is explicitly mentioned as the action performed.\",\"The verb is explicitly mentioned as the result of the action.\"],\"classification\":\"Operative Rule\",\"confidence\":0.9,\"reason\":\"The statement prescribes a specific action to be taken by the Secretary and its legal consequence.\",\"sources\":[\"(a)(3)\"]},{\"id\":5,\"title\":\"Definition of Managing Agent\",\"statement\":\"Managing agent means any person, including a trustee, who directs or manages, or who participates in directing or managing, the affairs of any unincorporated organization or association other than a partnership.\",\"terms\":[{\"term\":\"Managing agent\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term is defined within the context of the document.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly defined in the document.\"},{\"term\":\"Person\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term is a general reference to an individual or entity.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as part of the definition.\"},{\"term\":\"Trustee\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term refers to a specific role within the definition.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as part of the definition.\"},{\"term\":\"Unincorporated organization\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term refers to a type of entity managed by the agent.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as part of the definition.\"},{\"term\":\"Association\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term refers to a type of entity managed by the agent.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as part of the definition.\"},{\"term\":\"Partnership\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term refers to a type of entity excluded from the definition.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as part of the definition.\"}],\"verb_symbols\":[\"means\",\"directs\",\"manages\",\"participates in directing\",\"participates in managing\"],\"verb_symbols_extracted_confidence\":[0.9,0.9,0.9,0.8,0.8],\"verb_symbols_extracted_reason\":[\"The verb is explicitly mentioned as the definition.\",\"The verb is explicitly mentioned as the action performed by the agent.\",\"The verb is explicitly mentioned as the action performed by the agent.\",\"The verb phrase indicates participation in the action.\",\"The verb phrase indicates participation in the action.\"],\"classification\":\"Fact Type\",\"confidence\":0.9,\"reason\":\"The statement provides a definition applicable to various entities.\",\"sources\":[\"(b)(1)\"]},{\"id\":6,\"title\":\"Definition of Non-resident\",\"statement\":\"Non-resident means: (i) An individual who resides in any place not subject to the jurisdiction of the United States; (ii) A corporation that is incorporated in or that has its principal office and place of business in any place not subject to the jurisdiction of the United States; and (iii) A partnership or other unincorporated organization or association that has its principal office and place of business in any place not subject to the jurisdiction of the United States.\",\"terms\":[{\"term\":\"Non-resident\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term is defined within the context of the document.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly defined in the document.\"},{\"term\":\"Individual\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term refers to a type of non-resident entity.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as part of the definition.\"},{\"term\":\"Corporation\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term refers to a type of non-resident entity.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as part of the definition.\"},{\"term\":\"Principal office\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term refers to a location criterion for non-resident entities.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as part of the definition.\"},{\"term\":\"Place of business\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term refers to a location criterion for non-resident entities.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as part of the definition.\"},{\"term\":\"Partnership\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term refers to a type of non-resident entity.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as part of the definition.\"},{\"term\":\"Unincorporated organization\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term refers to a type of non-resident entity.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as part of the definition.\"},{\"term\":\"Association\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term refers to a type of non-resident entity.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as part of the definition.\"}],\"verb_symbols\":[\"means\",\"resides\",\"is incorporated\",\"has\"],\"verb_symbols_extracted_confidence\":[0.9,0.9,0.9,0.9],\"verb_symbols_extracted_reason\":[\"The verb is explicitly mentioned as the definition.\",\"The verb is explicitly mentioned as the condition for individuals.\",\"The verb is explicitly mentioned as the condition for corporations.\",\"The verb is explicitly mentioned as the condition for partnerships and other entities.\"],\"classification\":\"Fact Type\",\"confidence\":0.9,\"reason\":\"The statement provides a definition applicable to various entities.\",\"sources\":[\"(b)(2)\"]},{\"id\":7,\"title\":\"Definition of Principal Office and Place of Business\",\"statement\":\"Principal office and place of business has the same meaning as in \u00a7 275.203A-3(c) of this chapter.\",\"terms\":[{\"term\":\"Principal office\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term is defined within the context of the document.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly defined in the document.\"},{\"term\":\"Place of business\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term is defined within the context of the document.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly defined in the document.\"}],\"verb_symbols\":[\"has\"],\"verb_symbols_extracted_confidence\":[0.9],\"verb_symbols_extracted_reason\":[\"The verb is explicitly mentioned as the definition.\"],\"classification\":\"Fact Type\",\"confidence\":0.9,\"reason\":\"The statement provides a definition applicable to various entities.\",\"sources\":[\"(b)(3)\"]}]}",
+                                        "name": "ElementsDocumentModel"
+                                    },
+                                    "type": "function"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "created": 1733181634,
+                "model": "gpt-4o-2024-08-06",
+                "object": "chat.completion",
+                "service_tier": null,
+                "system_fingerprint": "fp_7f6be3efb0",
+                "usage": {
+                    "completion_tokens": 3977,
+                    "prompt_tokens": 2260,
+                    "total_tokens": 6237,
+                    "completion_tokens_details": null,
+                    "prompt_tokens_details": null
+                }
+            }
+        ]
+    },
+    {
+        "id": "\u00a7 275.0-5_P1",
+        "type": "llm_response",
+        "content": {
+            "section": "\u00a7 275.0-5",
+            "summary": "This document outlines the procedure for proceedings initiated by the filing of an application or by the Commission's own motion under any section of the Act or related rules. It specifies the publication of notice in the Federal Register, the process for interested persons to submit facts or request a hearing, and the conditions under which the Commission will order a hearing. It also defines what constitutes an 'application' for the purposes of this rule.",
+            "elements": [
+                {
+                    "id": 1,
+                    "title": "Notice of proceeding initiation",
+                    "statement": "Notice of the initiation of the proceeding will be published in the Federal Register and will indicate the earliest date upon which an order disposing of the matter may be entered.",
+                    "terms": [
+                        {
+                            "term": "Notice",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term is a general concept related to communication.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as a key part of the procedure."
+                        },
+                        {
+                            "term": "Initiation of the proceeding",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term describes a specific event in the process.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is central to the statement's context."
+                        },
+                        {
+                            "term": "Federal Register",
+                            "classification": "Proper Noun",
+                            "confidence": 0.95,
+                            "reason": "The term is a specific publication.",
+                            "extracted_confidence": 0.95,
+                            "extracted_reason": "The term is explicitly named as the publication medium."
+                        },
+                        {
+                            "term": "Order disposing of the matter",
+                            "classification": "Common Noun",
+                            "confidence": 0.85,
+                            "reason": "The term describes a specific outcome of the process.",
+                            "extracted_confidence": 0.85,
+                            "extracted_reason": "The term is a key part of the procedural outcome."
+                        }
+                    ],
+                    "verb_symbols": [
+                        "will be published",
+                        "will indicate"
+                    ],
+                    "verb_symbols_extracted_confidence": [
+                        0.9,
+                        0.9
+                    ],
+                    "verb_symbols_extracted_reason": [
+                        "The verb phrase describes the action to be taken.",
+                        "The verb phrase describes the action to be taken."
+                    ],
+                    "classification": "Operative Rule",
+                    "confidence": 0.9,
+                    "reason": "The statement prescribes a mandatory procedure to be followed.",
+                    "sources": [
+                        "(a)"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "title": "Submission of facts and hearing request",
+                    "statement": "Any interested person may, within the period of time specified therein, submit to the Commission in writing any facts bearing upon the desirability of a hearing on the matter and may request that a hearing be held, stating his reasons therefor and the nature of his interest in the matter.",
+                    "terms": [
+                        {
+                            "term": "Interested person",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term refers to a general category of individuals involved in the process.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as a participant in the process."
+                        },
+                        {
+                            "term": "Period of time",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term describes a temporal aspect of the process.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is a necessary condition for the action."
+                        },
+                        {
+                            "term": "Commission",
+                            "classification": "Proper Noun",
+                            "confidence": 0.95,
+                            "reason": "The term refers to a specific entity involved in the process.",
+                            "extracted_confidence": 0.95,
+                            "extracted_reason": "The term is explicitly named as the recipient of submissions."
+                        },
+                        {
+                            "term": "Facts",
+                            "classification": "Common Noun",
+                            "confidence": 0.85,
+                            "reason": "The term describes the information to be submitted.",
+                            "extracted_confidence": 0.85,
+                            "extracted_reason": "The term is central to the action of submission."
+                        },
+                        {
+                            "term": "Hearing",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term describes a potential event in the process.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is a key part of the request process."
+                        },
+                        {
+                            "term": "Reasons",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term describes the justification for a request.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is necessary for the request process."
+                        },
+                        {
+                            "term": "Nature of interest",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term describes the personal stake in the matter.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is part of the justification for a request."
+                        }
+                    ],
+                    "verb_symbols": [
+                        "may submit",
+                        "may request",
+                        "stating"
+                    ],
+                    "verb_symbols_extracted_confidence": [
+                        0.9,
+                        0.9,
+                        0.8
+                    ],
+                    "verb_symbols_extracted_reason": [
+                        "The verb phrase describes the action allowed.",
+                        "The verb phrase describes the action allowed.",
+                        "The verb phrase describes the action required."
+                    ],
+                    "classification": "Operative Rule",
+                    "confidence": 0.9,
+                    "reason": "The statement outlines permissible actions and conditions for interested persons.",
+                    "sources": [
+                        "(a)"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "title": "Issuance of order disposing of the matter",
+                    "statement": "An order disposing of the matter will be issued as of course following the expiration of the period of time referred to in paragraph (a) of this section, unless the Commission thereafter orders a hearing on the matter.",
+                    "terms": [
+                        {
+                            "term": "Order disposing of the matter",
+                            "classification": "Common Noun",
+                            "confidence": 0.85,
+                            "reason": "The term describes a specific outcome of the process.",
+                            "extracted_confidence": 0.85,
+                            "extracted_reason": "The term is central to the procedural outcome."
+                        },
+                        {
+                            "term": "Period of time",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term describes a temporal aspect of the process.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is a necessary condition for the action."
+                        },
+                        {
+                            "term": "Commission",
+                            "classification": "Proper Noun",
+                            "confidence": 0.95,
+                            "reason": "The term refers to a specific entity involved in the process.",
+                            "extracted_confidence": 0.95,
+                            "extracted_reason": "The term is explicitly named as the decision-maker."
+                        },
+                        {
+                            "term": "Hearing",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term describes a potential event in the process.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is a key part of the decision process."
+                        }
+                    ],
+                    "verb_symbols": [
+                        "will be issued",
+                        "orders"
+                    ],
+                    "verb_symbols_extracted_confidence": [
+                        0.9,
+                        0.9
+                    ],
+                    "verb_symbols_extracted_reason": [
+                        "The verb phrase describes the action to be taken.",
+                        "The verb phrase describes the action to be taken."
+                    ],
+                    "classification": "Operative Rule",
+                    "confidence": 0.9,
+                    "reason": "The statement prescribes a mandatory procedure to be followed unless a condition is met.",
+                    "sources": [
+                        "(b)"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "title": "Commission orders a hearing",
+                    "statement": "The Commission will order a hearing on the matter, if it appears that a hearing is necessary or appropriate in the public interest or for the protection of investors, upon the request of any interested person or upon its own motion.",
+                    "terms": [
+                        {
+                            "term": "Commission",
+                            "classification": "Proper Noun",
+                            "confidence": 0.95,
+                            "reason": "The term refers to a specific entity involved in the process.",
+                            "extracted_confidence": 0.95,
+                            "extracted_reason": "The term is explicitly named as the decision-maker."
+                        },
+                        {
+                            "term": "Hearing",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term describes a potential event in the process.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is central to the decision process."
+                        },
+                        {
+                            "term": "Public interest",
+                            "classification": "Common Noun",
+                            "confidence": 0.85,
+                            "reason": "The term describes a consideration for decision-making.",
+                            "extracted_confidence": 0.85,
+                            "extracted_reason": "The term is part of the criteria for ordering a hearing."
+                        },
+                        {
+                            "term": "Protection of investors",
+                            "classification": "Common Noun",
+                            "confidence": 0.85,
+                            "reason": "The term describes a consideration for decision-making.",
+                            "extracted_confidence": 0.85,
+                            "extracted_reason": "The term is part of the criteria for ordering a hearing."
+                        },
+                        {
+                            "term": "Interested person",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term refers to a general category of individuals involved in the process.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as a participant in the process."
+                        }
+                    ],
+                    "verb_symbols": [
+                        "will order",
+                        "appears",
+                        "is necessary",
+                        "is appropriate"
+                    ],
+                    "verb_symbols_extracted_confidence": [
+                        0.9,
+                        0.8,
+                        0.8,
+                        0.8
+                    ],
+                    "verb_symbols_extracted_reason": [
+                        "The verb phrase describes the action to be taken.",
+                        "The verb phrase describes the condition for action.",
+                        "The verb phrase describes the condition for action.",
+                        "The verb phrase describes the condition for action."
+                    ],
+                    "classification": "Operative Rule",
+                    "confidence": 0.9,
+                    "reason": "The statement prescribes conditions under which a hearing must be ordered.",
+                    "sources": [
+                        "(c)"
+                    ]
+                },
+                {
+                    "id": 5,
+                    "title": "Definition of application",
+                    "statement": "For purposes of this rule, an \u201capplication\u201d means any application for an order of the Commission under the Act other than an application for registration as an investment adviser.",
+                    "terms": [
+                        {
+                            "term": "Application",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term is a general concept related to the process.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly defined in the statement."
+                        },
+                        {
+                            "term": "Order of the Commission",
+                            "classification": "Common Noun",
+                            "confidence": 0.85,
+                            "reason": "The term describes a specific type of application.",
+                            "extracted_confidence": 0.85,
+                            "extracted_reason": "The term is central to the definition."
+                        },
+                        {
+                            "term": "Act",
+                            "classification": "Proper Noun",
+                            "confidence": 0.95,
+                            "reason": "The term refers to a specific legal document.",
+                            "extracted_confidence": 0.95,
+                            "extracted_reason": "The term is explicitly named as the governing document."
+                        },
+                        {
+                            "term": "Application for registration",
+                            "classification": "Common Noun",
+                            "confidence": 0.85,
+                            "reason": "The term describes a specific type of application excluded from the definition.",
+                            "extracted_confidence": 0.85,
+                            "extracted_reason": "The term is central to the exclusion in the definition."
+                        },
+                        {
+                            "term": "Investment adviser",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term describes a specific role related to the exclusion.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned as part of the exclusion."
+                        }
+                    ],
+                    "verb_symbols": [
+                        "means"
+                    ],
+                    "verb_symbols_extracted_confidence": [
+                        0.9
+                    ],
+                    "verb_symbols_extracted_reason": [
+                        "The verb phrase describes the definition being provided."
+                    ],
+                    "classification": "Fact Type",
+                    "confidence": 0.9,
+                    "reason": "The statement provides a definition, serving as a model for understanding the term 'application.'",
+                    "sources": [
+                        "(d)"
+                    ]
+                }
+            ]
+        },
+        "elapsed_times": [
+            24.986230739999883
+        ],
+        "completions": [
+            {
+                "id": "chatcmpl-AaA1a9LpHUDqxrDsMdDARi3CNBcDF",
+                "choices": [
+                    {
+                        "finish_reason": "stop",
+                        "index": 0,
+                        "logprobs": null,
+                        "message": {
+                            "content": null,
+                            "refusal": null,
+                            "role": "assistant",
+                            "audio": null,
+                            "function_call": null,
+                            "tool_calls": [
+                                {
+                                    "id": "call_xDnoI68chIldfrbULaYQZ7bA",
+                                    "function": {
+                                        "arguments": "{\"section\":\"\u00a7 275.0-5\",\"summary\":\"This document outlines the procedure for proceedings initiated by the filing of an application or by the Commission's own motion under any section of the Act or related rules. It specifies the publication of notice in the Federal Register, the process for interested persons to submit facts or request a hearing, and the conditions under which the Commission will order a hearing. It also defines what constitutes an 'application' for the purposes of this rule.\",\"elements\":[{\"id\":1,\"title\":\"Notice of proceeding initiation\",\"statement\":\"Notice of the initiation of the proceeding will be published in the Federal Register and will indicate the earliest date upon which an order disposing of the matter may be entered.\",\"terms\":[{\"term\":\"Notice\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term is a general concept related to communication.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as a key part of the procedure.\"},{\"term\":\"Initiation of the proceeding\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term describes a specific event in the process.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is central to the statement's context.\"},{\"term\":\"Federal Register\",\"classification\":\"Proper Noun\",\"confidence\":0.95,\"reason\":\"The term is a specific publication.\",\"extracted_confidence\":0.95,\"extracted_reason\":\"The term is explicitly named as the publication medium.\"},{\"term\":\"Order disposing of the matter\",\"classification\":\"Common Noun\",\"confidence\":0.85,\"reason\":\"The term describes a specific outcome of the process.\",\"extracted_confidence\":0.85,\"extracted_reason\":\"The term is a key part of the procedural outcome.\"}],\"verb_symbols\":[\"will be published\",\"will indicate\"],\"verb_symbols_extracted_confidence\":[0.9,0.9],\"verb_symbols_extracted_reason\":[\"The verb phrase describes the action to be taken.\",\"The verb phrase describes the action to be taken.\"],\"classification\":\"Operative Rule\",\"confidence\":0.9,\"reason\":\"The statement prescribes a mandatory procedure to be followed.\",\"sources\":[\"(a)\"]},{\"id\":2,\"title\":\"Submission of facts and hearing request\",\"statement\":\"Any interested person may, within the period of time specified therein, submit to the Commission in writing any facts bearing upon the desirability of a hearing on the matter and may request that a hearing be held, stating his reasons therefor and the nature of his interest in the matter.\",\"terms\":[{\"term\":\"Interested person\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term refers to a general category of individuals involved in the process.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as a participant in the process.\"},{\"term\":\"Period of time\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term describes a temporal aspect of the process.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is a necessary condition for the action.\"},{\"term\":\"Commission\",\"classification\":\"Proper Noun\",\"confidence\":0.95,\"reason\":\"The term refers to a specific entity involved in the process.\",\"extracted_confidence\":0.95,\"extracted_reason\":\"The term is explicitly named as the recipient of submissions.\"},{\"term\":\"Facts\",\"classification\":\"Common Noun\",\"confidence\":0.85,\"reason\":\"The term describes the information to be submitted.\",\"extracted_confidence\":0.85,\"extracted_reason\":\"The term is central to the action of submission.\"},{\"term\":\"Hearing\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term describes a potential event in the process.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is a key part of the request process.\"},{\"term\":\"Reasons\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term describes the justification for a request.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is necessary for the request process.\"},{\"term\":\"Nature of interest\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term describes the personal stake in the matter.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is part of the justification for a request.\"}],\"verb_symbols\":[\"may submit\",\"may request\",\"stating\"],\"verb_symbols_extracted_confidence\":[0.9,0.9,0.8],\"verb_symbols_extracted_reason\":[\"The verb phrase describes the action allowed.\",\"The verb phrase describes the action allowed.\",\"The verb phrase describes the action required.\"],\"classification\":\"Operative Rule\",\"confidence\":0.9,\"reason\":\"The statement outlines permissible actions and conditions for interested persons.\",\"sources\":[\"(a)\"]},{\"id\":3,\"title\":\"Issuance of order disposing of the matter\",\"statement\":\"An order disposing of the matter will be issued as of course following the expiration of the period of time referred to in paragraph (a) of this section, unless the Commission thereafter orders a hearing on the matter.\",\"terms\":[{\"term\":\"Order disposing of the matter\",\"classification\":\"Common Noun\",\"confidence\":0.85,\"reason\":\"The term describes a specific outcome of the process.\",\"extracted_confidence\":0.85,\"extracted_reason\":\"The term is central to the procedural outcome.\"},{\"term\":\"Period of time\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term describes a temporal aspect of the process.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is a necessary condition for the action.\"},{\"term\":\"Commission\",\"classification\":\"Proper Noun\",\"confidence\":0.95,\"reason\":\"The term refers to a specific entity involved in the process.\",\"extracted_confidence\":0.95,\"extracted_reason\":\"The term is explicitly named as the decision-maker.\"},{\"term\":\"Hearing\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term describes a potential event in the process.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is a key part of the decision process.\"}],\"verb_symbols\":[\"will be issued\",\"orders\"],\"verb_symbols_extracted_confidence\":[0.9,0.9],\"verb_symbols_extracted_reason\":[\"The verb phrase describes the action to be taken.\",\"The verb phrase describes the action to be taken.\"],\"classification\":\"Operative Rule\",\"confidence\":0.9,\"reason\":\"The statement prescribes a mandatory procedure to be followed unless a condition is met.\",\"sources\":[\"(b)\"]},{\"id\":4,\"title\":\"Commission orders a hearing\",\"statement\":\"The Commission will order a hearing on the matter, if it appears that a hearing is necessary or appropriate in the public interest or for the protection of investors, upon the request of any interested person or upon its own motion.\",\"terms\":[{\"term\":\"Commission\",\"classification\":\"Proper Noun\",\"confidence\":0.95,\"reason\":\"The term refers to a specific entity involved in the process.\",\"extracted_confidence\":0.95,\"extracted_reason\":\"The term is explicitly named as the decision-maker.\"},{\"term\":\"Hearing\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term describes a potential event in the process.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is central to the decision process.\"},{\"term\":\"Public interest\",\"classification\":\"Common Noun\",\"confidence\":0.85,\"reason\":\"The term describes a consideration for decision-making.\",\"extracted_confidence\":0.85,\"extracted_reason\":\"The term is part of the criteria for ordering a hearing.\"},{\"term\":\"Protection of investors\",\"classification\":\"Common Noun\",\"confidence\":0.85,\"reason\":\"The term describes a consideration for decision-making.\",\"extracted_confidence\":0.85,\"extracted_reason\":\"The term is part of the criteria for ordering a hearing.\"},{\"term\":\"Interested person\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term refers to a general category of individuals involved in the process.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as a participant in the process.\"}],\"verb_symbols\":[\"will order\",\"appears\",\"is necessary\",\"is appropriate\"],\"verb_symbols_extracted_confidence\":[0.9,0.8,0.8,0.8],\"verb_symbols_extracted_reason\":[\"The verb phrase describes the action to be taken.\",\"The verb phrase describes the condition for action.\",\"The verb phrase describes the condition for action.\",\"The verb phrase describes the condition for action.\"],\"classification\":\"Operative Rule\",\"confidence\":0.9,\"reason\":\"The statement prescribes conditions under which a hearing must be ordered.\",\"sources\":[\"(c)\"]},{\"id\":5,\"title\":\"Definition of application\",\"statement\":\"For purposes of this rule, an \u201capplication\u201d means any application for an order of the Commission under the Act other than an application for registration as an investment adviser.\",\"terms\":[{\"term\":\"Application\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term is a general concept related to the process.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly defined in the statement.\"},{\"term\":\"Order of the Commission\",\"classification\":\"Common Noun\",\"confidence\":0.85,\"reason\":\"The term describes a specific type of application.\",\"extracted_confidence\":0.85,\"extracted_reason\":\"The term is central to the definition.\"},{\"term\":\"Act\",\"classification\":\"Proper Noun\",\"confidence\":0.95,\"reason\":\"The term refers to a specific legal document.\",\"extracted_confidence\":0.95,\"extracted_reason\":\"The term is explicitly named as the governing document.\"},{\"term\":\"Application for registration\",\"classification\":\"Common Noun\",\"confidence\":0.85,\"reason\":\"The term describes a specific type of application excluded from the definition.\",\"extracted_confidence\":0.85,\"extracted_reason\":\"The term is central to the exclusion in the definition.\"},{\"term\":\"Investment adviser\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term describes a specific role related to the exclusion.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned as part of the exclusion.\"}],\"verb_symbols\":[\"means\"],\"verb_symbols_extracted_confidence\":[0.9],\"verb_symbols_extracted_reason\":[\"The verb phrase describes the definition being provided.\"],\"classification\":\"Fact Type\",\"confidence\":0.9,\"reason\":\"The statement provides a definition, serving as a model for understanding the term 'application.'\",\"sources\":[\"(d)\"]}]}",
+                                        "name": "ElementsDocumentModel"
+                                    },
+                                    "type": "function"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "created": 1733181706,
+                "model": "gpt-4o-2024-08-06",
+                "object": "chat.completion",
+                "service_tier": null,
+                "system_fingerprint": "fp_7f6be3efb0",
+                "usage": {
+                    "completion_tokens": 2210,
+                    "prompt_tokens": 2086,
+                    "total_tokens": 4296,
+                    "completion_tokens_details": null,
+                    "prompt_tokens_details": null
+                }
+            }
+        ]
+    },
+    {
+        "id": "\u00a7 275.0-7_P1",
+        "type": "llm_response",
+        "content": {
+            "section": "\u00a7 275.0-7",
+            "summary": "This document defines what constitutes a 'small business' or 'small organization' under the Investment Advisers Act of 1940 for the purposes of the Regulatory Flexibility Act. It specifies criteria related to assets under management, total assets, and control relationships to determine if an investment adviser qualifies as a small entity. It also provides definitions for 'control' and 'total assets' in this context.",
+            "elements": [
+                {
+                    "id": 1,
+                    "title": "Definition of small business or small organization",
+                    "statement": "The term small business or small organization for purposes of the Investment Advisers Act of 1940 shall mean an investment adviser that has assets under management of less than $25 million, or such higher amount as the Commission may by rule deem appropriate.",
+                    "terms": [
+                        {
+                            "term": "Small business",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term is a general category defined by specific criteria.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly defined in the document."
+                        },
+                        {
+                            "term": "Small organization",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term is a general category defined by specific criteria.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly defined in the document."
+                        },
+                        {
+                            "term": "Investment adviser",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term is a specific entity type within the financial industry.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned in the document."
+                        },
+                        {
+                            "term": "Assets under management",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term is a financial metric used to define the size of an investment adviser.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned in the document."
+                        },
+                        {
+                            "term": "Commission",
+                            "classification": "Proper Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to a specific regulatory body, likely the SEC.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific entity."
+                        }
+                    ],
+                    "verb_symbols": [
+                        "shall mean",
+                        "has",
+                        "deem"
+                    ],
+                    "verb_symbols_extracted_confidence": [
+                        0.9,
+                        0.9,
+                        0.8
+                    ],
+                    "verb_symbols_extracted_reason": [
+                        "The verb is used to define the term.",
+                        "The verb is used to describe possession.",
+                        "The verb is used to indicate judgment or decision."
+                    ],
+                    "classification": "Fact Type",
+                    "confidence": 0.9,
+                    "reason": "The statement provides a general definition applicable to entities meeting certain criteria.",
+                    "sources": [
+                        "(a)"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "title": "Assets under management criteria",
+                    "statement": "An investment adviser has assets under management of less than $25 million, or such higher amount as the Commission may by rule deem appropriate under Section 203A(a)(1)(A) of the Act.",
+                    "terms": [
+                        {
+                            "term": "Investment adviser",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term is a specific entity type within the financial industry.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned in the document."
+                        },
+                        {
+                            "term": "Assets under management",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term is a financial metric used to define the size of an investment adviser.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned in the document."
+                        },
+                        {
+                            "term": "Commission",
+                            "classification": "Proper Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to a specific regulatory body, likely the SEC.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific entity."
+                        },
+                        {
+                            "term": "Section 203A(a)(1)(A) of the Act",
+                            "classification": "Proper Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to a specific legal provision.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is explicitly mentioned in the document."
+                        }
+                    ],
+                    "verb_symbols": [
+                        "has",
+                        "deem"
+                    ],
+                    "verb_symbols_extracted_confidence": [
+                        0.9,
+                        0.8
+                    ],
+                    "verb_symbols_extracted_reason": [
+                        "The verb is used to describe possession.",
+                        "The verb is used to indicate judgment or decision."
+                    ],
+                    "classification": "Fact Type",
+                    "confidence": 0.9,
+                    "reason": "The statement provides criteria for a specific financial metric related to investment advisers.",
+                    "sources": [
+                        "(a)(1)"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "title": "Total assets criteria",
+                    "statement": "An investment adviser did not have total assets of $5 million or more on the last day of the most recent fiscal year.",
+                    "terms": [
+                        {
+                            "term": "Investment adviser",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term is a specific entity type within the financial industry.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned in the document."
+                        },
+                        {
+                            "term": "Total assets",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term is a financial metric used to define the size of an investment adviser.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned in the document."
+                        },
+                        {
+                            "term": "Fiscal year",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to a specific accounting period.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific period."
+                        }
+                    ],
+                    "verb_symbols": [
+                        "did not have"
+                    ],
+                    "verb_symbols_extracted_confidence": [
+                        0.9
+                    ],
+                    "verb_symbols_extracted_reason": [
+                        "The verb is used to describe a lack of possession."
+                    ],
+                    "classification": "Fact Type",
+                    "confidence": 0.9,
+                    "reason": "The statement provides criteria for a specific financial metric related to investment advisers.",
+                    "sources": [
+                        "(a)(2)"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "title": "Control relationship criteria",
+                    "statement": "An investment adviser does not control, is not controlled by, and is not under common control with another investment adviser that has assets under management of $25 million or more.",
+                    "terms": [
+                        {
+                            "term": "Investment adviser",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term is a specific entity type within the financial industry.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned in the document."
+                        },
+                        {
+                            "term": "Control",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term refers to a power relationship between entities.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned in the document."
+                        },
+                        {
+                            "term": "Assets under management",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term is a financial metric used to define the size of an investment adviser.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned in the document."
+                        }
+                    ],
+                    "verb_symbols": [
+                        "does not control",
+                        "is not controlled by",
+                        "is not under common control with"
+                    ],
+                    "verb_symbols_extracted_confidence": [
+                        0.9,
+                        0.9,
+                        0.9
+                    ],
+                    "verb_symbols_extracted_reason": [
+                        "The verb is used to describe a lack of power relationship.",
+                        "The verb is used to describe a lack of power relationship.",
+                        "The verb is used to describe a lack of power relationship."
+                    ],
+                    "classification": "Fact Type",
+                    "confidence": 0.9,
+                    "reason": "The statement provides criteria for control relationships between investment advisers.",
+                    "sources": [
+                        "(a)(3)"
+                    ]
+                },
+                {
+                    "id": 5,
+                    "title": "Definition of control",
+                    "statement": "Control means the power, directly or indirectly, to direct the management or policies of a person, whether through ownership of securities, by contract, or otherwise.",
+                    "terms": [
+                        {
+                            "term": "Control",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term refers to a power relationship between entities.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly defined in the document."
+                        },
+                        {
+                            "term": "Management",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to the act of directing or controlling a business or organization.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific function."
+                        },
+                        {
+                            "term": "Policies",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to a set of principles or rules.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific set of rules."
+                        },
+                        {
+                            "term": "Person",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to an individual or entity.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific entity."
+                        },
+                        {
+                            "term": "Ownership of securities",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to holding financial instruments.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific type of ownership."
+                        },
+                        {
+                            "term": "Contract",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to a legal agreement.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific type of agreement."
+                        }
+                    ],
+                    "verb_symbols": [
+                        "means",
+                        "to direct"
+                    ],
+                    "verb_symbols_extracted_confidence": [
+                        0.9,
+                        0.8
+                    ],
+                    "verb_symbols_extracted_reason": [
+                        "The verb is used to define the term.",
+                        "The verb is used to describe the action of control."
+                    ],
+                    "classification": "Fact Type",
+                    "confidence": 0.9,
+                    "reason": "The statement provides a definition applicable to entities meeting certain criteria.",
+                    "sources": [
+                        "(b)(1)"
+                    ]
+                },
+                {
+                    "id": 6,
+                    "title": "Presumption of control in corporations",
+                    "statement": "A person is presumed to control a corporation if the person directly or indirectly has the right to vote 25 percent or more of a class of the corporation's voting securities.",
+                    "terms": [
+                        {
+                            "term": "Person",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to an individual or entity.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific entity."
+                        },
+                        {
+                            "term": "Corporation",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to a specific type of business entity.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific entity."
+                        },
+                        {
+                            "term": "Right to vote",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to a legal entitlement to participate in decision-making.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific right."
+                        },
+                        {
+                            "term": "Voting securities",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to financial instruments that grant voting rights.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific type of security."
+                        }
+                    ],
+                    "verb_symbols": [
+                        "is presumed to control",
+                        "has"
+                    ],
+                    "verb_symbols_extracted_confidence": [
+                        0.9,
+                        0.8
+                    ],
+                    "verb_symbols_extracted_reason": [
+                        "The verb is used to describe a presumption of control.",
+                        "The verb is used to describe possession."
+                    ],
+                    "classification": "Fact Type",
+                    "confidence": 0.9,
+                    "reason": "The statement provides criteria for presuming control in corporations.",
+                    "sources": [
+                        "(b)(1)(i)(A)"
+                    ]
+                },
+                {
+                    "id": 7,
+                    "title": "Presumption of control in partnerships",
+                    "statement": "A person is presumed to control a partnership if the person has the right to receive upon dissolution, or has contributed, 25 percent or more of the capital of the partnership.",
+                    "terms": [
+                        {
+                            "term": "Person",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to an individual or entity.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific entity."
+                        },
+                        {
+                            "term": "Partnership",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to a specific type of business entity.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific entity."
+                        },
+                        {
+                            "term": "Right to receive upon dissolution",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to a legal entitlement to assets after dissolution.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific right."
+                        },
+                        {
+                            "term": "Capital",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to financial resources contributed to a business.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific type of financial resource."
+                        }
+                    ],
+                    "verb_symbols": [
+                        "is presumed to control",
+                        "has",
+                        "has contributed"
+                    ],
+                    "verb_symbols_extracted_confidence": [
+                        0.9,
+                        0.8,
+                        0.8
+                    ],
+                    "verb_symbols_extracted_reason": [
+                        "The verb is used to describe a presumption of control.",
+                        "The verb is used to describe possession.",
+                        "The verb is used to describe contribution."
+                    ],
+                    "classification": "Fact Type",
+                    "confidence": 0.9,
+                    "reason": "The statement provides criteria for presuming control in partnerships.",
+                    "sources": [
+                        "(b)(1)(ii)"
+                    ]
+                },
+                {
+                    "id": 8,
+                    "title": "Presumption of control in limited liability companies",
+                    "statement": "A person is presumed to control a limited liability company if the person directly or indirectly has the right to vote 25 percent or more of a class of the interests of the LLC, has the right to receive upon dissolution, or has contributed, 25 percent or more of the capital of the LLC, or is an elected manager of the LLC.",
+                    "terms": [
+                        {
+                            "term": "Person",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to an individual or entity.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific entity."
+                        },
+                        {
+                            "term": "Limited liability company",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to a specific type of business entity.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific entity."
+                        },
+                        {
+                            "term": "Right to vote",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to a legal entitlement to participate in decision-making.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific right."
+                        },
+                        {
+                            "term": "Interests of the LLC",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to ownership stakes in the LLC.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific type of interest."
+                        },
+                        {
+                            "term": "Right to receive upon dissolution",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to a legal entitlement to assets after dissolution.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific right."
+                        },
+                        {
+                            "term": "Capital",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to financial resources contributed to a business.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific type of financial resource."
+                        },
+                        {
+                            "term": "Elected manager",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to a person chosen to manage the LLC.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific role."
+                        }
+                    ],
+                    "verb_symbols": [
+                        "is presumed to control",
+                        "has",
+                        "has contributed",
+                        "is"
+                    ],
+                    "verb_symbols_extracted_confidence": [
+                        0.9,
+                        0.8,
+                        0.8,
+                        0.8
+                    ],
+                    "verb_symbols_extracted_reason": [
+                        "The verb is used to describe a presumption of control.",
+                        "The verb is used to describe possession.",
+                        "The verb is used to describe contribution.",
+                        "The verb is used to describe a state of being."
+                    ],
+                    "classification": "Fact Type",
+                    "confidence": 0.9,
+                    "reason": "The statement provides criteria for presuming control in limited liability companies.",
+                    "sources": [
+                        "(b)(1)(iii)"
+                    ]
+                },
+                {
+                    "id": 9,
+                    "title": "Presumption of control in trusts",
+                    "statement": "A person is presumed to control a trust if the person is a trustee or managing agent of the trust.",
+                    "terms": [
+                        {
+                            "term": "Person",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to an individual or entity.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific entity."
+                        },
+                        {
+                            "term": "Trust",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to a fiduciary arrangement.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific entity."
+                        },
+                        {
+                            "term": "Trustee",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to a person who holds and manages assets for the benefit of another.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific role."
+                        },
+                        {
+                            "term": "Managing agent",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to a person responsible for managing the trust.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific role."
+                        }
+                    ],
+                    "verb_symbols": [
+                        "is presumed to control",
+                        "is"
+                    ],
+                    "verb_symbols_extracted_confidence": [
+                        0.9,
+                        0.8
+                    ],
+                    "verb_symbols_extracted_reason": [
+                        "The verb is used to describe a presumption of control.",
+                        "The verb is used to describe a state of being."
+                    ],
+                    "classification": "Fact Type",
+                    "confidence": 0.9,
+                    "reason": "The statement provides criteria for presuming control in trusts.",
+                    "sources": [
+                        "(b)(1)(iv)"
+                    ]
+                },
+                {
+                    "id": 10,
+                    "title": "Definition of total assets",
+                    "statement": "Total assets means the total assets as shown on the balance sheet of the investment adviser or other person described above under paragraph (a)(3) of this section, or the balance sheet of the investment adviser or such other person with its subsidiaries consolidated, whichever is larger.",
+                    "terms": [
+                        {
+                            "term": "Total assets",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term refers to a financial metric used to define the size of an investment adviser.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly defined in the document."
+                        },
+                        {
+                            "term": "Balance sheet",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to a financial statement showing assets and liabilities.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific type of financial document."
+                        },
+                        {
+                            "term": "Investment adviser",
+                            "classification": "Common Noun",
+                            "confidence": 0.9,
+                            "reason": "The term is a specific entity type within the financial industry.",
+                            "extracted_confidence": 0.9,
+                            "extracted_reason": "The term is explicitly mentioned in the document."
+                        },
+                        {
+                            "term": "Person",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to an individual or entity.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific entity."
+                        },
+                        {
+                            "term": "Subsidiaries",
+                            "classification": "Common Noun",
+                            "confidence": 0.8,
+                            "reason": "The term refers to companies controlled by a parent company.",
+                            "extracted_confidence": 0.8,
+                            "extracted_reason": "The term is implied to be a specific type of entity."
+                        }
+                    ],
+                    "verb_symbols": [
+                        "means",
+                        "as shown on"
+                    ],
+                    "verb_symbols_extracted_confidence": [
+                        0.9,
+                        0.8
+                    ],
+                    "verb_symbols_extracted_reason": [
+                        "The verb is used to define the term.",
+                        "The verb is used to describe the presentation of information."
+                    ],
+                    "classification": "Fact Type",
+                    "confidence": 0.9,
+                    "reason": "The statement provides a definition applicable to entities meeting certain criteria.",
+                    "sources": [
+                        "(b)(2)"
+                    ]
+                }
+            ]
+        },
+        "elapsed_times": [
+            54.87687602999995
+        ],
+        "completions": [
+            {
+                "id": "chatcmpl-AaA2Lo5ipYMHySEZrBEiCYq1VkN4h",
+                "choices": [
+                    {
+                        "finish_reason": "stop",
+                        "index": 0,
+                        "logprobs": null,
+                        "message": {
+                            "content": null,
+                            "refusal": null,
+                            "role": "assistant",
+                            "audio": null,
+                            "function_call": null,
+                            "tool_calls": [
+                                {
+                                    "id": "call_bryilAxJwwgAoVmpcF9ZECzx",
+                                    "function": {
+                                        "arguments": "{\"section\":\"\u00a7 275.0-7\",\"summary\":\"This document defines what constitutes a 'small business' or 'small organization' under the Investment Advisers Act of 1940 for the purposes of the Regulatory Flexibility Act. It specifies criteria related to assets under management, total assets, and control relationships to determine if an investment adviser qualifies as a small entity. It also provides definitions for 'control' and 'total assets' in this context.\",\"elements\":[{\"id\":1,\"title\":\"Definition of small business or small organization\",\"statement\":\"The term small business or small organization for purposes of the Investment Advisers Act of 1940 shall mean an investment adviser that has assets under management of less than $25 million, or such higher amount as the Commission may by rule deem appropriate.\",\"terms\":[{\"term\":\"Small business\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term is a general category defined by specific criteria.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly defined in the document.\"},{\"term\":\"Small organization\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term is a general category defined by specific criteria.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly defined in the document.\"},{\"term\":\"Investment adviser\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term is a specific entity type within the financial industry.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned in the document.\"},{\"term\":\"Assets under management\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term is a financial metric used to define the size of an investment adviser.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned in the document.\"},{\"term\":\"Commission\",\"classification\":\"Proper Noun\",\"confidence\":0.8,\"reason\":\"The term refers to a specific regulatory body, likely the SEC.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific entity.\"}],\"verb_symbols\":[\"shall mean\",\"has\",\"deem\"],\"verb_symbols_extracted_confidence\":[0.9,0.9,0.8],\"verb_symbols_extracted_reason\":[\"The verb is used to define the term.\",\"The verb is used to describe possession.\",\"The verb is used to indicate judgment or decision.\"],\"classification\":\"Fact Type\",\"confidence\":0.9,\"reason\":\"The statement provides a general definition applicable to entities meeting certain criteria.\",\"sources\":[\"(a)\"]},{\"id\":2,\"title\":\"Assets under management criteria\",\"statement\":\"An investment adviser has assets under management of less than $25 million, or such higher amount as the Commission may by rule deem appropriate under Section 203A(a)(1)(A) of the Act.\",\"terms\":[{\"term\":\"Investment adviser\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term is a specific entity type within the financial industry.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned in the document.\"},{\"term\":\"Assets under management\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term is a financial metric used to define the size of an investment adviser.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned in the document.\"},{\"term\":\"Commission\",\"classification\":\"Proper Noun\",\"confidence\":0.8,\"reason\":\"The term refers to a specific regulatory body, likely the SEC.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific entity.\"},{\"term\":\"Section 203A(a)(1)(A) of the Act\",\"classification\":\"Proper Noun\",\"confidence\":0.8,\"reason\":\"The term refers to a specific legal provision.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is explicitly mentioned in the document.\"}],\"verb_symbols\":[\"has\",\"deem\"],\"verb_symbols_extracted_confidence\":[0.9,0.8],\"verb_symbols_extracted_reason\":[\"The verb is used to describe possession.\",\"The verb is used to indicate judgment or decision.\"],\"classification\":\"Fact Type\",\"confidence\":0.9,\"reason\":\"The statement provides criteria for a specific financial metric related to investment advisers.\",\"sources\":[\"(a)(1)\"]},{\"id\":3,\"title\":\"Total assets criteria\",\"statement\":\"An investment adviser did not have total assets of $5 million or more on the last day of the most recent fiscal year.\",\"terms\":[{\"term\":\"Investment adviser\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term is a specific entity type within the financial industry.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned in the document.\"},{\"term\":\"Total assets\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term is a financial metric used to define the size of an investment adviser.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned in the document.\"},{\"term\":\"Fiscal year\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to a specific accounting period.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific period.\"}],\"verb_symbols\":[\"did not have\"],\"verb_symbols_extracted_confidence\":[0.9],\"verb_symbols_extracted_reason\":[\"The verb is used to describe a lack of possession.\"],\"classification\":\"Fact Type\",\"confidence\":0.9,\"reason\":\"The statement provides criteria for a specific financial metric related to investment advisers.\",\"sources\":[\"(a)(2)\"]},{\"id\":4,\"title\":\"Control relationship criteria\",\"statement\":\"An investment adviser does not control, is not controlled by, and is not under common control with another investment adviser that has assets under management of $25 million or more.\",\"terms\":[{\"term\":\"Investment adviser\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term is a specific entity type within the financial industry.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned in the document.\"},{\"term\":\"Control\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term refers to a power relationship between entities.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned in the document.\"},{\"term\":\"Assets under management\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term is a financial metric used to define the size of an investment adviser.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned in the document.\"}],\"verb_symbols\":[\"does not control\",\"is not controlled by\",\"is not under common control with\"],\"verb_symbols_extracted_confidence\":[0.9,0.9,0.9],\"verb_symbols_extracted_reason\":[\"The verb is used to describe a lack of power relationship.\",\"The verb is used to describe a lack of power relationship.\",\"The verb is used to describe a lack of power relationship.\"],\"classification\":\"Fact Type\",\"confidence\":0.9,\"reason\":\"The statement provides criteria for control relationships between investment advisers.\",\"sources\":[\"(a)(3)\"]},{\"id\":5,\"title\":\"Definition of control\",\"statement\":\"Control means the power, directly or indirectly, to direct the management or policies of a person, whether through ownership of securities, by contract, or otherwise.\",\"terms\":[{\"term\":\"Control\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term refers to a power relationship between entities.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly defined in the document.\"},{\"term\":\"Management\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to the act of directing or controlling a business or organization.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific function.\"},{\"term\":\"Policies\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to a set of principles or rules.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific set of rules.\"},{\"term\":\"Person\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to an individual or entity.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific entity.\"},{\"term\":\"Ownership of securities\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to holding financial instruments.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific type of ownership.\"},{\"term\":\"Contract\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to a legal agreement.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific type of agreement.\"}],\"verb_symbols\":[\"means\",\"to direct\"],\"verb_symbols_extracted_confidence\":[0.9,0.8],\"verb_symbols_extracted_reason\":[\"The verb is used to define the term.\",\"The verb is used to describe the action of control.\"],\"classification\":\"Fact Type\",\"confidence\":0.9,\"reason\":\"The statement provides a definition applicable to entities meeting certain criteria.\",\"sources\":[\"(b)(1)\"]},{\"id\":6,\"title\":\"Presumption of control in corporations\",\"statement\":\"A person is presumed to control a corporation if the person directly or indirectly has the right to vote 25 percent or more of a class of the corporation's voting securities.\",\"terms\":[{\"term\":\"Person\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to an individual or entity.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific entity.\"},{\"term\":\"Corporation\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to a specific type of business entity.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific entity.\"},{\"term\":\"Right to vote\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to a legal entitlement to participate in decision-making.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific right.\"},{\"term\":\"Voting securities\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to financial instruments that grant voting rights.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific type of security.\"}],\"verb_symbols\":[\"is presumed to control\",\"has\"],\"verb_symbols_extracted_confidence\":[0.9,0.8],\"verb_symbols_extracted_reason\":[\"The verb is used to describe a presumption of control.\",\"The verb is used to describe possession.\"],\"classification\":\"Fact Type\",\"confidence\":0.9,\"reason\":\"The statement provides criteria for presuming control in corporations.\",\"sources\":[\"(b)(1)(i)(A)\"]},{\"id\":7,\"title\":\"Presumption of control in partnerships\",\"statement\":\"A person is presumed to control a partnership if the person has the right to receive upon dissolution, or has contributed, 25 percent or more of the capital of the partnership.\",\"terms\":[{\"term\":\"Person\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to an individual or entity.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific entity.\"},{\"term\":\"Partnership\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to a specific type of business entity.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific entity.\"},{\"term\":\"Right to receive upon dissolution\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to a legal entitlement to assets after dissolution.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific right.\"},{\"term\":\"Capital\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to financial resources contributed to a business.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific type of financial resource.\"}],\"verb_symbols\":[\"is presumed to control\",\"has\",\"has contributed\"],\"verb_symbols_extracted_confidence\":[0.9,0.8,0.8],\"verb_symbols_extracted_reason\":[\"The verb is used to describe a presumption of control.\",\"The verb is used to describe possession.\",\"The verb is used to describe contribution.\"],\"classification\":\"Fact Type\",\"confidence\":0.9,\"reason\":\"The statement provides criteria for presuming control in partnerships.\",\"sources\":[\"(b)(1)(ii)\"]},{\"id\":8,\"title\":\"Presumption of control in limited liability companies\",\"statement\":\"A person is presumed to control a limited liability company if the person directly or indirectly has the right to vote 25 percent or more of a class of the interests of the LLC, has the right to receive upon dissolution, or has contributed, 25 percent or more of the capital of the LLC, or is an elected manager of the LLC.\",\"terms\":[{\"term\":\"Person\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to an individual or entity.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific entity.\"},{\"term\":\"Limited liability company\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to a specific type of business entity.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific entity.\"},{\"term\":\"Right to vote\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to a legal entitlement to participate in decision-making.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific right.\"},{\"term\":\"Interests of the LLC\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to ownership stakes in the LLC.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific type of interest.\"},{\"term\":\"Right to receive upon dissolution\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to a legal entitlement to assets after dissolution.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific right.\"},{\"term\":\"Capital\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to financial resources contributed to a business.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific type of financial resource.\"},{\"term\":\"Elected manager\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to a person chosen to manage the LLC.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific role.\"}],\"verb_symbols\":[\"is presumed to control\",\"has\",\"has contributed\",\"is\"],\"verb_symbols_extracted_confidence\":[0.9,0.8,0.8,0.8],\"verb_symbols_extracted_reason\":[\"The verb is used to describe a presumption of control.\",\"The verb is used to describe possession.\",\"The verb is used to describe contribution.\",\"The verb is used to describe a state of being.\"],\"classification\":\"Fact Type\",\"confidence\":0.9,\"reason\":\"The statement provides criteria for presuming control in limited liability companies.\",\"sources\":[\"(b)(1)(iii)\"]},{\"id\":9,\"title\":\"Presumption of control in trusts\",\"statement\":\"A person is presumed to control a trust if the person is a trustee or managing agent of the trust.\",\"terms\":[{\"term\":\"Person\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to an individual or entity.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific entity.\"},{\"term\":\"Trust\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to a fiduciary arrangement.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific entity.\"},{\"term\":\"Trustee\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to a person who holds and manages assets for the benefit of another.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific role.\"},{\"term\":\"Managing agent\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to a person responsible for managing the trust.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific role.\"}],\"verb_symbols\":[\"is presumed to control\",\"is\"],\"verb_symbols_extracted_confidence\":[0.9,0.8],\"verb_symbols_extracted_reason\":[\"The verb is used to describe a presumption of control.\",\"The verb is used to describe a state of being.\"],\"classification\":\"Fact Type\",\"confidence\":0.9,\"reason\":\"The statement provides criteria for presuming control in trusts.\",\"sources\":[\"(b)(1)(iv)\"]},{\"id\":10,\"title\":\"Definition of total assets\",\"statement\":\"Total assets means the total assets as shown on the balance sheet of the investment adviser or other person described above under paragraph (a)(3) of this section, or the balance sheet of the investment adviser or such other person with its subsidiaries consolidated, whichever is larger.\",\"terms\":[{\"term\":\"Total assets\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term refers to a financial metric used to define the size of an investment adviser.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly defined in the document.\"},{\"term\":\"Balance sheet\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to a financial statement showing assets and liabilities.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific type of financial document.\"},{\"term\":\"Investment adviser\",\"classification\":\"Common Noun\",\"confidence\":0.9,\"reason\":\"The term is a specific entity type within the financial industry.\",\"extracted_confidence\":0.9,\"extracted_reason\":\"The term is explicitly mentioned in the document.\"},{\"term\":\"Person\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to an individual or entity.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific entity.\"},{\"term\":\"Subsidiaries\",\"classification\":\"Common Noun\",\"confidence\":0.8,\"reason\":\"The term refers to companies controlled by a parent company.\",\"extracted_confidence\":0.8,\"extracted_reason\":\"The term is implied to be a specific type of entity.\"}],\"verb_symbols\":[\"means\",\"as shown on\"],\"verb_symbols_extracted_confidence\":[0.9,0.8],\"verb_symbols_extracted_reason\":[\"The verb is used to define the term.\",\"The verb is used to describe the presentation of information.\"],\"classification\":\"Fact Type\",\"confidence\":0.9,\"reason\":\"The statement provides a definition applicable to entities meeting certain criteria.\",\"sources\":[\"(b)(2)\"]}]}",
+                                        "name": "ElementsDocumentModel"
+                                    },
+                                    "type": "function"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "created": 1733181753,
+                "model": "gpt-4o-2024-08-06",
+                "object": "chat.completion",
+                "service_tier": null,
+                "system_fingerprint": "fp_7f6be3efb0",
+                "usage": {
+                    "completion_tokens": 4092,
+                    "prompt_tokens": 2421,
+                    "total_tokens": 6513,
+                    "completion_tokens_details": null,
+                    "prompt_tokens_details": null
+                }
+            }
+        ]
+    }
+]

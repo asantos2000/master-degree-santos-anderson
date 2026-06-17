@@ -1,0 +1,761 @@
+{
+    "classify_P1|true_table": {
+        "id": "classify_P1",
+        "type": "true_table",
+        "content": [
+            {
+                "doc_id": "§ 275.0-2",
+                "statement_id": "3",
+                "statement": "The Secretary of the Commission (Secretary) will promptly forward a copy to each named party by registered or certified mail at that party's last address filed with the Commission.",
+                "sources": [
+                    "(a)(2)"
+                ],
+                "type": "Party rules"
+            },
+            {
+                "doc_id": "§ 275.0-2",
+                "statement_id": "4",
+                "statement": "If the Secretary certifies that the Commission was served with process, pleadings, or other papers pursuant to paragraph (a)(1) of this section and forwarded these documents to a named party pursuant to paragraph (a)(2) of this section, this certification constitutes evidence of service upon that party.",
+                "sources": [
+                    "(a)(3)"
+                ],
+                "type": "Party rules"
+            },
+            {
+                "doc_id": "§ 275.0-5",
+                "statement_id": "1",
+                "statement": "Notice of the initiation of the proceeding will be published in the Federal Register and will indicate the earliest date upon which an order disposing of the matter may be entered.",
+                "sources": [
+                    "(a)"
+                ],
+                "type": "Activity rules"
+            },
+            {
+                "doc_id": "§ 275.0-5",
+                "statement_id": "2",
+                "statement": "Any interested person may, within the period of time specified therein, submit to the Commission in writing any facts bearing upon the desirability of a hearing on the matter and may request that a hearing be held, stating his reasons therefor and the nature of his interest in the matter.",
+                "sources": [
+                    "(a)"
+                ],
+                "type": "Party rules"
+            },
+            {
+                "doc_id": "§ 275.0-5",
+                "statement_id": "3",
+                "statement": "An order disposing of the matter will be issued as of course following the expiration of the period of time referred to in paragraph (a) of this section, unless the Commission thereafter orders a hearing on the matter.",
+                "sources": [
+                    "(b)"
+                ],
+                "type": "Activity rules"
+            },
+            {
+                "doc_id": "§ 275.0-5",
+                "statement_id": "4",
+                "statement": "The Commission will order a hearing on the matter, if it appears that a hearing is necessary or appropriate in the public interest or for the protection of investors, upon the request of any interested person or upon its own motion.",
+                "sources": [
+                    "(c)"
+                ],
+                "type": "Activity rules"
+            }
+        ]
+    },
+    "classify_P2_Operative_rules|true_table": {
+        "id": "classify_P2_Operative_rules",
+        "type": "true_table",
+        "content": [
+            {
+                "doc_id": "§ 275.0-2",
+                "statement_id": "3",
+                "statement": "The Secretary of the Commission (Secretary) will promptly forward a copy to each named party by registered or certified mail at that party's last address filed with the Commission.",
+                "sources": [
+                    "(a)(2)"
+                ],
+                "subtype": "Responsibility rules",
+                "templates_ids": [
+                    "T56"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-2",
+                "statement_id": "4",
+                "statement": "If the Secretary certifies that the Commission was served with process, pleadings, or other papers pursuant to paragraph (a)(1) of this section and forwarded these documents to a named party pursuant to paragraph (a)(2) of this section, this certification constitutes evidence of service upon that party.",
+                "sources": [
+                    "(a)(3)"
+                ],
+                "subtype": "Responsibility rules",
+                "templates_ids": [
+                    "T56"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-5",
+                "statement_id": "2",
+                "statement": "Any interested person may, within the period of time specified therein, submit to the Commission in writing any facts bearing upon the desirability of a hearing on the matter and may request that a hearing be held, stating his reasons therefor and the nature of his interest in the matter.",
+                "sources": [
+                    "(a)"
+                ],
+                "subtype": "Party restriction rules",
+                "templates_ids": [
+                    "T53"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-5",
+                "statement_id": "1",
+                "statement": "Notice of the initiation of the proceeding will be published in the Federal Register and will indicate the earliest date upon which an order disposing of the matter may be entered.",
+                "sources": [
+                    "(a)"
+                ],
+                "subtype": "Activity time limit rules",
+                "templates_ids": [
+                    "T48"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-5",
+                "statement_id": "3",
+                "statement": "An order disposing of the matter will be issued as of course following the expiration of the period of time referred to in paragraph (a) of this section, unless the Commission thereafter orders a hearing on the matter.",
+                "sources": [
+                    "(b)"
+                ],
+                "subtype": "Activity pre-condition rules",
+                "templates_ids": [
+                    "T50"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-5",
+                "statement_id": "4",
+                "statement": "The Commission will order a hearing on the matter, if it appears that a hearing is necessary or appropriate in the public interest or for the protection of investors, upon the request of any interested person or upon its own motion.",
+                "sources": [
+                    "(c)"
+                ],
+                "subtype": "Activity pre-condition rules",
+                "templates_ids": [
+                    "T50"
+                ]
+            }
+        ]
+    },
+    "classify_P2_Definitional_terms|true_table": {
+        "id": "classify_P2_Definitional_terms",
+        "type": "true_table",
+        "content": [
+            {
+                "doc_id": "§ 275.0-2",
+                "statement_id": "Commission's records",
+                "statement": "Records maintained by the Commission, which include copies of process, pleadings, or other papers served.",
+                "sources": [
+                    "(a)(1)"
+                ],
+                "subtype": "Formal extensional definitions",
+                "templates_ids": [
+                    "T8"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-2",
+                "statement_id": "Evidence of service",
+                "statement": "The certification by the Secretary that the Commission was served with process, pleadings, or other papers and forwarded these documents to a named party.",
+                "sources": [
+                    "(a)(3)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-2",
+                "statement_id": "Managing agent",
+                "statement": "Any person, including a trustee, who directs or manages, or who participates in directing or managing, the affairs of any unincorporated organization or association other than a partnership.",
+                "sources": [
+                    "(b)(1)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-2",
+                "statement_id": "Non-resident",
+                "statement": "An individual, corporation, partnership, or other unincorporated organization or association that resides or has its principal office and place of business in any place not subject to the jurisdiction of the United States.",
+                "sources": [
+                    "(b)(2)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-5",
+                "statement_id": "Order disposing of the matter",
+                "statement": "An order issued after the period of time for submitting facts or requesting a hearing has expired.",
+                "sources": [
+                    "(a)",
+                    "(b)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-5",
+                "statement_id": "Notice",
+                "statement": "A publication in the Federal Register indicating the initiation of the proceeding and the earliest date for an order.",
+                "sources": [
+                    "(a)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-5",
+                "statement_id": "Initiation of the proceeding",
+                "statement": "The process that begins when a notice is published in the Federal Register indicating the earliest date upon which an order disposing of the matter may be entered.",
+                "sources": [
+                    "(a)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-5",
+                "statement_id": "Order",
+                "statement": "A decision issued by the Commission disposing of the matter.",
+                "sources": [
+                    "(a)",
+                    "(b)",
+                    "(d)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-5",
+                "statement_id": "Matter",
+                "statement": "The subject of the proceeding initiated by the filing of an application or the Commission's motion.",
+                "sources": [
+                    "(c)",
+                    "(a)",
+                    "(b)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-5",
+                "statement_id": "Interested person",
+                "statement": "Any person who may submit facts or request a hearing on the matter.",
+                "sources": [
+                    "(c)",
+                    "(a)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-5",
+                "statement_id": "Period of time",
+                "statement": "The timeframe specified in the notice during which interested persons can submit facts or request a hearing.",
+                "sources": [
+                    "(a)",
+                    "(b)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-5",
+                "statement_id": "Facts",
+                "statement": "Information submitted to the Commission bearing upon the desirability of a hearing on the matter.",
+                "sources": [
+                    "(a)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-5",
+                "statement_id": "Hearing",
+                "statement": "A proceeding ordered by the Commission if necessary or appropriate in the public interest or for the protection of investors.",
+                "sources": [
+                    "(c)",
+                    "(a)",
+                    "(b)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-5",
+                "statement_id": "Reasons",
+                "statement": "The justification provided by an interested person for requesting a hearing.",
+                "sources": [
+                    "(a)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-5",
+                "statement_id": "Nature of interest",
+                "statement": "The specific interest an interested person has in the matter, which must be stated when requesting a hearing.",
+                "sources": [
+                    "(a)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-5",
+                "statement_id": "Motion",
+                "statement": "A formal proposal by the Commission to initiate a proceeding.",
+                "sources": [
+                    "(c)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-5",
+                "statement_id": "Public interest",
+                "statement": "A consideration for ordering a hearing if it appears necessary or appropriate.",
+                "sources": [
+                    "(c)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-5",
+                "statement_id": "Protection of investors",
+                "statement": "A consideration for ordering a hearing if it appears necessary or appropriate.",
+                "sources": [
+                    "(c)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-5",
+                "statement_id": "Order of the Commission",
+                "statement": "An order issued by the Commission under the Act.",
+                "sources": [
+                    "(d)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-5",
+                "statement_id": "Application",
+                "statement": "Any application for an order of the Commission under the Act, excluding applications for registration as an investment adviser.",
+                "sources": [
+                    "(d)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-7",
+                "statement_id": "Small business",
+                "statement": "An investment adviser with assets under management of less than $25 million, or such higher amount as the Commission may deem appropriate, and other specific conditions.",
+                "sources": [
+                    "(a)"
+                ],
+                "subtype": "Valid value definitions",
+                "templates_ids": [
+                    "T15"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-7",
+                "statement_id": "Small organization",
+                "statement": "An investment adviser with assets under management of less than $25 million, or such higher amount as the Commission may deem appropriate, and other specific conditions.",
+                "sources": [
+                    "(a)"
+                ],
+                "subtype": "Valid value definitions",
+                "templates_ids": [
+                    "T15"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-7",
+                "statement_id": "Total assets",
+                "statement": "The total assets as shown on the balance sheet of the investment adviser or other person described, or the balance sheet of the investment adviser or such other person with its subsidiaries consolidated, whichever is larger.",
+                "sources": [
+                    "(b)(2)",
+                    "(a)(2)"
+                ],
+                "subtype": "Complex concept equivalence rules",
+                "templates_ids": [
+                    "T13"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-7",
+                "statement_id": "Control",
+                "statement": "The power, directly or indirectly, to direct the management or policies of a person, whether through ownership of securities, by contract, or otherwise.",
+                "sources": [
+                    "(a)(3)",
+                    "(b)(1)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-7",
+                "statement_id": "Right to vote",
+                "statement": "A person is presumed to control a corporation if the person directly or indirectly has the right to vote 25 percent or more of a class of the corporation's voting securities.",
+                "sources": [
+                    "(b)(1)(i)(A)",
+                    "(b)(1)(iii)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-7",
+                "statement_id": "Partnership",
+                "statement": "A person is presumed to control a partnership if the person has the right to receive upon dissolution, or has contributed, 25 percent or more of the capital of the partnership.",
+                "sources": [
+                    "(b)(1)(ii)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-7",
+                "statement_id": "Limited liability company (LLC)",
+                "statement": "A person is presumed to control a limited liability company (LLC) if the person directly or indirectly has the right to vote 25 percent or more of a class of the interests of the LLC, has the right to receive upon dissolution, or has contributed, 25 percent or more of the capital of the LLC, or is an elected manager of the LLC.",
+                "sources": [
+                    "(b)(1)(iii)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-7",
+                "statement_id": "Trust",
+                "statement": "A person is presumed to control a trust if the person is a trustee or managing agent of the trust.",
+                "sources": [
+                    "(b)(1)(iv)"
+                ],
+                "subtype": "Formal extensional definitions",
+                "templates_ids": [
+                    "T8"
+                ]
+            }
+        ]
+    },
+    "classify_P2_Definitional_names|true_table": {
+        "id": "classify_P2_Definitional_names",
+        "type": "true_table",
+        "content": [
+            {
+                "doc_id": "§ 275.0-2",
+                "statement_id": "Secretary of the Commission",
+                "statement": "The Secretary of the Commission is responsible for forwarding copies of process, pleadings, or other papers to each named party by registered or certified mail.",
+                "sources": [
+                    "(a)(2)"
+                ],
+                "subtype": "Formal term definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-2",
+                "statement_id": "Secretary",
+                "statement": "The Secretary of the Commission is responsible for forwarding copies of process, pleadings, or other papers to each named party by registered or certified mail.",
+                "sources": [
+                    "(a)(3)"
+                ],
+                "subtype": "Formal term definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-5",
+                "statement_id": "Federal Register",
+                "statement": "The official journal where the notice of initiation of the proceeding is published.",
+                "sources": [
+                    "(a)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-5",
+                "statement_id": "Commission",
+                "statement": "The regulatory body responsible for issuing orders and conducting hearings.",
+                "sources": [
+                    "(c)",
+                    "(a)",
+                    "(b)",
+                    "(d)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-5",
+                "statement_id": "Act",
+                "statement": "The legislation under which the Commission operates and applications are filed.",
+                "sources": [
+                    "(d)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            }
+        ]
+    },
+    "classify_P2_Definitional_facts|true_table": {
+        "id": "classify_P2_Definitional_facts",
+        "type": "true_table",
+        "content": [
+            {
+                "doc_id": "§ 275.0-2",
+                "statement_id": "1",
+                "statement": "A person may serve process, pleadings, or other papers on a non-resident investment adviser, or on a non-resident general partner or non-resident managing agent of an investment adviser by serving any or all of its appointed agents.",
+                "sources": [
+                    "(a)"
+                ],
+                "subtype": "Complex concept structure rules",
+                "templates_ids": [
+                    "T12"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-2",
+                "statement_id": "2",
+                "statement": "A person may serve a non-resident investment adviser, non-resident general partner, or non-resident managing agent by furnishing the Commission with one copy of the process, pleadings, or papers, for each named party, and one additional copy for the Commission's records.",
+                "sources": [
+                    "(a)(1)"
+                ],
+                "subtype": "Complex concept structure rules",
+                "templates_ids": [
+                    "T12"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-2",
+                "statement_id": "5",
+                "statement": "Managing agent means any person, including a trustee, who directs or manages, or who participates in directing or managing, the affairs of any unincorporated organization or association other than a partnership.",
+                "sources": [
+                    "(b)(1)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-2",
+                "statement_id": "6",
+                "statement": "Non-resident means an individual who resides in any place not subject to the jurisdiction of the United States; a corporation that is incorporated in or that has its principal office and place of business in any place not subject to the jurisdiction of the United States; and a partnership or other unincorporated organization or association that has its principal office and place of business in any place not subject to the jurisdiction of the United States.",
+                "sources": [
+                    "(b)(2)"
+                ],
+                "subtype": "Formal extensional definitions",
+                "templates_ids": [
+                    "T8"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-2",
+                "statement_id": "7",
+                "statement": "Principal office and place of business has the same meaning as in § 275.203A-3(c) of this chapter.",
+                "sources": [
+                    "(b)(3)"
+                ],
+                "subtype": "Formal term definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-5",
+                "statement_id": "5",
+                "statement": "For purposes of this rule, an application means any application for an order of the Commission under the Act other than an application for registration as an investment adviser.",
+                "sources": [
+                    "(d)"
+                ],
+                "subtype": "Formal extensional definitions",
+                "templates_ids": [
+                    "T8"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-7",
+                "statement_id": "1",
+                "statement": "The term small business or small organization for purposes of the Investment Advisers Act of 1940 shall mean an investment adviser that has assets under management of less than $25 million, or such higher amount as the Commission may by rule deem appropriate.",
+                "sources": [
+                    "(a)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-7",
+                "statement_id": "2",
+                "statement": "An investment adviser has assets under management, as defined under Section 203A(a)(3) of the Act and reported on its annual updating amendment to Form ADV, of less than $25 million, or such higher amount as the Commission may by rule deem appropriate.",
+                "sources": [
+                    "(a)(1)"
+                ],
+                "subtype": "Valid value definitions",
+                "templates_ids": [
+                    "T15"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-7",
+                "statement_id": "3",
+                "statement": "An investment adviser did not have total assets of $5 million or more on the last day of the most recent fiscal year.",
+                "sources": [
+                    "(a)(2)"
+                ],
+                "subtype": "Valid value definitions",
+                "templates_ids": [
+                    "T15"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-7",
+                "statement_id": "4",
+                "statement": "An investment adviser does not control, is not controlled by, and is not under common control with another investment adviser that has assets under management of $25 million or more, or any person (other than a natural person) that had total assets of $5 million or more on the last day of the most recent fiscal year.",
+                "sources": [
+                    "(a)(3)"
+                ],
+                "subtype": "Complex concept structure rules",
+                "templates_ids": [
+                    "T12"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-7",
+                "statement_id": "5",
+                "statement": "Control means the power, directly or indirectly, to direct the management or policies of a person, whether through ownership of securities, by contract, or otherwise.",
+                "sources": [
+                    "(b)(1)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-7",
+                "statement_id": "6",
+                "statement": "A person is presumed to control a corporation if the person directly or indirectly has the right to vote 25 percent or more of a class of the corporation's voting securities.",
+                "sources": [
+                    "(b)(1)(i)(A)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-7",
+                "statement_id": "7",
+                "statement": "A person is presumed to control a partnership if the person has the right to receive upon dissolution, or has contributed, 25 percent or more of the capital of the partnership.",
+                "sources": [
+                    "(b)(1)(ii)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-7",
+                "statement_id": "8",
+                "statement": "A person is presumed to control a limited liability company (LLC) if the person directly or indirectly has the right to vote 25 percent or more of a class of the interests of the LLC, has the right to receive upon dissolution, or has contributed, 25 percent or more of the capital of the LLC, or is an elected manager of the LLC.",
+                "sources": [
+                    "(b)(1)(iii)"
+                ],
+                "subtype": "Formal intensional definitions",
+                "templates_ids": [
+                    "T7"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-7",
+                "statement_id": "9",
+                "statement": "A person is presumed to control a trust if the person is a trustee or managing agent of the trust.",
+                "sources": [
+                    "(b)(1)(iv)"
+                ],
+                "subtype": "Formal extensional definitions",
+                "templates_ids": [
+                    "T8"
+                ]
+            },
+            {
+                "doc_id": "§ 275.0-7",
+                "statement_id": "10",
+                "statement": "Total assets means the total assets as shown on the balance sheet of the investment adviser or other person described above under paragraph (a)(3) of this section, or the balance sheet of the investment adviser or such other person with its subsidiaries consolidated, whichever is larger.",
+                "sources": [
+                    "(b)(2)"
+                ],
+                "subtype": "Formal extensional definitions",
+                "templates_ids": [
+                    "T8"
+                ]
+            }
+        ]
+    }
+}

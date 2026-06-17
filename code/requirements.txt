@@ -20,19 +20,21 @@ google-generativeai
 tiktoken
 humanize
 
-# Graph and RDF libraries
+# Graph, DB, and RDF libraries
 agraph-python
 # networkx
 # pygraphviz
 rdflib
 defusedxml
+duckdb
 
 # Visualization libraries
 matplotlib
 plotly
 seaborn
 XlsxWriter
-xelatex
+#xelatex
+missingno
 
 # # Web scraping and diffing
 # beautifulsoup4
@@ -42,10 +44,15 @@ xelatex
 inflect
 pyyaml
 jsonref
+jellyfish
+python-dotenv
+natsort
 
 # Jupyter environment
 jupyterlab
+streamlit
 
 # Additional notes:
 # pygraphviz depends on sudo apt-get install graphviz graphviz-dev
 tornado>=6.4.2 # not directly required, pinned by Snyk to avoid a vulnerability
+pillow>=10.0.1 # not directly required, pinned by Snyk to avoid a vulnerability

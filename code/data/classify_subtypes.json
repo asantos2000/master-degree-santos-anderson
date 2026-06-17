@@ -37,7 +37,7 @@
 				"section_title": "Categorization scheme enumerations",
 				"section_definition": "A categorization scheme enumeration defines the members of a categorization scheme that is both mutually exclusive and jointly exhaustive.",
 				"templates": ["T10"],
-				"examples": ["R75", "R76", "R77", "R78", "R328", "R329"]
+				"examples": ["R75", "R76", "R77", "R78", "R328", "R329", "F202", "F203"]
 			},
 			{
 				"section_id": "9.2.3",
@@ -488,5 +488,10 @@
 				"examples": ["R147", "R402", "F356", "F357"]
 			}
 		]
+	},
+	{
+		"section_id": "9+",
+		"section_title": "Operative rules",
+		"section_definition": "Operative rules (otherwise known as normative rules or prescriptive rules) state what must or must not happen in particular circumstances. Operative rules can be contravened, and required information may be omitted, inappropriate information supplied, or an attempt may be made to perform a process that is prohibited. By contrast, definitional rules (otherwise known as structural rules or descriptive rules) constrain how we define various constructs created by the organization (or the industry within which it operates). Data, Activity, and Party rules are all operative rules."
 	}
 ]
