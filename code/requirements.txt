@@ -54,7 +54,7 @@ streamlit
 
 # Additional notes:
 # pygraphviz depends on sudo apt-get install graphviz graphviz-dev
-tornado>=6.5.3 # not directly required, pinned by Snyk to avoid a vulnerability
+tornado>=6.5.7 # not directly required, pinned by Snyk to avoid a vulnerability
 pillow>=10.0.1 # not directly required, pinned by Snyk to avoid a vulnerability
 setuptools>=78.1.1 # not directly required, pinned by Snyk to avoid a vulnerability
 fonttools>=4.61.0 # not directly required, pinned by Snyk to avoid a vulnerability
@@ -62,3 +62,4 @@ nbconvert>=7.17.0 # not directly required, pinned by Snyk to avoid a vulnerabili
 protobuf>=6.33.5 # not directly required, pinned by Snyk to avoid a vulnerability
 urllib3>=2.5.0 # not directly required, pinned by Snyk to avoid a vulnerability
 zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
+mistune>=3.2.1 # not directly required, pinned by Snyk to avoid a vulnerability
