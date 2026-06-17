@@ -54,3 +54,4 @@ streamlit
 
 # Additional notes:
 # pygraphviz depends on sudo apt-get install graphviz graphviz-dev
+pillow>=10.0.1 # not directly required, pinned by Snyk to avoid a vulnerability
