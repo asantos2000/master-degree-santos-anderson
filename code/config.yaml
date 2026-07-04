@@ -41,7 +41,7 @@ ALLEGROGRAPH_CLOUD:
   HOST: "ag1eawvuu0p3zv35.allegrograph.cloud"
   PORT: 443 
   USER: "admin"
-  PASSWORD: "GYL6N1KPB4R4xdWKIZqrYw"  # Replace with your password
+  PASSWORD: "your-password-here"  # Replace with your password
   PROTOCOL: "https"
 
 # Directories and Files
