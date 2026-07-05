@@ -16,4 +16,4 @@ code/data/temp
 swark-output
 *.log
 .devcontainer
-.streamlit/secrets.toml
+.streamlit/secrets.toml.venv

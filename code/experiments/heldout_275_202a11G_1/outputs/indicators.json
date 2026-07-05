@@ -1,0 +1,177 @@
+{
+  "section": "§ 275.202(a)(11)(G)-1",
+  "design": "frozen pipeline, single run, no gold-standard correction at any checkpoint",
+  "model": "gpt-4o",
+  "temperature": 0,
+  "counts": {
+    "operative_rules": 5,
+    "fact_types": 1,
+    "terms_with_definition": 15,
+    "names_with_definition": 0
+  },
+  "grounding_check": {
+    "Operative Rules": {
+      "n": 5,
+      "mean": 0.8531,
+      "median": 0.8149,
+      "min": 0.7831,
+      "max": 1.0,
+      "share_ge_0.8": 0.6
+    },
+    "Fact Types": {
+      "n": 1,
+      "mean": 0.4245,
+      "median": 0.4245,
+      "min": 0.4245,
+      "max": 0.4245,
+      "share_ge_0.8": 0.0
+    },
+    "Terms": {
+      "n": 15,
+      "mean": 0.765,
+      "median": 0.832,
+      "min": 0.3813,
+      "max": 1.0,
+      "share_ge_0.8": 0.5333
+    }
+  },
+  "grounding_check_overall": {
+    "n": 21,
+    "mean": 0.7697,
+    "median": 0.8149,
+    "min": 0.3813,
+    "max": 1.0,
+    "share_ge_0.8": 0.5238
+  },
+  "semscore_overall": {
+    "n": 21,
+    "mean": 0.8938,
+    "median": 0.9041,
+    "min": 0.797,
+    "max": 0.9651,
+    "share_ge_0.8": 0.9524
+  },
+  "llm_judge": {
+    "Operative Rules": {
+      "similarity_score": {
+        "n": 5,
+        "mean": 0.88,
+        "median": 0.85,
+        "min": 0.8,
+        "max": 0.95,
+        "share_ge_0.8": 1.0
+      },
+      "transformation_accuracy": {
+        "n": 5,
+        "mean": 0.85,
+        "median": 0.9,
+        "min": 0.7,
+        "max": 0.95,
+        "share_ge_0.8": 0.8
+      },
+      "grammar_syntax_accuracy": {
+        "n": 5,
+        "mean": 0.97,
+        "median": 1.0,
+        "min": 0.9,
+        "max": 1.0,
+        "share_ge_0.8": 1.0
+      }
+    },
+    "Fact Types": {
+      "similarity_score": {
+        "n": 1,
+        "mean": 0.95,
+        "median": 0.95,
+        "min": 0.95,
+        "max": 0.95,
+        "share_ge_0.8": 1.0
+      },
+      "transformation_accuracy": {
+        "n": 1,
+        "mean": 0.95,
+        "median": 0.95,
+        "min": 0.95,
+        "max": 0.95,
+        "share_ge_0.8": 1.0
+      },
+      "grammar_syntax_accuracy": {
+        "n": 1,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "share_ge_0.8": 1.0
+      }
+    },
+    "Terms": {
+      "similarity_score": {
+        "n": 15,
+        "mean": 0.9133,
+        "median": 0.95,
+        "min": 0.6,
+        "max": 1.0,
+        "share_ge_0.8": 0.9333
+      },
+      "transformation_accuracy": {
+        "n": 15,
+        "mean": 0.86,
+        "median": 0.9,
+        "min": 0.5,
+        "max": 1.0,
+        "share_ge_0.8": 0.8
+      },
+      "grammar_syntax_accuracy": {
+        "n": 15,
+        "mean": 0.9467,
+        "median": 0.95,
+        "min": 0.8,
+        "max": 1.0,
+        "share_ge_0.8": 1.0
+      }
+    }
+  },
+  "llm_judge_overall": {
+    "similarity_score": {
+      "n": 21,
+      "mean": 0.9071,
+      "median": 0.95,
+      "min": 0.6,
+      "max": 1.0,
+      "share_ge_0.8": 0.9524
+    },
+    "transformation_accuracy": {
+      "n": 21,
+      "mean": 0.8619,
+      "median": 0.9,
+      "min": 0.5,
+      "max": 1.0,
+      "share_ge_0.8": 0.8095
+    },
+    "grammar_syntax_accuracy": {
+      "n": 21,
+      "mean": 0.9548,
+      "median": 0.95,
+      "min": 0.8,
+      "max": 1.0,
+      "share_ge_0.8": 1.0
+    }
+  },
+  "flagged_below_threshold": [
+    {
+      "group": "Terms",
+      "doc_id": "§ 275.202(a)(11)(G)-1",
+      "statement_id": "Former family member",
+      "similarity_score": 0.6,
+      "findings": [
+        "The transformed sentence omits the condition of 'no longer being a family member due to a divorce or other similar event', which is crucial to the definition.",
+        "The transformation captures the initial part of the definition but misses the essential condition that defines 'former'.",
+        "The grammar and syntax of the transformed sentence are correct, but it lacks completeness in terms of the original definition."
+      ]
+    }
+  ],
+  "tokens": {
+    "input": 208962,
+    "output": 17557
+  }
+}
