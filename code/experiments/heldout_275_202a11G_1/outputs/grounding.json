@@ -1,0 +1,170 @@
+[
+  {
+    "group": "Operative Rules",
+    "doc_id": "§ 275.202(a)(11)(G)-1",
+    "statement_id": 1,
+    "text_key": "statement",
+    "fragment": "A family office, as defined in this section, shall not be considered to be an investment adviser for purpose of the Act.",
+    "grounding_score": 1.0
+  },
+  {
+    "group": "Operative Rules",
+    "doc_id": "§ 275.202(a)(11)(G)-1",
+    "statement_id": 2,
+    "text_key": "statement",
+    "fragment": "A family office has no clients other than family clients.",
+    "grounding_score": 0.878
+  },
+  {
+    "group": "Operative Rules",
+    "doc_id": "§ 275.202(a)(11)(G)-1",
+    "statement_id": 3,
+    "text_key": "statement",
+    "fragment": "A family office is wholly owned by family clients and is exclusively controlled by one or more family members and/or family entities.",
+    "grounding_score": 0.7893
+  },
+  {
+    "group": "Operative Rules",
+    "doc_id": "§ 275.202(a)(11)(G)-1",
+    "statement_id": 4,
+    "text_key": "statement",
+    "fragment": "A family office does not hold itself out to the public as an investment adviser.",
+    "grounding_score": 0.7831
+  },
+  {
+    "group": "Operative Rules",
+    "doc_id": "§ 275.202(a)(11)(G)-1",
+    "statement_id": 5,
+    "text_key": "statement",
+    "fragment": "A family office shall not exclude any person, who was not registered or required to be registered under the Act on January 1, 2010, solely because such person provides investment advice to, and was engaged before January 1, 2010 in providing investment advice to certain individuals and entities.",
+    "grounding_score": 0.8149
+  },
+  {
+    "group": "Fact Types",
+    "doc_id": "§ 275.202(a)(11)(G)-1",
+    "statement_id": 6,
+    "text_key": "statement",
+    "fragment": "Family client means any family member, former family member, key employee, former key employee, non-profit organization, charitable foundation, charitable trust, estate, irrevocable trust, revocable trust, or company wholly owned by family clients.",
+    "grounding_score": 0.4245
+  },
+  {
+    "group": "Terms",
+    "doc_id": "§ 275.202(a)(11)(G)-1",
+    "statement_id": "Family office",
+    "text_key": "definition",
+    "fragment": "A company (including its directors, partners, members, managers, trustees, and employees acting within the scope of their position or employment) that has no clients other than family clients, is wholly owned by family clients and is exclusively controlled by one or more family members and/or family entities, and does not hold itself out to the public as an investment adviser.",
+    "grounding_score": 0.3813
+  },
+  {
+    "group": "Terms",
+    "doc_id": "§ 275.202(a)(11)(G)-1",
+    "statement_id": "Family clients",
+    "text_key": "definition",
+    "fragment": "Includes family members, former family members, key employees, former key employees, non-profit organizations, charitable foundations, charitable trusts, estates, irrevocable trusts, revocable trusts, and companies wholly owned by family clients.",
+    "grounding_score": 0.4088
+  },
+  {
+    "group": "Terms",
+    "doc_id": "§ 275.202(a)(11)(G)-1",
+    "statement_id": "Family members",
+    "text_key": "definition",
+    "fragment": "All lineal descendants (including by adoption, stepchildren, foster children, and individuals that were a minor when another family member became a legal guardian of that individual) of a common ancestor (who may be living or deceased), and such lineal descendants' spouses or spousal equivalents; provided that the common ancestor is no more than 10 generations removed from the youngest generation of family members.",
+    "grounding_score": 1.0
+  },
+  {
+    "group": "Terms",
+    "doc_id": "§ 275.202(a)(11)(G)-1",
+    "statement_id": "Family entities",
+    "text_key": "definition",
+    "fragment": "Any of the trusts, estates, companies or other entities set forth in paragraphs (d)(4)(v), (vi), (vii), (viii), (ix), or (xi) of this section, but excluding key employees and their trusts from the definition of family client solely for purposes of this definition.",
+    "grounding_score": 1.0
+  },
+  {
+    "group": "Terms",
+    "doc_id": "§ 275.202(a)(11)(G)-1",
+    "statement_id": "Family client",
+    "text_key": "definition",
+    "fragment": "Includes family members, former family members, key employees, former key employees, non-profit organizations, charitable foundations, charitable trusts, estates, irrevocable trusts, revocable trusts, and companies wholly owned by family clients.",
+    "grounding_score": 0.4088
+  },
+  {
+    "group": "Terms",
+    "doc_id": "§ 275.202(a)(11)(G)-1",
+    "statement_id": "Family member",
+    "text_key": "definition",
+    "fragment": "All lineal descendants (including by adoption, stepchildren, foster children, and individuals that were a minor when another family member became a legal guardian of that individual) of a common ancestor (who may be living or deceased), and such lineal descendants' spouses or spousal equivalents; provided that the common ancestor is no more than 10 generations removed from the youngest generation of family members.",
+    "grounding_score": 1.0
+  },
+  {
+    "group": "Terms",
+    "doc_id": "§ 275.202(a)(11)(G)-1",
+    "statement_id": "Former family member",
+    "text_key": "definition",
+    "fragment": "A spouse, spousal equivalent, or stepchild that was a family member but is no longer a family member due to a divorce or other similar event.",
+    "grounding_score": 1.0
+  },
+  {
+    "group": "Terms",
+    "doc_id": "§ 275.202(a)(11)(G)-1",
+    "statement_id": "Key employee",
+    "text_key": "definition",
+    "fragment": "Any natural person (including any key employee's spouse or spouse equivalent who holds a joint, community property, or other similar shared ownership interest with that key employee) who is an executive officer, director, trustee, general partner, or person serving in a similar capacity of the family office or its affiliated family office or any employee of the family office or its affiliated family office who, in connection with his or her regular functions or duties, participates in the investment activities of the family office or affiliated family office, provided that such employee has been performing such functions and duties for or on behalf of the family office or affiliated family office, or substantially similar functions or duties for or on behalf of another company, for at least 12 months.",
+    "grounding_score": 0.8726
+  },
+  {
+    "group": "Terms",
+    "doc_id": "§ 275.202(a)(11)(G)-1",
+    "statement_id": "Former key employee",
+    "text_key": "definition",
+    "fragment": "A former key employee shall not receive investment advice from the family office other than with respect to assets advised by the family office immediately prior to the end of such individual's employment, except for certain contractual obligations.",
+    "grounding_score": 0.5464
+  },
+  {
+    "group": "Terms",
+    "doc_id": "§ 275.202(a)(11)(G)-1",
+    "statement_id": "Non-profit organization",
+    "text_key": "definition",
+    "fragment": "A charitable organization for which all the funding such organization holds came exclusively from one or more other family clients.",
+    "grounding_score": 0.7885
+  },
+  {
+    "group": "Terms",
+    "doc_id": "§ 275.202(a)(11)(G)-1",
+    "statement_id": "Charitable foundation",
+    "text_key": "definition",
+    "fragment": "A charitable organization for which all the funding such foundation holds came exclusively from one or more other family clients.",
+    "grounding_score": 0.7798
+  },
+  {
+    "group": "Terms",
+    "doc_id": "§ 275.202(a)(11)(G)-1",
+    "statement_id": "Charitable trust",
+    "text_key": "definition",
+    "fragment": "A trust (including charitable lead trusts and charitable remainder trusts whose only current beneficiaries are other family clients and charitable or non-profit organizations) for which all the funding such trust holds came exclusively from one or more other family clients.",
+    "grounding_score": 0.832
+  },
+  {
+    "group": "Terms",
+    "doc_id": "§ 275.202(a)(11)(G)-1",
+    "statement_id": "Estate",
+    "text_key": "definition",
+    "fragment": "Any estate of a family member, former family member, key employee, or, subject to certain conditions, former key employee.",
+    "grounding_score": 0.7266
+  },
+  {
+    "group": "Terms",
+    "doc_id": "§ 275.202(a)(11)(G)-1",
+    "statement_id": "Irrevocable trust",
+    "text_key": "definition",
+    "fragment": "A trust in which one or more other family clients are the only current beneficiaries or funded exclusively by one or more other family clients in which other family clients and non-profit organizations, charitable foundations, charitable trusts, or other charitable organizations are the only current beneficiaries.",
+    "grounding_score": 0.8659
+  },
+  {
+    "group": "Terms",
+    "doc_id": "§ 275.202(a)(11)(G)-1",
+    "statement_id": "Revocable trust",
+    "text_key": "definition",
+    "fragment": "A trust of which one or more other family clients are the sole grantor.",
+    "grounding_score": 0.8642
+  }
+]

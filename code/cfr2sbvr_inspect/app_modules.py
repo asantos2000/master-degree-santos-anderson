@@ -636,9 +636,6 @@ def transform_to_rdf_subject(input_string: str) -> str:
 
     return rdf_subject
 
-def now_as_xsd_dateTime() -> str:
-    return datetime.now().isoformat()
-
 def remove_section_symbol(doc_id: str) -> str:
     return doc_id.replace("§", "")
 
@@ -833,7 +830,7 @@ def triples_term_and_name(graph: Graph, designation: Designation) -> None:
                 graph.add((designation_class, CFR_SBVR.classificationTemplatesId, Literal(template)))
 
 
-def now_as_xsd_dateTime():
+def now_as_xsd_dateTime() -> str:
     # Get the current datetime in UTC
     current_time = datetime.utcnow().isoformat()
 

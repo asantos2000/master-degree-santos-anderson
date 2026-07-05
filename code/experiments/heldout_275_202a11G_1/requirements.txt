@@ -1,0 +1,11 @@
+# Held-out generalization probe (run_probe.py)
+# Versions pinned to the original experiment environment
+# (requirements-ipt-cfr2sbvr-freeze-env.txt) to keep the pipeline frozen.
+
+pydantic==2.8.2
+pydantic_core==2.20.1
+instructor==1.6.3
+openai==1.52.2
+httpx==0.27.0
+PyYAML==6.0.2
+numpy==1.26.4
