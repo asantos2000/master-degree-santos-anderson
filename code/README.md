@@ -23,7 +23,7 @@ The primary objective of this project is to create a Knowledge Graph in RDF form
 ## Dependencies
 
 - Python 3.11 or later
-  - [agraph-python](https://github.com/edmcouncil/agraph-python)
+  - [agraph-python](https://github.com/franzinc/agraph-python)
   - [SPARQLWrapper](https://github.com/RDFLib/sparqlwrapper)
   - Check `src/requirements.txt`
 - [AllegroGraph 8.2.1 or later](https://franz.com/agraph/support/documentation/8.2.1/agraph-quick-start.html)
